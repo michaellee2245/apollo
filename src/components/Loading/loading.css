@@ -1,0 +1,19 @@
+.loading{
+    display:flex;
+    width: 100vw;
+    height:100vh;
+    justify-content: center;
+    align-items: center;
+    background-color:black;
+}
+.progress_bar{
+    position:relative;
+    height:10px;
+    width:500px;
+    border: solid 1px white;
+}
+.filler{
+    background:white;
+    height:100%;
+    transition: width .2s ease-in;
+}
