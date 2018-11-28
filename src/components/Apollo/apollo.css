@@ -4,6 +4,9 @@
     height:100vh;
     justify-content: center;
     align-items:center;
-    /* background-color: black;
-    color:white; */
+    background-image: url(../../assets/moon-background.jpg);
+    background-size: 100%;
+    background-repeat:none;
+    background-position: -25%;
+    
 }

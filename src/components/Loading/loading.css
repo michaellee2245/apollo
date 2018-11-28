@@ -4,7 +4,9 @@
     height:100vh;
     justify-content: center;
     align-items: center;
-    background-color:black;
+    background-image: url(../../assets/loading-background.jpg);
+    background-size:cover;
+    background-position:-25%;
 }
 .progress_bar{
     position:relative;

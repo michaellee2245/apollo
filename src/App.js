@@ -14,19 +14,19 @@ class App extends Component {
   };
 
   componentDidMount(){
-    let config = {
-      onDownloadProgress: progressEvent => {
-        let percentCompleted = Math.floor((progressEvent.loaded * 100) / 387003 );
-        this.setState({percentage:percentCompleted})
-        console.log(progressEvent)
+    // let config = {
+    //   onDownloadProgress: progressEvent => {
+    //     let percentCompleted = Math.floor((progressEvent.loaded * 100) / 387003 );
+    //     this.setState({percentage:percentCompleted})
+    //     console.log(progressEvent)
 
-        // do whatever you like with the percentage complete
-        // maybe dispatch an action that will update a progress bar or something
-      }
-    }
-    axios.get('https://pokeapi.co/api/v2/pokemon/1/', config)
-    .then(res => console.log(res))
-    // setTimeout(() => this.setState({loading: false}), 2000)
+    //     // do whatever you like with the percentage complete
+    //     // maybe dispatch an action that will update a progress bar or something
+    //   }
+    // }
+    // axios.get('https://pokeapi.co/api/v2/pokemon/1/', config)
+    // .then(res => console.log(res))
+    setTimeout(() => this.setState({loading: false}), 2000)
   }
 
 
@@ -36,7 +36,7 @@ class App extends Component {
     const { loading } = this.state;
 
     if(loading){
-      return <Loading percentage={this.state.percentage}/>
+      return <Loading />  //percentage={this.state.percentage}
     }
 
     return (
