@@ -3,6 +3,7 @@ import axios from 'axios';
 import './App.css';
 import Loading from './components/Loading/Loading';
 import Apollo from './components/Apollo/Apollo';
+import { Motion, spring } from 'react-motion';
 
 
 
@@ -10,10 +11,10 @@ class App extends Component {
 
   state = {
     loading: true,
-    percentage:0
+    percentage: 0
   };
 
-  componentDidMount(){
+  componentDidMount() {
     // let config = {
     //   onDownloadProgress: progressEvent => {
     //     let percentCompleted = Math.floor((progressEvent.loaded * 100) / 387003 );
@@ -26,23 +27,27 @@ class App extends Component {
     // }
     // axios.get('https://pokeapi.co/api/v2/pokemon/1/', config)
     // .then(res => console.log(res))
-    setTimeout(() => this.setState({loading: false}), 2000)
+    setTimeout(() => this.setState({ loading: false }), 2000)
   }
 
 
 
   render() {
-    
+
     const { loading } = this.state;
 
-    if(loading){
+    if (loading) {
       return <Loading />  //percentage={this.state.percentage}
     }
 
     return (
-      <div className="App">
-        <Apollo />
-      </div>
+      <Motion defaultStyle={{ x: 0 }} style={{ x: spring(10) }}>
+        {interpolatingStyle => (
+          <div className="App">
+            <Apollo />
+          </div>
+        )}
+      </Motion>
     );
   }
 }
