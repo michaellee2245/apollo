@@ -4,17 +4,27 @@ import './App.css';
 import Loading from './components/Loading/Loading';
 import Apollo from './components/Apollo/Apollo';
 import { Motion, spring } from 'react-motion';
+import { loadProgressBar } from 'axios-progress-bar';
 
-
+loadProgressBar(undefined, axios)
 
 class App extends Component {
 
   state = {
     loading: true,
-    percentage: 0
+    waiting: true
   };
 
+
   componentDidMount() {
+    axios.get('https://reqres.in/api/users?delay=3')
+      .then(response => {
+        setTimeout(() => this.setState({ loading: false }), 800)
+        console.log(response)
+      })
+
+
+
     // let config = {
     //   onDownloadProgress: progressEvent => {
     //     let percentCompleted = Math.floor((progressEvent.loaded * 100) / 387003 );
@@ -27,18 +37,22 @@ class App extends Component {
     // }
     // axios.get('https://pokeapi.co/api/v2/pokemon/1/', config)
     // .then(res => console.log(res))
-    setTimeout(() => this.setState({ loading: false }), 2000)
+    // setTimeout(() => this.setState({ loading: false }), 2000)
   }
 
+  openApollo = () => {
+    this.setState({ waiting: false })
+  }
 
 
   render() {
 
-    const { loading } = this.state;
+    const { loading, waiting } = this.state;
 
-    if (loading) {
-      return <Loading />  //percentage={this.state.percentage}
+    if (waiting) {
+      return <Loading loading={loading} openApollo={this.openApollo}/>  //percentage={this.state.percentage}
     }
+
 
     return (
       <Motion defaultStyle={{ x: 0 }} style={{ x: spring(10) }}>
