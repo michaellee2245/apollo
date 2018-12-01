@@ -3,9 +3,15 @@ import axios from 'axios';
 import './missions.css';
 
 class Missions extends Component {
-    render(){
-        return(
-            <div>Missions</div>
+    render() {
+        return (
+            <div>
+                <div className="mission-tile">
+                    
+                </div>
+                
+                
+            </div>
         )
     }
 }
