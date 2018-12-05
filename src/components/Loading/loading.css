@@ -1,24 +1,3 @@
-.loading{
-    display:flex;
-    width: 100vw;
-    height:100vh;
-    justify-content: center;
-    align-items: center;
-    background-image: url(../../assets/loading-background.jpg);
-    background-size:cover;
-    background-position:-25%;
-}
-.progress_bar{
-    position:relative;
-    height:10px;
-    width:500px;
-    border: solid 1px white;
-}
-.filler{
-    background:white;
-    height:100%;
-    transition: width .2s ease-in;
-}
 /*************************************************************************
     npm Load Progress Bar
 **************************************************************************/
@@ -27,34 +6,33 @@
   }
   
   #nprogress .bar {
-    background: #29d;
-  
-    position: fixed;
+    background: white;
+    position:absolute;
     z-index: 1031;
-    top: 0;
+    top: 50%;
     left: 0;
   
     width: 100%;
-    height: 2px;
+    height: 5px;
   }
   
   /* Fancy blur effect */
-  #nprogress .peg {
+  /* #nprogress .peg {
     display: block;
     position: absolute;
     right: 0px;
     width: 100px;
     height: 100%;
-    box-shadow: 0 0 10px #29d, 0 0 5px #29d;
+     box-shadow: 0 0 10px #29d, 0 0 5px #29d; 
     opacity: 1.0;
   
     -webkit-transform: rotate(3deg) translate(0px, -4px);
         -ms-transform: rotate(3deg) translate(0px, -4px);
             transform: rotate(3deg) translate(0px, -4px);
-  }
+  } */
   
   /* Remove these to get rid of the spinner */
-  #nprogress .spinner {
+  /* #nprogress .spinner {
     display: block;
     position: fixed;
     z-index: 1031;
@@ -93,4 +71,83 @@
   @keyframes nprogress-spinner {
     0%   { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
-  }
+  } */
+  
+/*************************************************************************
+    Bebas Font
+**************************************************************************/
+@font-face {
+    font-family: 'bebas_neuebold';
+    src: url('../../assets/fonts/bebas/bebasneue_bold-webfont.woff2') format('woff2'),
+         url('../../assets/fonts/bebas/bebasneue_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'bebas_neuebook';
+    src: url('../../assets/fonts/bebas/bebasneue_book-webfont.woff2') format('woff2'),
+         url('../../assets/fonts/bebas/bebasneue_book-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'bebas_neuelight';
+    src: url('../../assets/fonts/bebas/bebasneue_light-webfont.woff2') format('woff2'),
+         url('../../assets/fonts/bebas/bebasneue_light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'bebas_neueregular';
+    src: url('../../assets/fonts/bebas/bebasneue_regular-webfont.woff2') format('woff2'),
+         url('../../assets/fonts/bebas/bebasneue_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'bebas_neuethin';
+    src: url('../../assets/fonts/bebas/bebasneue_thin-webfont.woff2') format('woff2'),
+         url('../../assets/fonts/bebas/bebasneue_thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+} 
+/*************************************************************************
+    Loading Page Styles
+**************************************************************************/
+
+.loading{
+    display:flex;
+    width: 100vw;
+    height:100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../../assets/loading-background.jpg);
+    background-size:cover;
+    background-position:-25%;
+}
+
+.progress_bar{
+    position:relative;
+    height:10px;
+    width:500px;
+    border: solid 1px white;
+}
+.filler{
+    background:white;
+    height:100%;
+    transition: width .2s ease-in;
+}
+.open-apollo{
+    border:1px solid white;
+    padding:15px;
+    background:none;
+    color:white;
+    font-family: 'bebas_neueregular', sans-serif;
+    font-size:1em;
+    cursor: pointer;
+}
