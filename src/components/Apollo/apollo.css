@@ -1,3 +1,46 @@
+/*************************************************************************
+    Bebas Font
+**************************************************************************/
+@font-face {
+    font-family: 'bebas_neuebold';
+    src: url('../../assets/fonts/bebas/bebasneue_bold-webfont.woff2') format('woff2'),
+         url('../../assets/fonts/bebas/bebasneue_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'bebas_neuebook';
+    src: url('../../assets/fonts/bebas/bebasneue_book-webfont.woff2') format('woff2'),
+         url('../../assets/fonts/bebas/bebasneue_book-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'bebas_neuelight';
+    src: url('../../assets/fonts/bebas/bebasneue_light-webfont.woff2') format('woff2'),
+         url('../../assets/fonts/bebas/bebasneue_light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'bebas_neueregular';
+    src: url('../../assets/fonts/bebas/bebasneue_regular-webfont.woff2') format('woff2'),
+         url('../../assets/fonts/bebas/bebasneue_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'bebas_neuethin';
+    src: url('../../assets/fonts/bebas/bebasneue_thin-webfont.woff2') format('woff2'),
+         url('../../assets/fonts/bebas/bebasneue_thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+} 
 body{
     background-color:black;
     color:white;
@@ -29,4 +72,56 @@ section{
 }
 .about_apollo{
     width:200vw;
+}
+.nav_container{
+    width:100vw;
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+.page_nav{
+    width:20px;
+    height:250px;
+    list-style:none;
+    border-right:1px solid greenyellow;
+    position: fixed;
+    right:2%;
+    top:50%;
+    transform:translateY(-50%);
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 45px;
+}
+.page_nav li{
+    height:17%;
+    border-right:5px solid greenyellow;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width:35px;
+    opacity:.25;
+    transition: opacity .5s;
+    /* width:5px;
+    height:20%;
+    background-color:rgb(27, 236, 27); */
+}
+.page_nav li:hover{
+    opacity:1;
+}
+.page_nav li span{
+    font-family: 'bebas_neuelight', sans-serif;
+    font-size:1.5em;
+    opacity:0;
+    transition: opacity .5s;
+}
+.page_nav li:hover span{
+    opacity:1;
+}
+.is_selected{
+    opacity:1 !important;
+}
+.is_selected span{
+    opacity: 1 !important;
 }
