@@ -9,7 +9,7 @@ class Apollo extends Component {
     handleClick = (i) => () => {
         $('body,html').animate(
             {scrollTop:i*window.innerHeight},
-            600
+            800
         );
     }
 
@@ -17,7 +17,7 @@ class Apollo extends Component {
         const navigationButtons = $('.page_nav li');
 
         function updateNav(){
-            const activeSection = Math.floor(window.scrollY/window.innerHeight - 0.75)
+            const activeSection = Math.floor(window.scrollY/window.innerHeight - 0.65)
             navigationButtons.each(function(){
                 console.log(activeSection, this.id[4]-2)
                 if(activeSection === this.id[4]-2){
@@ -59,16 +59,19 @@ class Apollo extends Component {
                 </ul>
 
                 <section>
-                    <div className="hero_container"></div>
+                    <div className="hero_container">
+                    <div className="moon"></div>
+                    <div className="hero_line"></div>
+                    </div>
                 </section>
-                <section className="wide_section">
+                <section className="wide_section gray">
                     <div className="about_apollo"><p></p>
                     </div>
                 </section>
                 <section>
                     <Missions />
                 </section>
-                <section></section>
+                <section className="gray"></section>
                 <section></section>
 
             </div>

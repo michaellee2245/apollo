@@ -1,14 +1,36 @@
-.mission-tile{
-    width:25vw;
-    height:50vh;
-    border:1px solid blue;
+.missions{
+    display: flex;
+    flex-flow:row wrap;
+    width:100vw;
+    height: 100vh;
+}
+.mission_tile{
+    width:25%;
+    height:auto;
+    
     background-color:blue;
     display:flex;
     flex-direction: column;
     justify-content:center;
     align-items:center;
+    transition: .75s;
+    overflow:hidden;
 }
-
+.mission_collapsed{
+    height:0;
+    width:0;
+    /* max-width: 0;
+    max-height: 0; */
+    border:none;
+    opacity:0;
+    
+}
+.selected_mission{
+    background-color: green;
+    width:100vw;
+    height:100vh;
+    overflow-y:scroll;
+}
 *,
 *:after,
 *:before {
