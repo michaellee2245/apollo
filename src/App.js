@@ -19,7 +19,9 @@ class App extends Component {
   componentDidMount() {
     axios.get('https://reqres.in/api/unknown')
       .then(response => {
-        setTimeout(() => this.setState({ loading: false }), 800)
+        setTimeout(() => {
+          this.setState({ loading: false })
+        }, 800)
         console.log(response)
       })
 

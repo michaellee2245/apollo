@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './loading.css';
+import './loading.scss';
 import axios from 'axios';
 import { loadProgressBar } from 'axios-progress-bar';
 import { ReactComponent as RocketIcon } from '../../assets/rocket-with-a-circle.svg';

@@ -1,13 +1,60 @@
+/*************************************************************************
+    Bebas Font
+**************************************************************************/
+@font-face {
+    font-family: 'bebas_neuebold';
+    src: url('../../assets/fonts/bebas/bebasneue_bold-webfont.woff2') format('woff2'),
+         url('../../assets/fonts/bebas/bebasneue_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'bebas_neuebook';
+    src: url('../../assets/fonts/bebas/bebasneue_book-webfont.woff2') format('woff2'),
+         url('../../assets/fonts/bebas/bebasneue_book-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'bebas_neuelight';
+    src: url('../../assets/fonts/bebas/bebasneue_light-webfont.woff2') format('woff2'),
+         url('../../assets/fonts/bebas/bebasneue_light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'bebas_neueregular';
+    src: url('../../assets/fonts/bebas/bebasneue_regular-webfont.woff2') format('woff2'),
+         url('../../assets/fonts/bebas/bebasneue_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'bebas_neuethin';
+    src: url('../../assets/fonts/bebas/bebasneue_thin-webfont.woff2') format('woff2'),
+         url('../../assets/fonts/bebas/bebasneue_thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/*************************************************************************
+    Mission Component Styles
+**************************************************************************/
+
 .missions{
     display: flex;
     flex-flow:row wrap;
     width:100vw;
-    height: 100vh;
+    height:200vh;
 }
 .mission_tile{
-    width:25%;
-    height:auto;
-    
+    width:33.333%;
+    height:50vh;
+    border:1px solid black;
     background-color:blue;
     display:flex;
     flex-direction: column;
@@ -15,7 +62,11 @@
     align-items:center;
     transition: .75s;
     overflow:hidden;
+    position:relative;
 }
+/* .mission_tile:hover{
+    cursor: pointer;
+} */
 .mission_collapsed{
     height:0;
     width:0;
@@ -28,9 +79,43 @@
 .selected_mission{
     background-color: green;
     width:100vw;
-    height:100vh;
+    height:200vh;
     overflow-y:scroll;
+    
+    .close_section{
+        display: block;
+    }
+    .mission_tile_apollo{
+        transform:rotate(-90deg)
+    }
 }
+.close_section{
+    position:relative;
+    width:15px;
+    height:15px;
+    background-image: url(../../assets/wrong-sign.png);
+    background-size:contain;
+    display:none;
+}
+.mission_tile_apollo{
+    font-family: 'bebas_neuebold', sans-serif;
+    /* transform: rotate(-90deg); */
+    font-size:25px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+.mission_tile_number{
+    font-family: 'bebas_neuebold', sans-serif;
+    font-size:200px;
+    opacity:.75;
+}
+
+
+/**************************************************************************************
+Loading Screen Launch Button
+**************************************************************************************/
 *,
 *:after,
 *:before {

@@ -59,6 +59,10 @@ section{
     overflow-x:scroll;
     background-color:gray;
 }
+.tall_section{
+    height: 200vh;
+    width:100vw;
+}
 ::-webkit-scrollbar { 
     display: none; 
 }
@@ -108,7 +112,7 @@ section{
     width:20px;
     height:250px;
     list-style:none;
-    border-right:1px solid greenyellow;
+    border-right:1px solid #f2e69c;
     position: fixed;
     right:2%;
     top:50%;
@@ -117,10 +121,11 @@ section{
     flex-direction: column;
     justify-content: space-between;
     padding-right: 45px;
+    z-index: 1000;
 }
 .page_nav li{
     height:17%;
-    border-right:5px solid greenyellow;
+    border-right:5px solid #f2e69c;
     display:flex;
     flex-direction: column;
     justify-content: center;

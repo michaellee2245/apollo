@@ -4,6 +4,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const massive = require('massive');
 const cors = require('cors');
+const controller = require('./controller.js');
 
 const app = express();
 
@@ -22,3 +23,5 @@ app.use(bodyParser.json());
 app.listen(SERVER_PORT, () => {
     console.log(`Server connected and running on port ${SERVER_PORT}`);
 })
+
+app.get('/missions', (req, res) => controller.missionTile(req,res))

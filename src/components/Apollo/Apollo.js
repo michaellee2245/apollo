@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import './apollo.css';
+import './apollo.scss';
 import Missions from '../Missions/Missions';
 import $ from 'jquery';
 
@@ -8,24 +8,31 @@ class Apollo extends Component {
 
     handleClick = (i) => () => {
         $('body,html').animate(
-            {scrollTop:i*window.innerHeight},
+            { scrollTop: i * window.innerHeight },
             800
         );
     }
 
-    componentDidMount(){
+    componentDidMount() {
         const navigationButtons = $('.page_nav li');
 
-        function updateNav(){
-            const activeSection = Math.floor(window.scrollY/window.innerHeight - 0.65)
-            navigationButtons.each(function(){
-                console.log(activeSection, this.id[4]-2)
-                if(activeSection === this.id[4]-2){
+        function updateNav() {
+            const activeSection = Math.floor(window.scrollY / window.innerHeight - 0.65)
+            navigationButtons.each(function () {
+                console.log(activeSection, this.id[4] - 2)
+                if (this.id[4] > 3 ?
+                    activeSection === this.id[4] - 1
+                    :
+                    this.id[4] == 3 ?
+                        activeSection === 1 || activeSection === 2
+                    :
+                        activeSection === this.id[4] - 2
+                ) {
                     $(this).addClass('is_selected')
 
                 }
                 else $(this).removeClass('is_selected')
-                
+
             })
 
 
@@ -60,15 +67,15 @@ class Apollo extends Component {
 
                 <section>
                     <div className="hero_container">
-                    <div className="moon"></div>
-                    <div className="hero_line"></div>
+                        <div className="moon"></div>
+                        <div className="hero_line"></div>
                     </div>
                 </section>
                 <section className="wide_section gray">
                     <div className="about_apollo"><p></p>
                     </div>
                 </section>
-                <section>
+                <section className="tall_section">
                     <Missions />
                 </section>
                 <section className="gray"></section>
