@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import './apollo.scss';
 import Missions from '../Missions/Missions';
+import Comments from '../Comments/Comments';
 import $ from 'jquery';
 
 class Apollo extends Component {
@@ -78,7 +79,9 @@ class Apollo extends Component {
                 <section className="tall_section">
                     <Missions />
                 </section>
-                <section className="gray"></section>
+                <section className="gray">
+                    <Comments />
+                </section>
                 <section></section>
 
             </div>
