@@ -13,3 +13,17 @@ const apolloOne = {
         ["Spacecraft Preparation"]
     ]
 }
+
+
+const apolloSeven = {
+    mainTitle: "Apollo 7",
+    mainTitlePara:[
+        [""],
+        [""],
+        [""]
+    ],
+    subtitles:[
+        [""],
+        [""]
+    ],
+}

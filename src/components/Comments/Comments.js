@@ -39,17 +39,19 @@ class Comments extends Component {
             <div className="background-container">
                 <div className="main-auth-container">
                     <div>Logo</div>
+                    <div className="close_login"> </div>
                     <div className="auth-container-inputs">
-                        <label>Username:</label>
-                        <input name="username" value={this.state.username} onChange={this.onInputChange} />
-                        <label>Email:</label>
-                        <input name="email" value={this.state.email} onChange={this.onInputChange} />
-                        <label>Password:</label>
-                        <input name="password" value={this.state.password} onChange={this.onInputChange} />
+                        {/* <label>Username:</label> */}
+                        <input name="username" type="text" placeholder="Username" value={this.state.username} onChange={this.onInputChange} />
+                        {/* <label>Email:</label> */}
+                        <input name="email" type="text" placeholder="Email" value={this.state.email} onChange={this.onInputChange} />
+                        {/* <label>Password:</label> */}
+                        <input name="password" placeholder="Password" value={this.state.password} onChange={this.onInputChange} type="password"/>
                     </div>
                     <div>
                         <button onClick={this.loginUser}>Login</button>
                         <button onClick={this.newUser} >Register</button>
+                        <div className="close_section"> </div>
                     </div>
                 </div>
                 <div className="comment_cards">

@@ -79,7 +79,7 @@ class Apollo extends Component {
                 <section className="tall_section">
                     <Missions />
                 </section>
-                <section className="">
+                <section className="gray">
                     <Comments />
                 </section>
                 <section></section>
