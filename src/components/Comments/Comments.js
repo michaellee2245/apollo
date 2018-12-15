@@ -52,6 +52,24 @@ class Comments extends Component {
                         <button onClick={this.newUser} >Register</button>
                     </div>
                 </div>
+                <div className="comment_cards">
+                    <div className="comment_info">Apollo 8</div>
+                </div>
+                <div className="comment_cards">
+                    <div className="comment_info">Apollo 8</div>
+                </div>
+                <div className="comment_cards">
+                    <div className="comment_info">Apollo 8</div>
+                </div>
+                {/* <div className="comment_cards">
+                    <div className="comment_info">Apollo 8</div>
+                </div>
+                <div className="comment_cards">
+                    <div className="comment_info">Apollo 8</div>
+                </div>
+                <div className="comment_cards">
+                    <div className="comment_info">Apollo 8</div>
+                </div> */}
             </div>
         )
     }

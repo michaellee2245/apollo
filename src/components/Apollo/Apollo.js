@@ -72,14 +72,14 @@ class Apollo extends Component {
                         <div className="hero_line"></div>
                     </div>
                 </section>
-                <section className="wide_section gray">
+                <section className="wide_section">
                     <div className="about_apollo"><p></p>
                     </div>
                 </section>
                 <section className="tall_section">
                     <Missions />
                 </section>
-                <section className="gray">
+                <section className="">
                     <Comments />
                 </section>
                 <section></section>

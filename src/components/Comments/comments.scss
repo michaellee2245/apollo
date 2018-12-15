@@ -1,9 +1,53 @@
+/*************************************************************************
+    Bebas Font
+**************************************************************************/
+@font-face {
+    font-family: 'bebas_neuebold';
+    src: url('../../assets/fonts/bebas/bebasneue_bold-webfont.woff2') format('woff2'),
+         url('../../assets/fonts/bebas/bebasneue_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'bebas_neuebook';
+    src: url('../../assets/fonts/bebas/bebasneue_book-webfont.woff2') format('woff2'),
+         url('../../assets/fonts/bebas/bebasneue_book-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'bebas_neuelight';
+    src: url('../../assets/fonts/bebas/bebasneue_light-webfont.woff2') format('woff2'),
+         url('../../assets/fonts/bebas/bebasneue_light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'bebas_neueregular';
+    src: url('../../assets/fonts/bebas/bebasneue_regular-webfont.woff2') format('woff2'),
+         url('../../assets/fonts/bebas/bebasneue_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'bebas_neuethin';
+    src: url('../../assets/fonts/bebas/bebasneue_thin-webfont.woff2') format('woff2'),
+         url('../../assets/fonts/bebas/bebasneue_thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+} 
 .background-container{
     display: flex;
-    justify-content: center;
+    // justify-content: center;
     align-items:center;
-    height:100vh;
-    width:100vw;
+    height:100%;
+    width:100%;
+    overflow-x:scroll;
     
 }
 .main-auth-container{
@@ -14,6 +58,27 @@
     flex-direction: column;
     justify-content: space-evenly;
     
+}
+.comment_cards{
+    width: 400px;
+    height: 60%;
+    background:rgb(71, 95, 226);
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-evenly;
+    align-items:center;
+    border-radius:30px;
+    box-shadow: 0 10px 30px black;
+    margin:20px;
+    padding:15px;
+    // border:2px solid white;
+}
+.comment_info{
+    font-family: 'bebas_neuebold';
+    color:white;
+    font-size:2em;
+    letter-spacing: 6px;
+
 }
 .auth-container-inputs{
     display: flex;
