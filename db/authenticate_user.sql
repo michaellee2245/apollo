@@ -1,1 +1,1 @@
-select * from users where username = $1 and password = $2
+select * from users where (username = $1 or email = $2) and password = $3

@@ -6,10 +6,11 @@ const massive = require('massive');
 const cors = require('cors');
 const controller = require('./controller.js');
 const bcrypt = require('bcrypt-nodejs');
+const session = require('express-session');
 
 const app = express();
 
-const { SERVER_PORT, CONNECTION_STRING } = process.env;
+const { SERVER_PORT, CONNECTION_STRING, SESSION_SECRET } = process.env;
 
 massive(CONNECTION_STRING)
     .then(dbInstance => {
@@ -20,7 +21,16 @@ massive(CONNECTION_STRING)
 
 app.use(cors());
 app.use(bodyParser.json());
-
+app.use(session({
+    secret: SESSION_SECRET,
+    resave: true,
+    saveUninitialized: false
+}))
+app.use((req, res, next) => {
+    console.log("Session")
+    console.log(req.session)
+    next()
+})
 app.listen(SERVER_PORT, () => {
     console.log(`Server connected and running on port ${SERVER_PORT}`);
 })
@@ -44,6 +54,8 @@ app.post('/new_user', (req, res) => {
 
 })
 
-app.post('/login', (req, res) => controller.loginUser(req,res))
-
-app.get('/missions', (req, res) => controller.missionTile(req,res))
+app.post('/login', controller.loginUser)
+app.get('/missions', controller.missionTile)
+app.get('/comments', controller.getComments)
+app.get('/logout', controller.logoutUser)
+app.post('/leave-comment', controller.leaveComment)

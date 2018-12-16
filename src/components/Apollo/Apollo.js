@@ -7,6 +7,10 @@ import $ from 'jquery';
 
 class Apollo extends Component {
 
+    state = {
+        user: {}
+    }
+
     handleClick = (i) => () => {
         $('body,html').animate(
             { scrollTop: i * window.innerHeight },
@@ -26,7 +30,7 @@ class Apollo extends Component {
                     :
                     this.id[4] == 3 ?
                         activeSection === 1 || activeSection === 2
-                    :
+                        :
                         activeSection === this.id[4] - 2
                 ) {
                     $(this).addClass('is_selected')
@@ -39,6 +43,10 @@ class Apollo extends Component {
 
         }
         $(window).on('scroll', updateNav)
+    }
+
+    updateUser = (user) => {
+        this.setState({ user: user })
     }
 
     render() {
@@ -80,7 +88,7 @@ class Apollo extends Component {
                     <Missions />
                 </section>
                 <section className="gray">
-                    <Comments />
+                    <Comments user={this.state.user} updateUser={this.updateUser}/>
                 </section>
                 <section></section>
 

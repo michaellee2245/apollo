@@ -26,7 +26,7 @@ function loginUser(req, res) {
                 }
                 if (isCorrectPassword) {
                     req.session.user = user[0]
-                    res.status(200).send('Login Successful')
+                    res.status(200).send(user[0])
                 }
                 else {
                     res.status(401).send('Username or password incorrect')
@@ -38,8 +38,39 @@ function loginUser(req, res) {
             res.status(500).send(error)
         })
 }
-
+function logoutUser(req,res){
+    req.session.destroy()
+    res.status(200).send("User Logged Out")
+}
+function getComments(req, res){
+    const db = req.app.get('db')
+    db.get_comments()
+    .then((comments) => {
+        res.status(200).send(comments)
+    })
+    .catch((error) => {
+        console.log(error)
+        res.status(500).send(error)
+    })
+}
+function leaveComment(req,res){
+    console.log(req.session)
+    const db = req.app.get('db')
+    const { user_name, mission, user_comment, users_id } = req.body
+    // const { id } = req.session.user || {}
+    db.leave_comment({ user_name, mission, user_comment, users_id})
+    .then(() => {
+        res.status(200).send('Comment Added')
+    })
+    .catch((error) => {
+        console.log(error)
+        res.status(500).send(error)
+    })
+}
 module.exports = {
     missionTile,
-    loginUser
+    loginUser,
+    getComments,
+    logoutUser,
+    leaveComment
 }

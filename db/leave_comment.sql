@@ -1,0 +1,1 @@
+insert into mission_comments (user_name, mission, user_comment, users_id) values (${user_name}, ${mission}, ${user_comment}, ${users_id})
