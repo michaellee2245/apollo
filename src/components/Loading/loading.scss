@@ -133,7 +133,21 @@
     
     // background-position:-25%;
 }
+@keyframes fadeInPage {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity:1;
+    }
+}
+.fade_in_page {
+    animation: fadeIn ease-in 1;
+    animation-fill-mode: forwards;
+    animation-duration: 2.5s;
+    // animation-delay: 2s;
 
+}
 .progress_bar{
     position:relative;
     height:10px;
@@ -153,6 +167,7 @@
     font-family: 'bebas_neueregular', sans-serif;
     font-size:1em;
     cursor: pointer;
+    letter-spacing: 3px;
 }
 .a_mark{
     width:75px;

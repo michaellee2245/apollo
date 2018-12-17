@@ -78,8 +78,8 @@ class Apollo extends Component {
 
                 <section>
                     <div className="hero_container">
-                        <div className="moon"></div>
-                        <div className="hero_line"></div>
+                        <div className="hero_line fade_in_line"></div>
+                        <div className="moon fade_in_bg"></div>
                         <div className="text_image fade_in"></div>
                         <div className="sub_text_image fade_in_mission"></div>
                         <div class="scroll-down"></div>

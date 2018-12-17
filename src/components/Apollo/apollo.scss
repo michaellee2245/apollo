@@ -78,29 +78,29 @@ section{
     // background-image: url(../../assets/images/moon-background.jpg);
     background-size: cover;
     background-repeat:no-repeat;
-    background-position: -25%;
+    // background-position: -25%;
     flex-direction: column;
-    
-    // opacity: .5;
+    position: relative;
+    // opacity: .15;
 }
-/* .moon{
-    background-image: url(../../assets/moon-1303512.png);
-    background-size: contain;
-    width:70%;
-    height:70%;
+.moon{
+    background-image: url(../../assets/images/moaa-specials-cover01.jpg);
+    background-size: cover;
+    width:100%;
+    height:100%;
     background-repeat: no-repeat;
-    position: absolute;
-    opacity: .5;
-    left:50%;
-    top:50%;
-    transform: translate(-50%,-50%);
-} */
+    opacity: 0;
+    z-index: -10;
+} 
 .hero_line{
     height:2px;
     width:50vw;
     background-color:#ed2024;
-    
-    opacity:.50;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity:0;
     z-index: 25;
 }
 @keyframes fadeIn {
@@ -111,16 +111,34 @@ section{
         opacity:1;
     }
 }
-.fade_in, .fade_in_mission{
+.fade_in, .fade_in_mission, .fade_in_line{
     animation: fadeIn ease-in 1;
     animation-fill-mode: forwards;
     animation-duration: 2s;
-    animation-delay: 1.5s;
+    animation-delay: 3s;
 
 }
 .fade_in_mission{
-    animation-delay: 3s;
+    animation-delay: 5.5s;
     animation-duration: 1.5s;
+}
+.fade_in_line{
+    animation-duration: 8s;
+    animation-delay: .5s
+}
+@keyframes fadeInBg {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity:.12;
+    }
+}
+.fade_in_bg{
+    animation: fadeInBg ease-in 1;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+    animation-delay:.5s
 }
 .text_image{
     height:50%;
@@ -205,7 +223,7 @@ SCROLL DOWN ARROW
 .scroll-down {
 	position: absolute;
 	left: 50%;
-	bottom: 20px;
+	bottom: 25px;
 	display: block;
 	text-align: center;
 	font-size: 20px;
