@@ -4,6 +4,7 @@ import './apollo.scss';
 import Missions from '../Missions/Missions';
 import Comments from '../Comments/Comments';
 import $ from 'jquery';
+import AboutApollo from '../About/AboutApollo';
 
 class Apollo extends Component {
 
@@ -78,16 +79,18 @@ class Apollo extends Component {
                     <div className="hero_container">
                         <div className="moon"></div>
                         <div className="hero_line"></div>
+                        <div className="section_title">About Project Apollo</div>
                     </div>
                 </section>
                 <section className="wide_section">
-                    <div className="about_apollo"><p></p>
+                    <div className="about_apollo">
+                        <AboutApollo />
                     </div>
                 </section>
                 <section className="tall_section">
                     <Missions />
                 </section>
-                <section className="gray">
+                <section className="">
                     <Comments user={this.state.user} updateUser={this.updateUser}/>
                 </section>
                 <section></section>

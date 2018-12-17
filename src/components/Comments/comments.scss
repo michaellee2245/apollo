@@ -105,7 +105,7 @@
         margin: 40px;
         padding:10px;
         border:none;
-        border-bottom:2px solid white;
+        border-bottom:1px solid white;
         background:none;
         font-family: 'bebas_neueregular';
         letter-spacing: 5px;
@@ -113,22 +113,27 @@
         font-size:1.3em;
 
         &:focus{
-            border:2px solid white;
+            border:1px solid white;
             outline:none;
+            // opacity:.5;
         }
     }
     textarea{
         resize:none;
         outline:none;
-        border:2px solid white;
+        border:1px solid white;
         background:none;
         font-family: 'bebas_neueregular';
         letter-spacing: 5px;
         color:white;
-        width:500px;
+        width:400px;
+        height:400px;
     }
 }
-
+// .textarea_box{
+//     width:20px;
+//     height:20px;
+// }
 .close_login{
     width:25px;
     height:25px;

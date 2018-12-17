@@ -59,15 +59,15 @@ class Comments extends Component {
     }
     handleCloseLogin = () => {
         this.setState(
-            { 
-                loginClicked: false, 
-                username: '', 
-                email: '', 
-                password: '', 
+            {
+                loginClicked: false,
+                username: '',
+                email: '',
+                password: '',
                 leaveCommentClicked: false,
                 commentMission: '',
                 commentName: '',
-                commentText:''
+                commentText: ''
             })
     }
     handleLogout = () => {
@@ -77,16 +77,17 @@ class Comments extends Component {
             })
     }
     leaveComment = () => {
-        axios.post('http://localhost:8080/leave-comment', {user_name:this.state.commentName, mission:this.state.commentMission, user_comment:this.state.commentText, users_id:this.props.user.id})
-        .then((response) => {
-            console.log(response)
-            this.componentDidMount()
-            this.handleCloseLogin()
-        })
-        .catch((error) => {
-            console.error(error)
-        })
+        axios.post('http://localhost:8080/leave-comment', { user_name: this.state.commentName, mission: this.state.commentMission, user_comment: this.state.commentText, users_id: this.props.user.id })
+            .then((response) => {
+                console.log(response)
+                this.componentDidMount()
+                this.handleCloseLogin()
+            })
+            .catch((error) => {
+                console.error(error)
+            })
     }
+
     render() {
         return (
 
@@ -139,7 +140,12 @@ class Comments extends Component {
                         <div className="comment_title">{comment.mission}</div>
                         <div className="comment_text">{comment.user_comment}</div>
                         <div className="comment_name">{comment.user_name}</div>
+                        <button className="delete_comment">delete</button>
                     </div>
+
+                    // const deleteComment = (comment) => {
+                    //     console.log(comment)
+                    // }
                 ))}
 
                 {/* <div className="comment_cards">
