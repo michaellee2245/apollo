@@ -1,14 +1,39 @@
 .about_apollo_section{
     height:100vh;
-    width:200vw;
+    width:300vw;
     border: 1px solid white;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
+    // overflow-x:scroll;
+    position: relative;
 }
 .about_apollo_container{
     height:95%;
     width:98.3%;
     border:1px solid white;
     padding:100px;
+    display:inline-flex;
+}
+.test_sections{
+    
+    height:90%;
+    width: 750px;
+    border: 1px solid white;
+    margin:20px;
+    background-image: url(../../assets/images/apollo-1-patch.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+.section_title{
+    font-family:'bebas_neuebold', sans-serif;
+    color:#333;
+    font-size:100px;
+    letter-spacing: 30px;
+    position:absolute;
+    top:10%;
+    left:5%;
+    // transform: translate(-50%, -50%)
+
 }

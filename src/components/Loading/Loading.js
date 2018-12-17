@@ -17,12 +17,13 @@ class Loading extends Component {
 
     render() {
         return (
-            <div className="loading">
+            <div className="loading fade_in_page">
+            <div className="a_mark"></div>
                 {/* <div className="progress_bar">
                     <ProgressBarFiller percentage={this.props.percentage} />
                 </div> */}
                 {!this.props.loading ? (
-                    <div >
+                    <div>
                         <svg className="hidden">
                             <defs>
                                 <clipPath id="clipBox" clipPathUnits="objectBoundingBox">
@@ -41,7 +42,10 @@ class Loading extends Component {
 
                         </div>
                     </div>
-                ) : null}
+                )
+                    :
+                    null
+                }
 
             </div>
         )

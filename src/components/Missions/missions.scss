@@ -54,8 +54,8 @@
 .mission_tile{
     width:33.333%;
     height:50vh;
-    border:1px solid black;
-    background-color:blue;
+    border:10px solid white;
+    // background-color:blue;
     display:flex;
     flex-direction: column;
     justify-content:center;
@@ -93,7 +93,7 @@
     position:relative;
     width:15px;
     height:15px;
-    background-image: url(../../assets/wrong-sign.png);
+    background-image: url(../../assets/images/wrong-sign.png);
     background-size:contain;
     display:none;
 }
@@ -163,6 +163,21 @@ Loading Screen Launch Button
 }
 .button > span {
 	vertical-align: middle;
+}
+@keyframes fadeInPage {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity:1;
+    }
+}
+.fade_in_page {
+    animation: fadeIn ease-in 1;
+    animation-fill-mode: forwards;
+    animation-duration: 2.5s;
+    // animation-delay: 2s;
+
 }
 
 /* Text color adjustments (we could stick to the "inherit" but that does not work well in Safari) */

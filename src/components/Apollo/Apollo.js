@@ -44,6 +44,7 @@ class Apollo extends Component {
 
         }
         $(window).on('scroll', updateNav)
+        
     }
 
     updateUser = (user) => {
@@ -67,10 +68,10 @@ class Apollo extends Component {
                     <li id="nav_3" onClick={this.handleClick(2)}>
                         <span>03</span>
                     </li>
-                    <li id="nav_4" onClick={this.handleClick(3)}>
+                    <li id="nav_4" onClick={this.handleClick(4)}>
                         <span>04</span>
                     </li>
-                    <li id="nav_5" onClick={this.handleClick(4)}>
+                    <li id="nav_5" onClick={this.handleClick(5)}>
                         <span>05</span>
                     </li>
                 </ul>
@@ -79,7 +80,10 @@ class Apollo extends Component {
                     <div className="hero_container">
                         <div className="moon"></div>
                         <div className="hero_line"></div>
-                        <div className="section_title">About Project Apollo</div>
+                        <div className="text_image fade_in"></div>
+                        <div className="sub_text_image fade_in_mission"></div>
+                        <div class="scroll-down"></div>
+
                     </div>
                 </section>
                 <section className="wide_section">
@@ -91,7 +95,7 @@ class Apollo extends Component {
                     <Missions />
                 </section>
                 <section className="">
-                    <Comments user={this.state.user} updateUser={this.updateUser}/>
+                    <Comments user={this.state.user} updateUser={this.updateUser} />
                 </section>
                 <section></section>
 

@@ -67,6 +67,10 @@ function leaveComment(req,res){
         res.status(500).send(error)
     })
 }
+// function deleteComment(req,res){
+//     const db = req.app.get('db')
+//     db.delete_comment()
+// }
 module.exports = {
     missionTile,
     loginUser,

@@ -1,0 +1,1 @@
+delete from mission_comments where users_id
