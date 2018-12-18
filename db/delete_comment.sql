@@ -1,1 +1,1 @@
-delete from mission_comments where users_id
+delete from mission_comments where id = $1

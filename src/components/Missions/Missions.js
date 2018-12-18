@@ -21,7 +21,7 @@ class Missions extends Component {
         this.missionTile();
     }
     missionTile = () => {
-        axios.get('http://localhost:8080/missions')
+        axios.get('http://localhost:8080/api/missions')
         .then((response) => {
             console.log(response)
             this.setState({missions:response.data})

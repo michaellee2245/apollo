@@ -67,6 +67,48 @@ function leaveComment(req,res){
         res.status(500).send(error)
     })
 }
+function deleteComment(req,res){
+    const db = req.app.get('db')
+    const { params } = req 
+    console.log(req.params, "*******inside controller")
+    db.delete_comment([params.id])
+    .then(() => {
+        res.status(200).send('Comment Deleted')
+    })
+    .catch((error) => {
+        console.log(error)
+        res.status(500).send(error)
+    })
+}   
+function updateComment(req,res){
+    const db = req.app.get('db');
+    const { user_name, mission, user_comment } = req.body;
+    const id = req.params.id
+
+    db.update_comment({user_name, mission, user_comment, id})
+    .then(() => {
+        res.status(200).send('Comment Updated')
+    })
+    .catch((error) => {
+        console.log(error)
+        res.status(500).send(error)
+    })
+}
+
+function getComment(req,res){
+    const db = req.app.get('db')
+    const id = req.params.id
+
+    db.get_comment(id)
+    .then((comment) => {
+        
+        res.status(200).send(comment)
+    })
+    .catch((error) => {
+        console.log(error)
+        res.status(500).send(error)
+    })
+}
 // function deleteComment(req,res){
 //     const db = req.app.get('db')
 //     db.delete_comment()
@@ -76,5 +118,8 @@ module.exports = {
     loginUser,
     getComments,
     logoutUser,
-    leaveComment
+    leaveComment,
+    deleteComment,
+    updateComment,
+    getComment
 }

@@ -54,8 +54,11 @@ app.post('/new_user', (req, res) => {
 
 })
 
-app.post('/login', controller.loginUser)
-app.get('/missions', controller.missionTile)
-app.get('/comments', controller.getComments)
-app.get('/logout', controller.logoutUser)
-app.post('/leave-comment', controller.leaveComment)
+app.post('/api/login', controller.loginUser)
+app.get('/api/missions', controller.missionTile)
+app.get('/api/comments', controller.getComments)
+app.get('/api/logout', controller.logoutUser)
+app.post('/api/leave-comment', controller.leaveComment)
+app.delete('/api/delete-comment/:id', controller.deleteComment)
+app.put('/api/update-comment/:id', controller.updateComment)
+app.get('/api/comment/:id', controller.getComment)
