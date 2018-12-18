@@ -23,7 +23,7 @@ class Loading extends Component {
                     <ProgressBarFiller percentage={this.props.percentage} />
                 </div> */}
                 {!this.props.loading ? (
-                    <div>
+                    <div className="fade_in_page">
                         <svg className="hidden">
                             <defs>
                                 <clipPath id="clipBox" clipPathUnits="objectBoundingBox">

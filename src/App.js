@@ -21,7 +21,7 @@ class App extends Component {
       .then(response => {
         setTimeout(() => {
           this.setState({ loading: false })
-        }, 800)
+        }, 1500)
         console.log(response)
       })
 

@@ -11,11 +11,9 @@ class AboutApollo extends Component {
     render() {
         return (
             <section className="about_apollo_section">
-            <div className="section_title">About Project Apollo</div>
+            <div className="section_title">About <br/>Project <br/>Apollo</div>
                 <div className="about_apollo_container">
-                    <div className="test_sections"></div>
-                    <div className="test_sections"></div>
-                    <div className="test_sections"></div>
+                    
                     <div className="test_sections">
                         <p>The Apollo program, also known as Project Apollo, was the third United States human spaceflight program carried out by the National Aeronautics and Space Administration (NASA), which accomplished landing the first humans on the Moon from 1969 to 1972. First conceived during Dwight D. Eisenhower's administration as a three-man spacecraft to follow the one-man Project Mercury which put the first Americans in space, Apollo was later dedicated to President John F. Kennedy's national goal of "landing a man on the Moon and returning him safely to the Earth" by the end of the 1960s, which he proposed in an address to Congress on May 25, 1961. It was the third US human spaceflight program to fly, preceded by the two-man Project Gemini conceived in 1961 to extend spaceflight capability in support of Apollo.</p>
 
