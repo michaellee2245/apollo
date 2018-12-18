@@ -223,7 +223,7 @@ class Comments extends Component {
                         }`}
                     onKeyDown={({ key }) => key === "Enter" && this.loginUser()}
                 >
-                    {/* <div>Logo</div> */}
+
                     {/* <div className="close_login"> </div> */}
                     <div className="login_container_inputs">
                         <input name="username" type="text" placeholder="Username" value={this.state.username} onChange={this.onInputChange} />
@@ -234,6 +234,7 @@ class Comments extends Component {
                     <div className="vertical_line"></div>
 
                     <div className="auth-container-inputs">
+                        <div>Registering allows you to delete or update comments that you make</div>
                         {/* <label>Username:</label> */}
                         <input name="username" type="text" placeholder="Username" value={this.state.username} onChange={this.onInputChange} />
                         {/* <label>Email:</label> */}
@@ -268,16 +269,16 @@ class Comments extends Component {
 
                 </div>
                 {/* <div className="comment_carousel_container"></div> */}
-                    {this.state.comments.map((comment) => (
-                        <div className="comment_card">
-                            <div className="comment_title">{comment.mission}</div>
-                            <div className="comment_text">{comment.user_comment}</div>
-                            <div className="comment_name">{comment.user_name}</div>
-                            {this.props.user.username === comment.user_name ? <button className="delete_comment" onClick={() => this.onDeleteClick(comment.id)}>delete</button> : null}
-                            {this.props.user.username === comment.user_name ? <button className="update_comment" onClick={() => this.handleUpdateComment(comment.id)}>update</button> : null}
-                        </div>
-                    ))}
-                
+                {this.state.comments.map((comment) => (
+                    <div className="comment_card">
+                        <div className="comment_title">{comment.mission}</div>
+                        <div className="comment_text">{comment.user_comment}</div>
+                        <div className="comment_name">{comment.user_name}</div>
+                        {this.props.user.username === comment.user_name ? <button className="delete_comment" onClick={() => this.onDeleteClick(comment.id)}>delete</button> : null}
+                        {this.props.user.username === comment.user_name ? <button className="update_comment" onClick={() => this.handleUpdateComment(comment.id)}>update</button> : null}
+                    </div>
+                ))}
+
 
                 {/* <div className="comment_carousel_container">
                     <div className="comment_card">

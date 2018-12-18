@@ -8,19 +8,24 @@
     align-items: center;
     // overflow-x:scroll;
     position: relative;
+    background-image:url(../../assets/images/moon-background.jpg);
+    background-size:cover;
+    background-repeat:no-repeat;
+    // background-position: -200px 0%;
 }
 .about_apollo_container{
     height:95%;
     width:98.3%;
-    border:1px solid white;
+    // border:1px solid white;
     padding:100px;
     display:inline-flex;
+    position:relative;
 }
 .test_sections{
     
     height:90%;
     width: 750px;
-    border: 1px solid white;
+    // border: 1px solid white;
     margin:20px;
     // background-image: url(../../assets/images/apollo-1-patch.png);
     background-size:contain;
@@ -28,12 +33,47 @@
 }
 .section_title{
     font-family:'bebas_neuebold', sans-serif;
-    color:#333;
-    font-size:100px;
+    color:#999;
+    font-size:50px;
     letter-spacing: 30px;
     position:absolute;
-    top:10%;
-    left:5%;
+    top:3%;
+    left:1%;
     // transform: translate(-50%, -50%)
 
+}
+.section_one{
+    width:1200px;
+    display: flex;
+    border:1px solid pink;
+    justify-content: space-between;
+}
+.section_one p{
+    width:500px;
+    height:1000px;
+    margin:10px;
+}
+.pull_quote{
+    font-family:'bebas_neuebold', sans-serif;
+    color:#999;
+    font-size:75px;
+    position:absolute;
+    width:400px;
+    top:50%;
+    left:50%;
+    letter-spacing: 3px;
+    // text-align: justify;
+    transform: translate(-50%,-50%)
+}
+.quoter{
+    font-family:'bebas_neuelight', sans-serif;
+    color:#999;
+    width:400px;
+    font-size:50px;
+}
+#img1{
+    background-image: url(../../assets/images/rocket-command-module.jpg);
+    background-size:contain;
+    background-repeat: no-repeat;
+    
 }
