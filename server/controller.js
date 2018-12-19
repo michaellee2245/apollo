@@ -82,10 +82,10 @@ function deleteComment(req,res){
 }   
 function updateComment(req,res){
     const db = req.app.get('db');
-    const { user_name, mission, user_comment } = req.body;
+    const { user_name, mission, user_comment, user_id } = req.body;
     const id = req.params.id
-
-    db.update_comment({user_name, mission, user_comment, id})
+    console.log("update comment" ,req.body, req.params.id)
+    db.update_comment([user_name, mission, user_comment, Number(id)])
     .then(() => {
         res.status(200).send('Comment Updated')
     })

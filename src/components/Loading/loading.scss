@@ -148,6 +148,13 @@
     // animation-delay: 2s;
 
 }
+.fade_in_button {
+    animation: fadeIn ease-in 1;
+    animation-fill-mode: forwards;
+    animation-duration: 1.5s;
+    // animation-delay: .5s;
+
+}
 .progress_bar{
     position:relative;
     height:10px;

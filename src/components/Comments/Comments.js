@@ -5,7 +5,7 @@ import $ from 'jquery';
 import { connect } from 'react-redux';
 import { signInUser } from '../../redux/reducer';
 import './alice-carousel.scss';
-import AliceCarousel from 'react-alice-carousel'
+// import AliceCarousel from 'react-alice-carousel'
 
 class Comments extends Component {
 
@@ -23,6 +23,7 @@ class Comments extends Component {
             commentMission: '',
             commentText: '',
             commentName: '',
+            idToUpdate: null
             // currentIndex: 0,
         }
 
@@ -142,11 +143,13 @@ class Comments extends Component {
                     commentName: comment.user_name,
                     commentText: comment.user_comment,
                     updateCommentClicked: true,
+                    idToUpdate: id
                 })
                 console.log(response.data, "******", this.state)
             })
     }
     onUpdateClick(id) {
+        console.log("id",id)
         axios.put(`http://localhost:8080/api/update-comment/${id}`, { user_name: this.state.commentName, mission: this.state.commentMission, user_comment: this.state.commentText, user_id: this.props.user.id })
             .then((response) => {
                 console.log(response);
@@ -157,25 +160,25 @@ class Comments extends Component {
             })
     }
 
-    renderGallery = () => {
-        const { currentIndex, comments } = this.state;
+    // renderGallery = () => {
+    //     const { currentIndex, comments } = this.state;
 
-        return (<AliceCarousel
-            dotsDisabled={true}
-            buttonsDisabled={true}
-            slideToIndex={currentIndex}
-            onSlideChanged={this.onSlideChanged}
-        >
-            {comments.map((comment, i) =>
-                <div key={i} className="comment_carousel">
-                    <div className="comment_title">{comment.mission}</div>
-                    <div className="comment_text">{comment.user_comment}</div>
-                    <div className="comment_name">{comment.user_name}</div>
-                    {this.props.user.username === comment.user_name ? <button className="delete_comment" onClick={() => this.onDeleteClick(comment.id)}>delete</button> : null}
-                    {this.props.user.username === comment.user_name ? <button className="update_comment" onClick={() => this.handleUpdateComment(comment.id)}>update</button> : null}
-                </div>)}
-        </AliceCarousel>);
-    }
+    //     return (<AliceCarousel
+    //         dotsDisabled={true}
+    //         buttonsDisabled={true}
+    //         slideToIndex={currentIndex}
+    //         onSlideChanged={this.onSlideChanged}
+    //     >
+    //         {comments.map((comment, i) =>
+    //             <div key={i} className="comment_carousel">
+    //                 <div className="comment_title">{comment.mission}</div>
+    //                 <div className="comment_text">{comment.user_comment}</div>
+    //                 <div className="comment_name">{comment.user_name}</div>
+    //                 {this.props.user.username === comment.user_name ? <button className="delete_comment" onClick={() => this.onDeleteClick(comment.id)}>delete</button> : null}
+    //                 {this.props.user.username === comment.user_name ? <button className="update_comment" onClick={() => this.handleUpdateComment(comment.id)}>update</button> : null}
+    //             </div>)}
+    //     </AliceCarousel>);
+    // }
     render() {
         console.log(this.state)
         return (
@@ -224,7 +227,7 @@ class Comments extends Component {
                     onKeyDown={({ key }) => key === "Enter" && this.loginUser()}
                 >
 
-                    {/* <div className="close_login"> </div> */}
+                    <div className="close_login"> </div>
                     <div className="login_container_inputs">
                         <input name="username" type="text" placeholder="Username" value={this.state.username} onChange={this.onInputChange} />
                         <input name="password" placeholder="Password" value={this.state.password} onChange={this.onInputChange} type="password" />
@@ -265,11 +268,12 @@ class Comments extends Component {
                         }
 
                     </div>
-                    {/* <button onClick={() => this.onUpdateClick(comment.id)}>Update Comment</button> */}
-
+                    <button onClick={() => this.onUpdateClick(this.state.idToUpdate)}>Update Comment</button>
+                        
                 </div>
                 {/* <div className="comment_carousel_container"></div> */}
                 {this.state.comments.map((comment) => (
+
                     <div className="comment_card">
                         <div className="comment_title">{comment.mission}</div>
                         <div className="comment_text">{comment.user_comment}</div>
