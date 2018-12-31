@@ -22,7 +22,7 @@ class Missions extends Component {
         this.missionTile();
     }
     missionTile = () => {
-        axios.get('http://localhost:8080/missions')
+        axios.get('http://localhost:8080/api/missions')
             .then((response) => {
                 console.log(response)
                 this.setState({ missions: response.data })
@@ -114,102 +114,102 @@ class Missions extends Component {
                     <div className={`selected_mission ${this.missionTileOpen ? "" : "hidden"}`} onClick={() => this.handleMissionTileClick()} ></div>
                     <div>Some information</div>
                 </div> */}
-                <div id="fsm_container" class="fsm-container" onClick={() => this.expandingDiv()}>
-                    <div class="fsm apple">
-                        <div class="fa fa-apple">
+                <div id="fsm_container" className="fsm-container" onClick={() => this.expandingDiv()}>
+                    <div className="fsm apple">
+                        <div className="fa fa-apple">
                             <div>Apollo Mission</div>
                             <div>01</div>
                             <div>Something Else</div>
                         </div>
-                        <div class="modal-content">
+                        <div className="modal-content">
                             <p>The Apollo program, also known as Project Apollo, was the third United States human spaceflight program carried out by the National Aeronautics and Space Administration (NASA), which accomplished landing the first humans on the Moon from 1969 to 1972. First conceived during Dwight D. Eisenhower's administration as a three-man spacecraft to follow the one-man Project Mercury which put the first Americans in space, Apollo was later dedicated to President John F. Kennedy's national goal of "landing a man on the Moon and returning him safely to the Earth" by the end of the 1960s, which he proposed in an address to Congress on May 25, 1961. It was the third US human spaceflight program to fly, preceded by the two-man Project Gemini conceived in 1961 to extend spaceflight capability in support of Apollo.</p>
                         </div>
                     </div>
                 </div>
-                <div id="fsm_container" class="fsm-container" onClick={() => this.expandingDiv()}>
-                    <div class="fsm apple">
-                        <i class="fa fa-apple"></i>
-                        <div class="modal-content">
+                <div id="fsm_container" className="fsm-container" onClick={() => this.expandingDiv()}>
+                    <div className="fsm apple">
+                        <i className="fa fa-apple"></i>
+                        <div className="modal-content">
                             <p>The Apollo program, also known as Project Apollo, was the third United States human spaceflight program carried out by the National Aeronautics and Space Administration (NASA), which accomplished landing the first humans on the Moon from 1969 to 1972. First conceived during Dwight D. Eisenhower's administration as a three-man spacecraft to follow the one-man Project Mercury which put the first Americans in space, Apollo was later dedicated to President John F. Kennedy's national goal of "landing a man on the Moon and returning him safely to the Earth" by the end of the 1960s, which he proposed in an address to Congress on May 25, 1961. It was the third US human spaceflight program to fly, preceded by the two-man Project Gemini conceived in 1961 to extend spaceflight capability in support of Apollo.</p>
                         </div>
                     </div>
                 </div>
-                <div id="fsm_container" class="fsm-container" onClick={() => this.expandingDiv()}>
-                    <div class="fsm apple">
-                        <i class="fa fa-apple"></i>
-                        <div class="modal-content">
+                <div id="fsm_container" className="fsm-container" onClick={() => this.expandingDiv()}>
+                    <div className="fsm apple">
+                        <i className="fa fa-apple"></i>
+                        <div className="modal-content">
                             <p>The Apollo program, also known as Project Apollo, was the third United States human spaceflight program carried out by the National Aeronautics and Space Administration (NASA), which accomplished landing the first humans on the Moon from 1969 to 1972. First conceived during Dwight D. Eisenhower's administration as a three-man spacecraft to follow the one-man Project Mercury which put the first Americans in space, Apollo was later dedicated to President John F. Kennedy's national goal of "landing a man on the Moon and returning him safely to the Earth" by the end of the 1960s, which he proposed in an address to Congress on May 25, 1961. It was the third US human spaceflight program to fly, preceded by the two-man Project Gemini conceived in 1961 to extend spaceflight capability in support of Apollo.</p>
                         </div>
                     </div>
                 </div>
-                <div id="fsm_container" class="fsm-container" onClick={() => this.expandingDiv()}>
-                    <div class="fsm apple">
-                        <i class="fa fa-apple"></i>
-                        <div class="modal-content">
+                <div id="fsm_container" className="fsm-container" onClick={() => this.expandingDiv()}>
+                    <div className="fsm apple">
+                        <i className="fa fa-apple"></i>
+                        <div className="modal-content">
                             <p>The Apollo program, also known as Project Apollo, was the third United States human spaceflight program carried out by the National Aeronautics and Space Administration (NASA), which accomplished landing the first humans on the Moon from 1969 to 1972. First conceived during Dwight D. Eisenhower's administration as a three-man spacecraft to follow the one-man Project Mercury which put the first Americans in space, Apollo was later dedicated to President John F. Kennedy's national goal of "landing a man on the Moon and returning him safely to the Earth" by the end of the 1960s, which he proposed in an address to Congress on May 25, 1961. It was the third US human spaceflight program to fly, preceded by the two-man Project Gemini conceived in 1961 to extend spaceflight capability in support of Apollo.</p>
                         </div>
                     </div>
                 </div>
-                <div id="fsm_container" class="fsm-container" onClick={() => this.expandingDiv()}>
-                    <div class="fsm apple">
-                        <i class="fa fa-apple"></i>
-                        <div class="modal-content">
+                <div id="fsm_container" className="fsm-container" onClick={() => this.expandingDiv()}>
+                    <div className="fsm apple">
+                        <i className="fa fa-apple"></i>
+                        <div className="modal-content">
                             <p>The Apollo program, also known as Project Apollo, was the third United States human spaceflight program carried out by the National Aeronautics and Space Administration (NASA), which accomplished landing the first humans on the Moon from 1969 to 1972. First conceived during Dwight D. Eisenhower's administration as a three-man spacecraft to follow the one-man Project Mercury which put the first Americans in space, Apollo was later dedicated to President John F. Kennedy's national goal of "landing a man on the Moon and returning him safely to the Earth" by the end of the 1960s, which he proposed in an address to Congress on May 25, 1961. It was the third US human spaceflight program to fly, preceded by the two-man Project Gemini conceived in 1961 to extend spaceflight capability in support of Apollo.</p>
                         </div>
                     </div>
                 </div>
-                <div id="fsm_container" class="fsm-container" onClick={() => this.expandingDiv()}>
-                    <div class="fsm apple">
-                        <i class="fa fa-apple"></i>
-                        <div class="modal-content">
+                <div id="fsm_container" className="fsm-container" onClick={() => this.expandingDiv()}>
+                    <div className="fsm apple">
+                        <i className="fa fa-apple"></i>
+                        <div className="modal-content">
                             <p>The Apollo program, also known as Project Apollo, was the third United States human spaceflight program carried out by the National Aeronautics and Space Administration (NASA), which accomplished landing the first humans on the Moon from 1969 to 1972. First conceived during Dwight D. Eisenhower's administration as a three-man spacecraft to follow the one-man Project Mercury which put the first Americans in space, Apollo was later dedicated to President John F. Kennedy's national goal of "landing a man on the Moon and returning him safely to the Earth" by the end of the 1960s, which he proposed in an address to Congress on May 25, 1961. It was the third US human spaceflight program to fly, preceded by the two-man Project Gemini conceived in 1961 to extend spaceflight capability in support of Apollo.</p>
                         </div>
                     </div>
                 </div>
-                <div id="fsm_container" class="fsm-container" onClick={() => this.expandingDiv()}>
-                    <div class="fsm apple">
-                        <i class="fa fa-apple"></i>
-                        <div class="modal-content">
+                <div id="fsm_container" className="fsm-container" onClick={() => this.expandingDiv()}>
+                    <div className="fsm apple">
+                        <i className="fa fa-apple"></i>
+                        <div className="modal-content">
                             <p>The Apollo program, also known as Project Apollo, was the third United States human spaceflight program carried out by the National Aeronautics and Space Administration (NASA), which accomplished landing the first humans on the Moon from 1969 to 1972. First conceived during Dwight D. Eisenhower's administration as a three-man spacecraft to follow the one-man Project Mercury which put the first Americans in space, Apollo was later dedicated to President John F. Kennedy's national goal of "landing a man on the Moon and returning him safely to the Earth" by the end of the 1960s, which he proposed in an address to Congress on May 25, 1961. It was the third US human spaceflight program to fly, preceded by the two-man Project Gemini conceived in 1961 to extend spaceflight capability in support of Apollo.</p>
                         </div>
                     </div>
                 </div>
-                <div id="fsm_container" class="fsm-container" onClick={() => this.expandingDiv()}>
-                    <div class="fsm apple">
-                        <i class="fa fa-apple"></i>
-                        <div class="modal-content">
+                <div id="fsm_container" className="fsm-container" onClick={() => this.expandingDiv()}>
+                    <div className="fsm apple">
+                        <i className="fa fa-apple"></i>
+                        <div className="modal-content">
                             <p>The Apollo program, also known as Project Apollo, was the third United States human spaceflight program carried out by the National Aeronautics and Space Administration (NASA), which accomplished landing the first humans on the Moon from 1969 to 1972. First conceived during Dwight D. Eisenhower's administration as a three-man spacecraft to follow the one-man Project Mercury which put the first Americans in space, Apollo was later dedicated to President John F. Kennedy's national goal of "landing a man on the Moon and returning him safely to the Earth" by the end of the 1960s, which he proposed in an address to Congress on May 25, 1961. It was the third US human spaceflight program to fly, preceded by the two-man Project Gemini conceived in 1961 to extend spaceflight capability in support of Apollo.</p>
                         </div>
                     </div>
                 </div>
-                <div id="fsm_container" class="fsm-container" onClick={() => this.expandingDiv()}>
-                    <div class="fsm apple">
-                        <i class="fa fa-apple"></i>
-                        <div class="modal-content">
+                <div id="fsm_container" className="fsm-container" onClick={() => this.expandingDiv()}>
+                    <div className="fsm apple">
+                        <i className="fa fa-apple"></i>
+                        <div className="modal-content">
                             <p>The Apollo program, also known as Project Apollo, was the third United States human spaceflight program carried out by the National Aeronautics and Space Administration (NASA), which accomplished landing the first humans on the Moon from 1969 to 1972. First conceived during Dwight D. Eisenhower's administration as a three-man spacecraft to follow the one-man Project Mercury which put the first Americans in space, Apollo was later dedicated to President John F. Kennedy's national goal of "landing a man on the Moon and returning him safely to the Earth" by the end of the 1960s, which he proposed in an address to Congress on May 25, 1961. It was the third US human spaceflight program to fly, preceded by the two-man Project Gemini conceived in 1961 to extend spaceflight capability in support of Apollo.</p>
                         </div>
                     </div>
                 </div>
-                <div id="fsm_container" class="fsm-container" onClick={() => this.expandingDiv()}>
-                    <div class="fsm apple">
-                        <i class="fa fa-apple"></i>
-                        <div class="modal-content">
+                <div id="fsm_container" className="fsm-container" onClick={() => this.expandingDiv()}>
+                    <div className="fsm apple">
+                        <i className="fa fa-apple"></i>
+                        <div className="modal-content">
                             <p>The Apollo program, also known as Project Apollo, was the third United States human spaceflight program carried out by the National Aeronautics and Space Administration (NASA), which accomplished landing the first humans on the Moon from 1969 to 1972. First conceived during Dwight D. Eisenhower's administration as a three-man spacecraft to follow the one-man Project Mercury which put the first Americans in space, Apollo was later dedicated to President John F. Kennedy's national goal of "landing a man on the Moon and returning him safely to the Earth" by the end of the 1960s, which he proposed in an address to Congress on May 25, 1961. It was the third US human spaceflight program to fly, preceded by the two-man Project Gemini conceived in 1961 to extend spaceflight capability in support of Apollo.</p>
                         </div>
                     </div>
                 </div>
-                <div id="fsm_container" class="fsm-container" onClick={() => this.expandingDiv()}>
-                    <div class="fsm apple">
-                        <i class="fa fa-apple"></i>
-                        <div class="modal-content">
+                <div id="fsm_container" className="fsm-container" onClick={() => this.expandingDiv()}>
+                    <div className="fsm apple">
+                        <i className="fa fa-apple"></i>
+                        <div className="modal-content">
                             <p>The Apollo program, also known as Project Apollo, was the third United States human spaceflight program carried out by the National Aeronautics and Space Administration (NASA), which accomplished landing the first humans on the Moon from 1969 to 1972. First conceived during Dwight D. Eisenhower's administration as a three-man spacecraft to follow the one-man Project Mercury which put the first Americans in space, Apollo was later dedicated to President John F. Kennedy's national goal of "landing a man on the Moon and returning him safely to the Earth" by the end of the 1960s, which he proposed in an address to Congress on May 25, 1961. It was the third US human spaceflight program to fly, preceded by the two-man Project Gemini conceived in 1961 to extend spaceflight capability in support of Apollo.</p>
                         </div>
                     </div>
                 </div>
-                <div id="fsm_container" class="fsm-container" onClick={() => this.expandingDiv()}>
-                    <div class="fsm apple">
-                        <i class="fa fa-apple"></i>
-                        <div class="modal-content">
+                <div id="fsm_container" className="fsm-container" onClick={() => this.expandingDiv()}>
+                    <div className="fsm apple">
+                        <i className="fa fa-apple"></i>
+                        <div className="modal-content">
                             <p>The Apollo program, also known as Project Apollo, was the third United States human spaceflight program carried out by the National Aeronautics and Space Administration (NASA), which accomplished landing the first humans on the Moon from 1969 to 1972. First conceived during Dwight D. Eisenhower's administration as a three-man spacecraft to follow the one-man Project Mercury which put the first Americans in space, Apollo was later dedicated to President John F. Kennedy's national goal of "landing a man on the Moon and returning him safely to the Earth" by the end of the 1960s, which he proposed in an address to Congress on May 25, 1961. It was the third US human spaceflight program to fly, preceded by the two-man Project Gemini conceived in 1961 to extend spaceflight capability in support of Apollo.</p>
                         </div>
                     </div>

@@ -49,7 +49,7 @@ function getComments(req, res){
         res.status(200).send(comments)
     })
     .catch((error) => {
-        console.log(error)
+        console.log('controller error', error)
         res.status(500).send(error)
     })
 }

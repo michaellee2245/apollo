@@ -79,6 +79,9 @@ class Comments extends Component {
                 console.log(response)
                 this.setState({ comments: response.data })
             })
+            .catch((error) => {
+                console.log('front-end error', error)
+            })
     }
     componentDidMount = () => {
         this.getAllComments()
@@ -199,7 +202,7 @@ class Comments extends Component {
                         {/* <label>Username:</label> */}
                         <input name="commentMission" type="text" value={this.state.commentMission || ""} onChange={e => this.onInputChange(e)} />
                         {/* <label>Email:</label> */}
-                        <textarea maxlength="750" name="commentText" type="text" value={this.state.commentText || ""} onChange={e => this.onInputChange(e)} />
+                        <textarea maxLength="750" name="commentText" type="text" value={this.state.commentText || ""} onChange={e => this.onInputChange(e)} />
                         {/* <label>Password:</label> */}
 
 
@@ -256,7 +259,7 @@ class Comments extends Component {
                         {/* <label>Username:</label> */}
                         <input name="commentMission" type="text" value={this.state.commentMission || ""} onChange={e => this.onInputChange(e)} />
                         {/* <label>Email:</label> */}
-                        <textarea maxlength="750" name="commentText" type="text" value={this.state.commentText || ""} onChange={e => this.onInputChange(e)} />
+                        <textarea maxLength="750" name="commentText" type="text" value={this.state.commentText || ""} onChange={e => this.onInputChange(e)} />
                         {/* <label>Password:</label> */}
 
 

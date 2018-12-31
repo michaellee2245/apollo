@@ -5,6 +5,7 @@ import Missions from '../Missions/Missions';
 import Comments from '../Comments/Comments';
 import $ from 'jquery';
 import AboutApollo from '../About/AboutApollo';
+import CommentCarousel from '../CommentCarousel/CommentCarousel';
 
 class Apollo extends Component {
 
@@ -25,7 +26,7 @@ class Apollo extends Component {
         function updateNav() {
             const activeSection = Math.floor(window.scrollY / window.innerHeight - 0.65)
             navigationButtons.each(function () {
-                console.log(activeSection, this.id[4] - 2)
+                // console.log(activeSection, this.id[4] - 2)
                 if (this.id[4] > 3 ?
                     activeSection === this.id[4] - 1
                     :
@@ -44,7 +45,7 @@ class Apollo extends Component {
 
         }
         $(window).on('scroll', updateNav)
-        
+
     }
 
     updateUser = (user) => {
@@ -82,7 +83,7 @@ class Apollo extends Component {
                         <div className="moon fade_in_bg"></div>
                         <div className="text_image fade_in"></div>
                         <div className="sub_text_image fade_in_mission"></div>
-                        <div class="scroll-down"></div>
+                        <div className="scroll-down"></div>
 
                     </div>
                 </section>
@@ -97,7 +98,9 @@ class Apollo extends Component {
                 <section className="">
                     <Comments user={this.state.user} updateUser={this.updateUser} />
                 </section>
-                <section></section>
+                <section className="comment_section">
+                    <CommentCarousel user={this.state.user} updateUser={this.updateUser}/>
+                </section>
 
             </div>
 

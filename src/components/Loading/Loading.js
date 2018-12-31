@@ -4,10 +4,10 @@ import axios from 'axios';
 import { loadProgressBar } from 'axios-progress-bar';
 import { ReactComponent as RocketIcon } from '../../assets/rocket-with-a-circle.svg';
 
-function ProgressBarFiller(props) {
-    console.log(props)
-    return <div className="filler" style={{ width: `${props.percentage}%` }}></div>
-}
+// function ProgressBarFiller(props) {
+//     console.log(props)
+//     return <div className="filler" style={{ width: `${props.percentage}%` }}></div>
+// }
 loadProgressBar(undefined, axios)
 class Loading extends Component {
 
