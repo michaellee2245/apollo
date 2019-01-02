@@ -3,9 +3,9 @@ import './about-apollo.scss';
 
 class AboutApollo extends Component {
 
-    state = {
+    // state = {
 
-    }
+    // }
 
     render() {
         return (
@@ -35,7 +35,7 @@ class AboutApollo extends Component {
                     "That's one small step for man, one giant leap for mankind"
                     <div className="quoter">—Neil Armstrong</div>
                 </div>
-                <div className="test_sections" id="img1"></div>
+                {/* <div className="test_sections" id="img1"></div> */}
             </section>
         )
     }
