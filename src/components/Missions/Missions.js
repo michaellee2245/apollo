@@ -123,11 +123,11 @@ class Missions extends Component {
                         
                         <div className="modal-content">
                             <div className="apollo_1">
-                                <div className="mission_titles">
+                                {/* <div className="mission_titles">
                                     <div>Apollo 01 | 01.27.1967</div>
                                     
                                     <div>01.27.1967</div>
-                                </div>
+                                </div> */}
                                 <p>
                                 Apollo 1, initially designated AS-204, was the first manned mission of the United States Apollo program, the program to land the first men on the Moon. Planned as the first low Earth orbital test of the Apollo command and service module with a crew, to launch on February 21, 1967, the mission never flew; a cabin fire during a launch rehearsal test at Cape Kennedy Air Force Station Launch Complex 34 on January 27 killed all three crew members—Command Pilot Virgil I. "Gus" Grissom, Senior Pilot Ed White, and Pilot Roger B. Chaffee—and destroyed the command module (CM). The name Apollo 1, chosen by the crew, was officially retired by NASA in commemoration of them on April 24, 1967.
                                 
