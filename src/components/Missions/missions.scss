@@ -274,7 +274,7 @@ h1 {
 		color: #f5f5f5;
 		font-size: 50px;
 		text-align:center;
-		font-family: 'bebas_neueregular', sans-serif;
+		font-family: 'bebas_neuebold', sans-serif;
 		margin-right:45px;
 		margin-left:45px;
 		
@@ -327,11 +327,17 @@ h1 {
 		margin:0;
         border-radius: 0;
 		background-color:black;
+		border:none;
 		
 		
 		.fa {
-			font-size: 8vw;
-
+			font-size: 11vw;
+			letter-spacing: 15px;
+			// opacity:.5;
+			background-color:lightgrey;
+			width:100%;
+			margin-left:-.05%;
+			color:black;
 		}
 		.modal-content {
 			height: auto;
@@ -367,7 +373,7 @@ h1 {
 .apollo_1{
 	height:200vh;
 	width:100vw;
-	border:25px solid white;
+	border:25px solid #ed2024;
 	padding:30px;
 }
 .crew_list{

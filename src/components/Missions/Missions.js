@@ -116,12 +116,11 @@ class Missions extends Component {
                 </div> */}
                 <div id="fsm_container" className="fsm-container" onClick={() => this.expandingDiv()}>
                     <div className="fsm apple">
-                        {/* <div className="fa fa-apple">
-                            <div>Apollo Mission</div>
-                            <div>01</div>
-                            <div>01.27.1967</div>
-                        </div> */}
-                        <div>Something</div>
+                        <div className="fa fa-apple">
+                            <span>Apollo 01 | </span>
+                            <span>01.27.1967</span>
+                        </div>
+                        
                         <div className="modal-content">
                             <div className="apollo_1">
                                 <div className="mission_titles">
