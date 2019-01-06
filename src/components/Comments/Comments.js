@@ -23,7 +23,9 @@ class Comments extends Component {
             commentMission: '',
             commentText: '',
             commentName: '',
-            idToUpdate: null
+            idToUpdate: null,
+            loginUsername: '',
+            loginPassword: '',
             // currentIndex: 0,
         }
 
@@ -50,26 +52,28 @@ class Comments extends Component {
     newUser = () => {
         axios.post('http://localhost:8080/api/new_user', { username: this.state.username, email: this.state.email, password: this.state.password })
             .then(response => console.log(response))
-            .then(this.setState({ username: '', email: '', password: '' }))
+            .then(this.setState({ username: '', email: '', password: '', loginClicked: false }))
+            // .then(this.loginUser())
+            .catch((error) => console.error('Error making new user', error))
     }
 
     loginUser = () => {
-        let theUser = this.state.username;
-
-        if (this.props.user.username !== "") {
-            this.setState({ commentName: this.props.user.username })
+        let theUser = this.state.loginUsername;
+        
+        if (this.props.user.loginUsername !== "") {
+            this.setState({ commentName: this.props.user.loginUsername })
         }
 
-        axios.post('http://localhost:8080/api/login', { username: theUser, password: this.state.password })
+        axios.post('http://localhost:8080/api/login', { loginUsername: theUser, loginPassword: this.state.loginPassword })
             .then((response) => {
                 console.log(response, "*******")
                 this.props.updateUser(response.data)
-                this.setState({ commentName: response.data.username })
+                this.setState({ commentName: response.data.loginUsername })
                 this.handleCloseLogin()
             })
             .catch((error) => {
                 console.log({ error })
-                this.setState({ username: '', email: '', password: '' })
+                this.setState({ loginUsername: '', loginEmail: '', loginPassword: '' })
             })
     }
 
@@ -106,7 +110,9 @@ class Comments extends Component {
                 leaveCommentClicked: false,
                 commentMission: '',
                 // commentName: '',
-                commentText: ''
+                commentText: '',
+                loginPassword: '',
+                loginUsername: '',
             })
     }
     handleLogout = () => {
@@ -152,7 +158,7 @@ class Comments extends Component {
             })
     }
     onUpdateClick(id) {
-        console.log("id",id)
+        console.log("id", id)
         axios.put(`http://localhost:8080/api/update-comment/${id}`, { user_name: this.state.commentName, mission: this.state.commentMission, user_comment: this.state.commentText, user_id: this.props.user.id })
             .then((response) => {
                 console.log(response);
@@ -217,7 +223,11 @@ class Comments extends Component {
                     <button onClick={this.leaveComment}>Submit Comment</button>
 
                 </div>
-
+                {this.props.user.id ?
+                    <div className="welcome_message" >{`Welcome ${this.props.user.username}`}</div>
+                    :
+                    null
+                }
                 {this.props.user.id ?
                     <button className="login_button" onClick={this.handleLogout}>Logout</button>
                     :
@@ -229,30 +239,31 @@ class Comments extends Component {
                         }`}
                     onKeyDown={({ key }) => key === "Enter" && this.loginUser()}
                 >
+                    <div className="register_info">Registering allows you to delete or update comments that you leave.</div>
+                    <div className="login_wrapper">
+                        <div className="close_login"> </div>
+                        <div className="login_container_inputs">
+                            <input name="loginUsername" type="text" placeholder="Username" value={this.state.loginUsername} onChange={this.onInputChange} />
+                            <input name="loginPassword" placeholder="Password" value={this.state.loginPassword} onChange={this.onInputChange} type="password" />
+                            <button onClick={this.loginUser} className="login_buttons">Login</button>
+                        </div>
 
-                    <div className="close_login"> </div>
-                    <div className="login_container_inputs">
-                        <input name="username" type="text" placeholder="Username" value={this.state.username} onChange={this.onInputChange} />
-                        <input name="password" placeholder="Password" value={this.state.password} onChange={this.onInputChange} type="password" />
-                        <button onClick={this.loginUser}>Login</button>
+                        <div className="vertical_line"></div>
+
+                        <div className="auth-container-inputs">
+
+                            {/* <label>Username:</label> */}
+                            <input name="username" type="text" placeholder="Username" value={this.state.username} onChange={this.onInputChange} />
+                            {/* <label>Email:</label> */}
+                            <input name="email" type="text" placeholder="Email" value={this.state.email} onChange={this.onInputChange} />
+                            {/* <label>Password:</label> */}
+                            <input name="password" placeholder="Password" value={this.state.password} onChange={this.onInputChange} type="password" />
+                            <button onClick={this.newUser} className="login_buttons">Register</button>
+                        </div>
+
+                        <div className="close_login" onClick={this.handleCloseLogin}> </div>
                     </div>
-
-                    <div className="vertical_line"></div>
-
-                    <div className="auth-container-inputs">
-                        <div>Registering allows you to delete or update comments that you make</div>
-                        {/* <label>Username:</label> */}
-                        <input name="username" type="text" placeholder="Username" value={this.state.username} onChange={this.onInputChange} />
-                        {/* <label>Email:</label> */}
-                        <input name="email" type="text" placeholder="Email" value={this.state.email} onChange={this.onInputChange} />
-                        {/* <label>Password:</label> */}
-                        <input name="password" placeholder="Password" value={this.state.password} onChange={this.onInputChange} type="password" />
-                        <button onClick={this.newUser} >Register</button>
-                    </div>
-
-                    <div className="close_login" onClick={this.handleCloseLogin}> </div>
                 </div>
-
                 <div className={`update_comment_container ${this.state.updateCommentClicked ? "" : "hidden"}`}>
                     <div className="close_login" onClick={this.handleCloseLogin}> </div>
                     <div className="leave_comment_inputs">
@@ -272,7 +283,7 @@ class Comments extends Component {
 
                     </div>
                     <button onClick={() => this.onUpdateClick(this.state.idToUpdate)}>Update Comment</button>
-                        
+
                 </div>
                 {/* <div className="comment_carousel_container"></div> */}
                 {this.state.comments.map((comment) => (

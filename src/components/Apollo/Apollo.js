@@ -93,13 +93,13 @@ class Apollo extends Component {
                     </div>
                 </section>
                 <section className="tall_section">
-                    {/* <Missions /> */}
+                    <Missions />
                 </section>
                 <section className="">
-                    {/* <Comments user={this.state.user} updateUser={this.updateUser} /> */}
+                    <Comments user={this.state.user} updateUser={this.updateUser} />
                 </section>
                 <section className="comment_section">
-                    {/* <CommentCarousel user={this.state.user} updateUser={this.updateUser}/> */}
+                    <CommentCarousel user={this.state.user} updateUser={this.updateUser}/>
                 </section>
 
             </div>

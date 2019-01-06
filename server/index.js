@@ -35,7 +35,7 @@ app.listen(SERVER_PORT, () => {
     console.log(`Server connected and running on port ${SERVER_PORT}`);
 })
 
-app.post('/new_user', (req, res) => {
+app.post('/api/new_user', (req, res) => {
     const db = req.app.get('db')
     const { username, email, password } = req.body
 

@@ -13,14 +13,14 @@ function loginUser(req, res) {
     const db = req.app.get('db')
     // const { username, password } = req.body
     console.log(req.body)
-    db.search_user([req.body.username])
+    db.search_user([req.body.loginUsername])
         .then(user => {
             if (!user[0]) {
                 return res.status(401).send("User doesn't exist.")
 
             }
 
-            bcrypt.compare(req.body.password, user[0].password, function (err, isCorrectPassword) {
+            bcrypt.compare(req.body.loginPassword, user[0].password, function (err, isCorrectPassword) {
                 if (err) {
                     return res.status(500).send(err)
                 }

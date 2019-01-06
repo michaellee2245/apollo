@@ -121,6 +121,7 @@ class Missions extends Component {
                             <div>01</div>
                             <div>01.27.1967</div>
                         </div> */}
+                        <div>Something</div>
                         <div className="modal-content">
                             <div className="apollo_1">
                                 <div className="mission_titles">
