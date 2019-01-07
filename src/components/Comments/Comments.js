@@ -59,16 +59,16 @@ class Comments extends Component {
 
     loginUser = () => {
         let theUser = this.state.loginUsername;
-        
-        if (this.props.user.loginUsername !== "") {
-            this.setState({ commentName: this.props.user.loginUsername })
+
+        if (this.props.user.username !== "") {
+            this.setState({ commentName: this.props.user.username })
         }
 
         axios.post('http://localhost:8080/api/login', { loginUsername: theUser, loginPassword: this.state.loginPassword })
             .then((response) => {
                 console.log(response, "*******")
                 this.props.updateUser(response.data)
-                this.setState({ commentName: response.data.loginUsername })
+                this.setState({ commentName: response.data.username })
                 this.handleCloseLogin()
             })
             .catch((error) => {
@@ -104,12 +104,10 @@ class Comments extends Component {
         this.setState(
             {
                 loginClicked: false,
-                // username: '',
                 email: '',
                 password: '',
                 leaveCommentClicked: false,
                 commentMission: '',
-                // commentName: '',
                 commentText: '',
                 loginPassword: '',
                 loginUsername: '',
@@ -163,10 +161,21 @@ class Comments extends Component {
             .then((response) => {
                 console.log(response);
                 this.getAllComments();
+                this.handleCloseLogin();
             })
             .catch((error) => {
                 console.error(error)
             })
+    }
+    handleCloseUpdate = () => {
+        this.setState(
+            {
+                commentMission: '',
+                commentName: '',
+                commentText: '',
+                updateCommentClicked: false,
+            }
+        )
     }
 
     // renderGallery = () => {
@@ -200,27 +209,27 @@ class Comments extends Component {
                 /> */}
 
 
-                <button className="leave_comment" onClick={this.handleCommentClick}>Leave a Comment</button>
+                <button className="leave_comment" onClick={() => this.handleCommentClick()}>Leave a Comment</button>
 
                 <div className={`leave_comment_container ${this.state.leaveCommentClicked ? "" : "hidden"}`}>
-                    <div className="close_login" onClick={this.handleCloseLogin}> </div>
+                    <div className="close_login" onClick={() => this.handleCloseLogin()}> </div>
                     <div className="leave_comment_inputs">
                         {/* <label>Username:</label> */}
-                        <input name="commentMission" type="text" value={this.state.commentMission || ""} onChange={e => this.onInputChange(e)} />
+                        <input name="commentMission" placeholder="Favorite Mission" type="text" value={this.state.commentMission || ""} onChange={e => this.onInputChange(e)} />
                         {/* <label>Email:</label> */}
-                        <textarea maxLength="750" name="commentText" type="text" value={this.state.commentText || ""} onChange={e => this.onInputChange(e)} />
+                        <textarea maxLength="750" name="commentText" placeholder="Let us know why it was your favorite!" type="text" value={this.state.commentText || ""} onChange={e => this.onInputChange(e)} />
                         {/* <label>Password:</label> */}
+                        <input name="commentName" placeholder="First Name" value={this.state.commentName || ""} onChange={e => this.onInputChange(e)} />
 
-
-                        {this.props.user.username !== "" ?
+                        {/* {this.props.user.username !== "" ?
 
                             this.props.user.username
                             :
                             <input name="commentName" value={this.state.commentName || ""} onChange={e => this.onInputChange(e)} />
-                        }
+                        } */}
 
                     </div>
-                    <button onClick={this.leaveComment}>Submit Comment</button>
+                    <button onClick={() => this.leaveComment()} className="submit_comment">Submit Comment</button>
 
                 </div>
                 {this.props.user.id ?
@@ -229,9 +238,9 @@ class Comments extends Component {
                     null
                 }
                 {this.props.user.id ?
-                    <button className="login_button" onClick={this.handleLogout}>Logout</button>
+                    <button className="login_button" onClick={() => this.handleLogout()}>Logout</button>
                     :
-                    <button className="login_button" onClick={this.handleLoginClick}> Login/Register</button>
+                    <button className="login_button" onClick={() => this.handleLoginClick()}> Login/Register</button>
                 }
                 <div
                     className={`main-auth-container ${
@@ -265,7 +274,7 @@ class Comments extends Component {
                     </div>
                 </div>
                 <div className={`update_comment_container ${this.state.updateCommentClicked ? "" : "hidden"}`}>
-                    <div className="close_login" onClick={this.handleCloseLogin}> </div>
+                    <div className="close_login" onClick={() => this.handleCloseUpdate()}> </div>
                     <div className="leave_comment_inputs">
                         {/* <label>Username:</label> */}
                         <input name="commentMission" type="text" value={this.state.commentMission || ""} onChange={e => this.onInputChange(e)} />
@@ -278,11 +287,11 @@ class Comments extends Component {
 
                             this.props.user.username
                             :
-                            <input name="commentName" value={this.state.commentName || ""} onChange={e => this.onInputChange(e)} />
+                            <input name="commentName" placeholder="something" type="text" value={this.state.commentName || ""} onChange={e => this.onInputChange(e)} />
                         }
 
                     </div>
-                    <button onClick={() => this.onUpdateClick(this.state.idToUpdate)}>Update Comment</button>
+                    <button className="submit_comment" onClick={() => this.onUpdateClick(this.state.idToUpdate)}>Update Comment</button>
 
                 </div>
                 {/* <div className="comment_carousel_container"></div> */}
@@ -292,8 +301,10 @@ class Comments extends Component {
                         <div className="comment_title">{comment.mission}</div>
                         <div className="comment_text">{comment.user_comment}</div>
                         <div className="comment_name">{comment.user_name}</div>
-                        {this.props.user.username === comment.user_name ? <button className="delete_comment" onClick={() => this.onDeleteClick(comment.id)}>delete</button> : null}
-                        {this.props.user.username === comment.user_name ? <button className="update_comment" onClick={() => this.handleUpdateComment(comment.id)}>update</button> : null}
+                        <div className="comment_btn_container">
+                            {this.props.user.username === comment.user_name ? <button className="delete_comment" onClick={() => this.onDeleteClick(comment.id)}>delete</button> : null}
+                            {this.props.user.username === comment.user_name ? <button className="update_comment" onClick={() => this.handleUpdateComment(comment.id)}>update</button> : null}
+                        </div>
                     </div>
                 ))}
 

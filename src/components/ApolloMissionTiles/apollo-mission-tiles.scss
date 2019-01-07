@@ -1,12 +1,14 @@
 .mission_wrapper {
     font-family:helvetica neue, helvetica, arial, sans-serif;
     font-weight:200;
-    height:200vh;
+    height:225vh;
     width:100vw;
+    border:1px solid #ffffff;
+    overflow: hidden;
+    flex-flow: row wrap;
   }
   .modalDialog {
      position: fixed;
-    font-family: Arial, Helvetica, sans-serif;
     top: 0;
     right: 0;
     bottom: 0;
@@ -34,6 +36,7 @@
     // border-radius: 10px;
     background-color:black;
     color:white;
+    
 }
 
 .close {
@@ -54,9 +57,18 @@
     transition: .5s; 
 }
 .modal_button{
-    background-color:black;
-    width:33.333vw;
+    // background-color:rgb(4, 7, 1);
+    background-color:lightblue;
+    width:33.299vw;
     height:50vh;
     color:white;
+    border:1px solid white;
+    font-family: 'bebasneuebold';
+    font-size:50px;
+    cursor: pointer;
     
+    &:focus{
+        border:none;
+        outline:none;
+    }
 }

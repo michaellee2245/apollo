@@ -13,10 +13,10 @@ class ApolloMissionTiles extends Component {
 
                 <div id="openModal1" class="modalDialog">
                     <div>
-                        <a href="#close" title="Close" class="close">X</a>
-                        <h2>Modal Box 1</h2>
-                        <p>This is a sample modal box that can be created using the powers of CSS3.    </p>
-                        <p>You could do a lot of things here like have a pop-up ad that shows when your website loads, or create a login/register form for users.</p>
+                        <a href="#close" title="Close"><div className="close"></div></a>
+                        <h2>Modal Box 2</h2>
+                        <p><strong>Box 6</strong></p>
+                        <p>yadda yadda</p>
                     </div>
                 </div>
 
@@ -25,9 +25,9 @@ class ApolloMissionTiles extends Component {
 
                 <div id="openModal2" class="modalDialog">
                     <div>
-                        <a href="#close" title="Close" class="close">X</a>
+                        <a href="#close" title="Close"><div className="close"></div></a>
                         <h2>Modal Box 2</h2>
-                        <p><strong>Box 2</strong></p>
+                        <p><strong>Box 6</strong></p>
                         <p>yadda yadda</p>
                     </div>
                 </div>
@@ -35,9 +35,9 @@ class ApolloMissionTiles extends Component {
 
                 <div id="openModal3" class="modalDialog">
                     <div>
-                        <a href="#close" title="Close" class="close">X</a>
+                        <a href="#close" title="Close"><div className="close"></div></a>
                         <h2>Modal Box 2</h2>
-                        <p><strong>Box 3</strong></p>
+                        <p><strong>Box 6</strong></p>
                         <p>yadda yadda</p>
                     </div>
                 </div>
@@ -45,25 +45,85 @@ class ApolloMissionTiles extends Component {
 
                 <div id="openModal4" class="modalDialog">
                     <div>
-                        <a href="#close" title="Close" class="close">&times;</a>
+                        <a href="#close" title="Close"><div className="close"></div></a>
                         <h2>Modal Box 2</h2>
-                        <p><strong>Box 4</strong></p>
+                        <p><strong>Box 6</strong></p>
                         <p>yadda yadda</p>
                     </div>
                 </div>
                 <a href="#openModal5"><button className="modal_button">Apollo 07</button></a>
 
                 <div id="openModal5" class="modalDialog">
-                    <div className="mission_content">
-                        <a href="#close" title="Close" class="close">X</a>
+                    <div>
+                        <a href="#close" title="Close"><div className="close"></div></a>
                         <h2>Modal Box 2</h2>
-                        <p><strong>Box 5</strong></p>
+                        <p><strong>Box 6</strong></p>
                         <p>yadda yadda</p>
                     </div>
                 </div>
                 <a href="#openModal6"><button className="modal_button">Apollo 07</button></a>
 
                 <div id="openModal6" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Close"><div className="close"></div></a>
+                        <h2>Modal Box 2</h2>
+                        <p><strong>Box 6</strong></p>
+                        <p>yadda yadda</p>
+                    </div>
+                </div>
+                <a href="#openModal7"><button className="modal_button">Apollo 07</button></a>
+
+                <div id="openModal7" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Close"><div className="close"></div></a>
+                        <h2>Modal Box 2</h2>
+                        <p><strong>Box 6</strong></p>
+                        <p>yadda yadda</p>
+                    </div>
+                </div>
+                <a href="#openModal8"><button className="modal_button">Apollo 07</button></a>
+
+                <div id="openModal8" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Close"><div className="close"></div></a>
+                        <h2>Modal Box 2</h2>
+                        <p><strong>Box 6</strong></p>
+                        <p>yadda yadda</p>
+                    </div>
+                </div>
+                <a href="#openModal9"><button className="modal_button">Apollo 07</button></a>
+
+                <div id="openModal9" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Close"><div className="close"></div></a>
+                        <h2>Modal Box 2</h2>
+                        <p><strong>Box 6</strong></p>
+                        <p>yadda yadda</p>
+                    </div>
+                </div>
+                <a href="#openModal10"><button className="modal_button">Apollo 07</button></a>
+
+                <div id="openModal10" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Close"><div className="close"></div></a>
+                        <h2>Modal Box 2</h2>
+                        <p><strong>Box 6</strong></p>
+                        <p>yadda yadda</p>
+                    </div>
+                </div>
+                <a href="#openModal11"><button className="modal_button">Apollo 07</button></a>
+
+                <div id="openModal11" class="modalDialog">
+                    <div>
+                        <a href="#close" title="Close"><div className="close"></div></a>
+                        <h2>Modal Box 2</h2>
+                        <p><strong>Box 6</strong></p>
+                        <p>yadda yadda</p>
+                    </div>
+                </div>
+                <a href="#openModal12"><button className="modal_button">Apollo 07</button></a>
+
+                <div id="openModal12" class="modalDialog">
                     <div>
                         <a href="#close" title="Close"><div className="close"></div></a>
                         <h2>Modal Box 2</h2>

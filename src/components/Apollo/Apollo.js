@@ -49,6 +49,7 @@ class Apollo extends Component {
     }
 
     updateUser = (user) => {
+        console.log('user',user)
         this.setState({ user: user })
     }
 
