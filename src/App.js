@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import axios from 'axios';
+// import axios from 'axios';
 import './App.css';
 import Loading from './components/Loading/Loading';
 import Apollo from './components/Apollo/Apollo';
-import { Motion, spring } from 'react-motion';
-import { loadProgressBar } from 'axios-progress-bar';
 
-loadProgressBar(undefined, axios)
+// import { loadProgressBar } from 'axios-progress-bar';
+
+// loadProgressBar(undefined, axios)
 
 class App extends Component {
 
@@ -17,13 +17,11 @@ class App extends Component {
 
 
   componentDidMount() {
-    axios.get('https://reqres.in/api/unknown')
-      .then(response => {
+      
         setTimeout(() => {
           this.setState({ loading: false })
         }, 1500)
-        console.log(response)
-      })
+      
 
 
 
@@ -57,13 +55,13 @@ class App extends Component {
 
 
     return (
-      <Motion defaultStyle={{ x: 0 }} style={{ x: spring(10) }}>
-        {interpolatingStyle => (
+      
+        
           <div className="App">
             <Apollo />
           </div>
-        )}
-      </Motion>
+        
+      
     );
   }
 }

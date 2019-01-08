@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import axios from 'axios';
+// import axios from 'axios';
 import './apollo.scss';
 import Missions from '../Missions/Missions';
 import Comments from '../Comments/Comments';
@@ -58,7 +58,7 @@ class Apollo extends Component {
 
 
             <div>
-
+                
                 <ul className="page_nav">
 
                     <li id="nav_1" onClick={this.handleClick(0)}>

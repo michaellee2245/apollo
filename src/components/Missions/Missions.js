@@ -1,38 +1,38 @@
 import React, { Component } from 'react';
-import axios from 'axios';
+// import axios from 'axios';
 import './missions.scss';
 
 import ApolloMissionTiles from '../ApolloMissionTiles/ApolloMissionTiles';
 class Missions extends Component {
 
-    state = {
-        selectedMission: -1,
-        missions: [],
-        missionTileOpen: false,
-    }
+    // state = {
+    //     selectedMission: -1,
+    //     missions: [],
+    //     missionTileOpen: false,
+    // }
 
-    handleClick = i => e => {
-        e.stopPropagation()
-        console.log(i)
-        this.setState({ selectedMission: i })
-    }
+    // handleClick = i => e => {
+    //     e.stopPropagation()
+    //     console.log(i)
+    //     this.setState({ selectedMission: i })
+    // }
     // handleClose = () => {
     //     this.setState
     // }
-    componentDidMount() {
-        this.missionTile();
-    }
-    missionTile = () => {
-        axios.get('http://localhost:8080/api/missions')
-            .then((response) => {
-                console.log(response)
-                this.setState({ missions: response.data })
-            })
+    // componentDidMount() {
+    //     this.missionTile();
+    // }
+    // missionTile = () => {
+    //     axios.get('http://localhost:8080/api/missions')
+    //         .then((response) => {
+    //             console.log(response)
+    //             this.setState({ missions: response.data })
+    //         })
 
-    }
-    handleMissionTileClick = () => {
-        this.setState({ missionTileOpen: true })
-    }
+    // }
+    // handleMissionTileClick = () => {
+    //     this.setState({ missionTileOpen: true })
+    // }
 
     render() {
         return (

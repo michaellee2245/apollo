@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import './comments.scss';
-import $ from 'jquery';
+// import $ from 'jquery';
 import { connect } from 'react-redux';
 import { signInUser } from '../../redux/reducer';
-import './alice-carousel.scss';
+// import './alice-carousel.scss';
 // import AliceCarousel from 'react-alice-carousel'
 
 class Comments extends Component {
