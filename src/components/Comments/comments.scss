@@ -5,7 +5,7 @@
     align-items:center;
     height:100%;
     width:100%;
-    
+    font-family: 'Oswald', sans-serif;
     position:relative;
     border:1px solid white;
 }
@@ -18,7 +18,7 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    z-index: 1000;
+    z-index: 9000;
     position:absolute;
     top:50%;
     left:50%;
@@ -38,7 +38,9 @@
     height:35px;
     width:150px;
     border: 1px solid white;
-    font-family: 'bebasneueregular';
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    text-transform:uppercase;
     font-size:15px;
     color:white;
     background-color:transparent;
@@ -46,7 +48,7 @@
     vertical-align: center;
     padding:10px;
 }
-.login_buttons:hover{
+.login_buttons:hover, .submit_comment:hover{
     background-color:white;
     opacity:.5;
     color:black;
@@ -54,7 +56,8 @@
     cursor: pointer;
 }
 .register_info{
-    font-family: 'bebasneuebold';
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
     top:75px;
     position: absolute;
     color:white;
@@ -72,10 +75,10 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    z-index: 1000;
+    z-index: 9000;
     position:absolute;
     top:50%;
-    left:70%;
+    left:50%;
     transform:translate(-50%, -50%);
     transition: .75s;
 }
@@ -92,7 +95,9 @@
     left:20px;
     background:none;
     border:none;
-    font-family: 'bebas_neuebold';
+    font-family: 'Oswald', sans-serif;
+    font-weight: 200;
+    text-transform: uppercase;
     letter-spacing: 5px;
     font-size:1.2em;
     color:white4;
@@ -123,11 +128,15 @@
     padding:15px;
     color:black;
     position: relative;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
 
     // border:2px solid white;
 }
 .comment_title{
-    font-family: 'bebas_neuebold';
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
     color:black;
     font-size:2em;
     letter-spacing: 6px;
@@ -147,7 +156,8 @@
         border:none;
         border-bottom:1px solid white;
         background:none;
-        font-family: 'bebas_neueregular';
+        font-family: 'Oswald', sans-serif;
+        font-weight: 200;
         letter-spacing: 5px;
         color:white;
         font-size:1.3em;
@@ -164,7 +174,8 @@
         outline:none;
         border:1px solid white;
         background:none;
-        font-family: 'bebas_neueregular';
+        font-family: 'Oswald', sans-serif;
+        font-weight: 200;
         letter-spacing: 5px;
         color:white;
         width:400px;
@@ -193,11 +204,13 @@
     right:20px;
     background:none;
     border:none;
-    font-family: 'bebas_neueregular';
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
     letter-spacing: 5px;
     font-size:1.2em;
     color:white;
     padding:5px;
+    text-transform: uppercase;
     
 
 
@@ -232,7 +245,9 @@
     width:150px;
     height:40px;
     color:black;
-    font-family: 'bebasneueregular';
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
     padding:5px;
     font-size:15px;
     letter-spacing: 3px;
@@ -240,6 +255,7 @@
 .submit_comment{
     border:1px solid white;
     color:white;
+    width:180px;
 }
 .comment_text{
     position: absolute;

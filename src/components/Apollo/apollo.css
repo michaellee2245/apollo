@@ -1,0 +1,290 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700");
+body {
+  background-color: #040701;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+}
+
+section {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.comment_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.gray {
+  background-color: gray;
+}
+
+.wide_section {
+  height: 100vh;
+  width: 100vw;
+  overflow-x: scroll;
+  background-color: black;
+}
+
+.tall_section {
+  height: 200vh;
+  width: 100vw;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.hero_container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex-direction: column;
+  position: relative;
+}
+
+.moon {
+  background-image: url(../../assets/images/moaa-specials-cover01.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  opacity: 0;
+  z-index: -10;
+}
+
+.hero_line {
+  height: 2px;
+  width: 50vw;
+  background-color: #ed2024;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  z-index: 25;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade_in, .fade_in_mission, .fade_in_line {
+  animation: fadeIn ease-in 1;
+  animation-fill-mode: forwards;
+  animation-duration: 2s;
+  animation-delay: 3s;
+}
+
+.fade_in_mission {
+  animation-delay: 5s;
+  animation-duration: 1s;
+}
+
+.fade_in_line {
+  animation-duration: 8s;
+  animation-delay: .5s;
+}
+
+@keyframes fadeInBg {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: .12;
+  }
+}
+
+.fade_in_bg {
+  animation: fadeInBg ease-in 1;
+  animation-fill-mode: forwards;
+  animation-duration: 2s;
+  animation-delay: .5s;
+}
+
+.text_image {
+  height: 50%;
+  width: 50%;
+  background-image: url(../../assets/images/project-apollo-header-text.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0;
+  position: absolute;
+}
+
+.sub_text_image {
+  height: 50%;
+  width: 50%;
+  background-image: url(../../assets/images/mission-to-moon.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0;
+  position: absolute;
+  top: 54%;
+}
+
+.about_apollo {
+  width: 200vw;
+}
+
+.nav_container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page_nav {
+  width: 20px;
+  height: 250px;
+  list-style: none;
+  border-right: 1px solid #ed2024;
+  position: fixed;
+  right: 2%;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-right: 45px;
+  z-index: 1000;
+}
+
+.page_nav li {
+  height: 17%;
+  border-right: 5px solid #ed2024;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 35px;
+  opacity: .25;
+  transition: opacity .5s;
+  /* width:5px;
+    height:20%;
+    background-color:rgb(27, 236, 27); */
+}
+
+.page_nav li:hover {
+  opacity: 1;
+}
+
+.page_nav li span {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 200;
+  font-size: 1.5em;
+  opacity: 0;
+  transition: opacity .5s;
+}
+
+.page_nav li:hover span {
+  opacity: 1;
+}
+
+.is_selected {
+  opacity: 1 !important;
+}
+
+.is_selected span {
+  opacity: 1 !important;
+}
+
+/********************************************************************************************
+SCROLL DOWN ARROW
+********************************************************************************************/
+.scroll-down {
+  position: absolute;
+  left: 50%;
+  bottom: 25px;
+  display: block;
+  text-align: center;
+  font-size: 20px;
+  text-decoration: none;
+  text-shadow: 0;
+  width: 13px;
+  height: 13px;
+  border-bottom: 2px solid #fff;
+  border-right: 2px solid #fff;
+  z-index: 1000;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%) rotate(45deg);
+  -moz-transform: translate(-50%, 0%) rotate(45deg);
+  transform: translate(-50%, 0%) rotate(45deg);
+  -webkit-animation: fade_move_down 4s ease-in-out infinite;
+  -moz-animation: fade_move_down 4s ease-in-out infinite;
+  animation: fade_move_down 4s ease-in-out infinite;
+}
+
+/*animated scroll arrow animation*/
+@-webkit-keyframes fade_move_down {
+  0% {
+    -webkit-transform: translate(0, -10px) rotate(45deg);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translate(0, 10px) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes fade_move_down {
+  0% {
+    -moz-transform: translate(0, -10px) rotate(45deg);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -moz-transform: translate(0, 10px) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+@keyframes fade_move_down {
+  0% {
+    transform: translate(0, -10px) rotate(45deg);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0, 10px) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+/********************************************************************************************
+SECTION 5
+********************************************************************************************/
+.thank_you {
+  font-family: 'bebas_neueregular', sans-serif;
+  font-size: 150px;
+  color: white;
+  letter-spacing: 10px;
+}
+
+.section_5 {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

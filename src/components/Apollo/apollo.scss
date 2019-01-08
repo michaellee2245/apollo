@@ -1,51 +1,10 @@
-/*************************************************************************
-    Bebas Font
-**************************************************************************/
-@font-face {
-    font-family: 'bebas_neuebold';
-    src: url('../../assets/fonts/bebas/bebasneue_bold-webfont.woff2') format('woff2'),
-         url('../../assets/fonts/bebas/bebasneue_bold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-@font-face {
-    font-family: 'bebas_neuebook';
-    src: url('../../assets/fonts/bebas/bebasneue_book-webfont.woff2') format('woff2'),
-         url('../../assets/fonts/bebas/bebasneue_book-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-@font-face {
-    font-family: 'bebas_neuelight';
-    src: url('../../assets/fonts/bebas/bebasneue_light-webfont.woff2') format('woff2'),
-         url('../../assets/fonts/bebas/bebasneue_light-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-@font-face {
-    font-family: 'bebas_neueregular';
-    src: url('../../assets/fonts/bebas/bebasneue_regular-webfont.woff2') format('woff2'),
-         url('../../assets/fonts/bebas/bebasneue_regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-@font-face {
-    font-family: 'bebas_neuethin';
-    src: url('../../assets/fonts/bebas/bebasneue_thin-webfont.woff2') format('woff2'),
-         url('../../assets/fonts/bebas/bebasneue_thin-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-} 
+@import url('https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700');
 body{
     // background-color:yellow;
     background-color:rgb(4, 7, 1);
     // background-color:rgb(2, 2, 66);
     color:white;
+    font-family: 'Oswald', sans-serif;
 }
 
 section{
@@ -71,7 +30,7 @@ section{
     // background-color:rgb(2, 2, 66);
 }
 .tall_section{
-    height: 225vh;
+    height: 200vh;
     width:100vw;
 }
 ::-webkit-scrollbar { 
@@ -210,7 +169,8 @@ section{
     opacity:1;
 }
 .page_nav li span{
-    font-family: 'bebas_neuelight', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 200;
     font-size:1.5em;
     opacity:0;
     transition: opacity .5s;
