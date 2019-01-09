@@ -12,6 +12,8 @@ const app = express();
 
 const { SERVER_PORT, CONNECTION_STRING, SESSION_SECRET } = process.env;
 
+
+
 massive(CONNECTION_STRING)
     .then(dbInstance => {
         app.set('db', dbInstance)
@@ -20,6 +22,7 @@ massive(CONNECTION_STRING)
     .catch((error) => console.error('Database connection error', error))
 
 app.use(cors());
+app.use( express.static( `${__dirname}/../build` ) );
 app.use(bodyParser.json());
 app.use(session({
     secret: SESSION_SECRET,
@@ -62,3 +65,8 @@ app.post('/api/leave-comment', controller.leaveComment)
 app.delete('/api/delete-comment/:id', controller.deleteComment)
 app.put('/api/update-comment/:id', controller.updateComment)
 app.get('/api/comment/:id', controller.getComment)
+
+const path = require('path')
+app.get('*', (req, res)=>{
+res.sendFile(path.join(__dirname, '..','build','index.html'));
+})
