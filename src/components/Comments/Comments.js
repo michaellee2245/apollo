@@ -50,7 +50,7 @@ class Comments extends Component {
     }
 
     newUser = () => {
-        axios.post('http://localhost:8080/api/new_user', { username: this.state.username, email: this.state.email, password: this.state.password })
+        axios.post('/api/new_user', { username: this.state.username, email: this.state.email, password: this.state.password })
             .then(response => console.log(response))
             .then(this.setState({ username: '', email: '', password: '', loginClicked: false }))
             // .then(this.loginUser())
@@ -64,7 +64,7 @@ class Comments extends Component {
             this.setState({ commentName: this.props.user.username })
         }
 
-        axios.post('http://localhost:8080/api/login', { loginUsername: theUser, loginPassword: this.state.loginPassword })
+        axios.post('/api/login', { loginUsername: theUser, loginPassword: this.state.loginPassword })
             .then((response) => {
                 console.log(response, "*******")
                 this.props.updateUser(response.data)
@@ -78,7 +78,7 @@ class Comments extends Component {
     }
 
     getAllComments = () => {
-        axios.get('http://localhost:8080/api/comments')
+        axios.get('/api/comments')
             .then((response) => {
                 console.log(response)
                 this.setState({ comments: response.data })
@@ -114,13 +114,13 @@ class Comments extends Component {
             })
     }
     handleLogout = () => {
-        axios.get('http://localhost:8080/api/logout')
+        axios.get('/api/logout')
             .then((response) => {
                 this.props.updateUser({})
             })
     }
     leaveComment = () => {
-        axios.post('http://localhost:8080/api/leave-comment', { user_name: this.state.commentName, mission: this.state.commentMission, user_comment: this.state.commentText, users_id: this.props.user.id })
+        axios.post('/api/leave-comment', { user_name: this.state.commentName, mission: this.state.commentMission, user_comment: this.state.commentText, users_id: this.props.user.id })
             .then((response) => {
                 console.log(response)
                 this.componentDidMount()
@@ -133,7 +133,7 @@ class Comments extends Component {
 
     onDeleteClick(id) {
         console.log(id, "****** function")
-        axios.delete(`http://localhost:8080/api/delete-comment/${id}`)
+        axios.delete(`/api/delete-comment/${id}`)
             .then((response) => {
                 console.log(response)
                 this.getAllComments();
@@ -141,7 +141,7 @@ class Comments extends Component {
     }
     handleUpdateComment(id) {
         console.log("function hit", id)
-        axios.get(`http://localhost:8080/api/comment/${id}`)
+        axios.get(`/api/comment/${id}`)
             .then((response) => {
 
                 let comment = response.data[0]
@@ -157,7 +157,7 @@ class Comments extends Component {
     }
     onUpdateClick(id) {
         console.log("id", id)
-        axios.put(`http://localhost:8080/api/update-comment/${id}`, { user_name: this.state.commentName, mission: this.state.commentMission, user_comment: this.state.commentText, user_id: this.props.user.id })
+        axios.put(`/api/update-comment/${id}`, { user_name: this.state.commentName, mission: this.state.commentMission, user_comment: this.state.commentText, user_id: this.props.user.id })
             .then((response) => {
                 console.log(response);
                 this.getAllComments();
