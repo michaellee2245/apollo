@@ -1,16 +1,17 @@
 import React, { Component } from 'react';
-// import axios from 'axios';
+import axios from 'axios';
 import './apollo.scss';
 import Missions from '../Missions/Missions';
 import Comments from '../Comments/Comments';
 import $ from 'jquery';
 import AboutApollo from '../About/AboutApollo';
-import CommentCarousel from '../CommentCarousel/CommentCarousel';
+// import CommentCarousel from '../CommentCarousel/CommentCarousel';
 
 class Apollo extends Component {
 
     state = {
-        user: {}
+        user: {},
+        comments:[],
     }
 
     handleClick = (i) => () => {
@@ -42,14 +43,23 @@ class Apollo extends Component {
 
             })
 
-
         }
         $(window).on('scroll', updateNav)
-
+        
+        this.getAllComments()
     }
-
+    getAllComments = () => {
+        axios.get('/api/comments')
+            .then((response) => {
+                console.log(response)
+                this.setState({ comments: response.data })
+            })
+            .catch((error) => {
+                console.log('front-end error', error)
+            })
+    }
     updateUser = (user) => {
-        console.log('user',user)
+        console.log('user', user)
         this.setState({ user: user })
     }
 
@@ -58,7 +68,7 @@ class Apollo extends Component {
 
 
             <div>
-                
+
                 <ul className="page_nav">
 
                     <li id="nav_1" onClick={this.handleClick(0)}>
@@ -100,7 +110,7 @@ class Apollo extends Component {
                     <Comments user={this.state.user} updateUser={this.updateUser} />
                 </section>
                 <section className="comment_section">
-                    <CommentCarousel user={this.state.user} updateUser={this.updateUser}/>
+                    {/* <CommentCarousel user={this.state.user} updateUser={this.updateUser} comments={this.state.comments}/> */}
                 </section>
 
             </div>

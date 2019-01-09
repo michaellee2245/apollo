@@ -4,6 +4,8 @@ import './comments.scss';
 // import $ from 'jquery';
 import { connect } from 'react-redux';
 import { signInUser } from '../../redux/reducer';
+import Slider from 'react-slick';
+
 // import './alice-carousel.scss';
 // import AliceCarousel from 'react-alice-carousel'
 
@@ -178,27 +180,36 @@ class Comments extends Component {
         )
     }
 
-    // renderGallery = () => {
-    //     const { currentIndex, comments } = this.state;
 
-    //     return (<AliceCarousel
-    //         dotsDisabled={true}
-    //         buttonsDisabled={true}
-    //         slideToIndex={currentIndex}
-    //         onSlideChanged={this.onSlideChanged}
-    //     >
-    //         {comments.map((comment, i) =>
-    //             <div key={i} className="comment_carousel">
-    //                 <div className="comment_title">{comment.mission}</div>
-    //                 <div className="comment_text">{comment.user_comment}</div>
-    //                 <div className="comment_name">{comment.user_name}</div>
-    //                 {this.props.user.username === comment.user_name ? <button className="delete_comment" onClick={() => this.onDeleteClick(comment.id)}>delete</button> : null}
-    //                 {this.props.user.username === comment.user_name ? <button className="update_comment" onClick={() => this.handleUpdateComment(comment.id)}>update</button> : null}
-    //             </div>)}
-    //     </AliceCarousel>);
-    // }
+
     render() {
-        console.log(this.state)
+
+        const settings = {
+            className: "center",
+            centerMode: true,
+            infinite: true,
+            centerPadding: "0px",
+            slidesToShow: 3,
+            speed: 1000,
+            arrows: true,
+            focusOnSelect: true,
+        }
+
+        // const carouselIndex = this.state.comments.map(function (comment) {
+        //     console.log(this.state.comments)
+        //     return (
+
+        //             <div className="comment_card" key={comment.id}>
+        //                 <div className="comment_title">{comment.mission}</div>
+        //                 <div className="comment_text">{comment.user_comment}</div>
+        //                 <div className="comment_name">{comment.user_name}</div>
+        //                 {this.props.user.username === comment.user_name ? <button className="delete_comment" onClick={() => this.onDeleteClick(comment.id)}>delete</button> : null}
+        //                 {this.props.user.username === comment.user_name ? <button className="update_comment" onClick={() => this.handleUpdateComment(comment.id)}>update</button> : null}
+        //             </div>
+
+        //     );
+        // })
+
         return (
             <div className="background-container">
                 {/* <Script
@@ -295,7 +306,7 @@ class Comments extends Component {
 
                 </div>
                 {/* <div className="comment_carousel_container"></div> */}
-                {this.state.comments.map((comment) => (
+                {/* {this.state.comments.map((comment) => (
 
                     <div className="comment_card">
                         <div className="comment_title">{comment.mission}</div>
@@ -306,14 +317,26 @@ class Comments extends Component {
                             {this.props.user.username === comment.user_name ? <button className="update_comment" onClick={() => this.handleUpdateComment(comment.id)}>update</button> : null}
                         </div>
                     </div>
-                ))}
+                ))} */}
+
+                <div className="carousel_container">
+                    <Slider {...settings}>
 
 
-                {/* <div className="comment_carousel_container">
-                    <div className="comment_card">
-                        {this.renderGallery()}
-                    </div>
-                </div> */}
+                        {this.state.comments.map((comment) => (
+
+                            <div className="comment_card" >
+                                <div className="comment_title">{comment.mission}</div>
+                                <div className="comment_text">{comment.user_comment}</div>
+                                <div className="comment_name">{comment.user_name}</div>
+                                {this.props.user.username === comment.user_name ? <button className="delete_comment" onClick={() => this.onDeleteClick(comment.id)}>delete</button> : null}
+                                {this.props.user.username === comment.user_name ? <button className="update_comment" onClick={() => this.handleUpdateComment(comment.id)}>update</button> : null}
+                            </div>
+                            
+                        ))}
+
+                    </Slider>
+                </div>
 
             </div>
         )

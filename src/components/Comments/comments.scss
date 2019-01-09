@@ -1,3 +1,6 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
 
 .background-container{
     display: flex;
@@ -113,18 +116,46 @@
     border: 1px solid white;
     opacity: .5;
 }
+.carousel_container{
+    width: 85%;
+    height:80%;
+    position: absolute;
+    top:50%;
+    left:50%;
+    // border:1px solid white;
+    transform:translate(-50%,-50%);
+    padding:0px 40px;
+}
+
+.slick-list {
+    margin: 0 -10px;
+    
+}
+.slick-slide {
+    
+    opacity:1;
+    // background-color:white;
+}
+.slick-slide.slick-center div {
+    transform: scale(1.1);
+    
+    transition:1s;
+    opacity:1;
+    background-color:red;
+    
+}
 .comment_card{
     width: 400px;
-    height: 60%;
-    background: white;
-    opacity:.85;
+    height: 725px;
+    background-color: white;
+    // opacity:.85;
     display: flex;
     flex-direction: column;
-    // justify-content: space-evenly;
+    justify-content: center;
     align-items:center;
     // border-radius:30px;
     box-shadow: 0 10px 30px #ed2024;
-    margin:20px;
+    margin-right:200px;
     padding:15px;
     color:black;
     position: relative;
@@ -225,7 +256,7 @@
     }
 }
 .leave_comment{
-    right:200px;
+    right:230px;
 }
 .comment_carousel_container{
     height:100%;

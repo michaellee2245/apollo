@@ -1,32 +1,24 @@
 import React, { Component } from 'react';
 import Slider from 'react-slick';
 import './comment_carousel.scss';
-import '../Comments/comments.scss'
+import '../Comments/comments.scss';
 
 class CommentCarousel extends Component {
 
-    constructor(props) {
-        super(props);
 
-        this.state = {
-            comments: [],
-            commentMission: '',
-            commentText: '',
-            commentName: '',
-        }
-    }
+
     render() {
         const settings = {
             className: "center",
             centerMode: true,
             infinite: true,
-            centerPadding: "150px",
-            slidesToShow: 2,
+            centerPadding: "60px",
+            slidesToShow: 3,
             speed: 1000,
             arrows: true,
             focusOnSelect: true,
         };
-        // let carouselIndex = this.state.comments.map(function (comment) {
+        // var carouselIndex = this.state.comments.map(function (comment) {
         //     return (
         //         <div className="comment_card" key={comment.id}>
         //             <div className="comment_title">{comment.mission}</div>
@@ -38,41 +30,28 @@ class CommentCarousel extends Component {
         //     );
         // })
         return (
-            <div className="comment_carousels">
+            <div >
 
 
 
 
-                {/* <Slider {...settings}>
-
-{this.state.comments.map((comment) => (
-    
-    <div className="comment_card">
-    <div className="comment_title">{comment.mission}</div>
-    <div className="comment_text">{comment.user_comment}</div>
-    <div className="comment_name">{comment.user_name}</div>
-    {this.props.user.username === comment.user_name ? <button className="delete_comment" onClick={() => this.onDeleteClick(comment.id)}>delete</button> : null}
-    {this.props.user.username === comment.user_name ? <button className="update_comment" onClick={() => this.handleUpdateComment(comment.id)}>update</button> : null}
-    </div>
-    ))}
-    
-</Slider> */}
-
-                <h2>Center Mode</h2>
                 <Slider {...settings}>
-                    <div>
-                        <h3>1</h3>
-                    </div>
-                    <div>
-                        <h3>1</h3>
-                    </div>
-                    <div>
-                        <h3>1</h3>
-                    </div>
-                    <div>
-                        <h3>1</h3>
-                    </div>
+                    
+                    
+                        {/* {this.props.comments.map((comment) => (
+
+                            <div className="comment_card" >
+                                <div className="comment_title">{comment.mission}</div>
+                                <div className="comment_text">{comment.user_comment}</div>
+                                <div className="comment_name">{comment.user_name}</div>
+                                {this.props.user.username === comment.user_name ? <button className="delete_comment" onClick={() => this.onDeleteClick(comment.id)}>delete</button> : null}
+                                {this.props.user.username === comment.user_name ? <button className="update_comment" onClick={() => this.handleUpdateComment(comment.id)}>update</button> : null}
+                            </div>
+                        ))} */}
+                    
                 </Slider>
+
+
             </div>
 
         );
