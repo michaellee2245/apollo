@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 // import axios from 'axios';
-import './missions.scss';
+import './missions.css';
 
 import ApolloMissionTiles from '../ApolloMissionTiles/ApolloMissionTiles';
 class Missions extends Component {
