@@ -1,6 +1,6 @@
 .about_apollo_section{
     height:100vh;
-    width:150vw;
+    width:180vw;
     // border: 1px solid white;
     display: flex;
     flex-direction: row;
@@ -67,7 +67,7 @@
 .section_one_para p{
     font-weight:400;
     font-size:19px;
-    margin-bottom:-10px;
+    margin-bottom:-5px;
 }
 .pull_quote{
     font-family: 'Oswald', sans-serif;
@@ -76,7 +76,7 @@
     position:absolute;
     width:500px;
     top:50%;
-    left:60%;
+    left:48%;
     letter-spacing: 3px;
     text-transform:uppercase;
     font-weight:600;
@@ -99,7 +99,7 @@
 #curve_arrow{
     position:absolute;
     top:19%;
-    left:4.5%;
+    left:3%;
     width:120px;
     height:120px;
     background-image: url(../../assets/red-curve-arrow.svg);
@@ -115,7 +115,7 @@ $rotate: 45deg;
   padding: 15px 45px 13px 30px;
   border: 0;
   bottom:3%;
-  left:56%;
+  left:47.5%;
   color: #fff;
   font-weight: 300;
   font-size: 1.2rem;
@@ -179,3 +179,177 @@ $rotate: 45deg;
   }
 }
 
+.about_profile_header{
+  font-family:'Oswald', sans-serif;
+  font-weight:500;
+  text-transform: uppercase;
+  font-size:40px;
+  letter-spacing: 10px;
+  position: absolute;
+  top:0;
+  right:12%;
+  color:rgba(237,32,36,.75);
+  width:1000px;
+  line-height: 50px;
+  
+}
+.about_seq_main_container{
+  position: relative;
+  width:2500px;
+  height:900px;
+  // border:1px solid white;
+  margin-left:100px;
+  margin-right:50px;
+  font-family:'Oswald', sans-serif;
+  // background-color:rgba(0,0,0,.5)
+}
+.seq_text{
+  font-weight:300;
+  font-size:14px;
+  color:white;
+  max-width: 250px;
+  width:250px;
+  margin-top:15px;
+}
+.seq_container{
+  position:absolute;
+}
+.seq_img{
+  width:250px;
+  height:165px;
+}
+#img1{
+  background-image:url(../../assets/images/Apollo11-01.png);
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+#img2{
+  background-image:url(../../assets/images/Apollo11-02.png);
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+#img3{
+  background-image:url(../../assets/images/Apollo11-03.png);
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+#img4{
+  background-image:url(../../assets/images/Apollo11-04.png);
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+#img5{
+  background-image:url(../../assets/images/Apollo11-05.png);
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+#img6{
+  background-image:url(../../assets/images/Apollo11-07.png);
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+#img7{
+  background-image:url(../../assets/images/Apollo11-08.png);
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+#img8{
+  background-image:url(../../assets/images/Apollo11-09.png);
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+#img9{
+  background-image:url(../../assets/images/Apollo11-10.png);
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+#img10{
+  background-image:url(../../assets/images/Apollo11-11.png);
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+#img11{
+  background-image:url(../../assets/images/Apollo11-12.png);
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+#img12{
+  background-image:url(../../assets/images/Apollo11-13.png);
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+#img13{
+  background-image:url(../../assets/images/Apollo11-14.png);
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+#img14{
+  background-image:url(../../assets/images/Apollo11-15.png);
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+#img15{
+  background-image:url(../../assets/images/Apollo11-16.png);
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+#seq1{
+  top:2%;
+  left:0%;
+}
+#seq2{
+  top:2%;
+  left:20%;
+}
+#seq3{
+  top:2%;
+  left:40%;
+}
+#seq4{
+  top:2%;
+  left:60%;
+}
+#seq5{
+  top:2%;
+  left:80%;
+}
+#seq6{
+  top:34%;
+  left:0%;
+}
+#seq7{
+  top:42%;
+  left:20%;
+}
+#seq8{
+  top:42%;
+  left:40%;
+}
+#seq9{
+  top:42%;
+  left:60%;
+}
+#seq10{
+  top:42%;
+  left:80%;
+}
+#seq11{
+  top:74%;
+  left:0%;
+}
+#seq12{
+  top:74%;
+  left:20%;
+}
+#seq13{
+  top:74%;
+  left:40%;
+}
+#seq14{
+  top:74%;
+  left:60%;
+}
+#seq15{
+  top:74%;
+  left:80%;
+}

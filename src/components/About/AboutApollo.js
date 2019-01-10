@@ -7,7 +7,7 @@ class AboutApollo extends Component {
 
   // }
 
- 
+
 
   render() {
     return (
@@ -50,23 +50,16 @@ class AboutApollo extends Component {
               <p>
                 Apollo ran from 1961 to 1972, with the first manned flight in
                 1968. It achieved its goal of manned lunar landing, despite the
-                major setback of a 1967 Apollo 1 cabin fire that killed the
+                major setback of the 1967 Apollo 1 cabin fire that killed the
                 entire crew during a prelaunch test. After the first landing,
-                sufficient flight hardware remained for nine follow-on landings
-                with a plan for extended lunar geological and astrophysical
-                exploration. Budget cuts forced the cancellation of three of
-                these. Five of the remaining six missions achieved successful
+                five of the remaining six missions achieved successful
                 landings, but the Apollo 13 landing was prevented by an oxygen
                 tank explosion in transit to the Moon, which destroyed the
                 service module's capability to provide electrical power,
                 crippling the CSM's propulsion and life support systems. The
                 crew returned to Earth safely by using the lunar module as a
                 "lifeboat" for these functions. Apollo used Saturn family
-                rockets as launch vehicles, which were also used for an Apollo
-                Applications Program, which consisted of Skylab, a space station
-                that supported three manned missions in 1973–74, and the
-                Apollo–Soyuz Test Project, a joint US-Soviet Union Earth-orbit
-                mission in 1975.
+                rockets as launch vehicles.
               </p>
 
               <p>
@@ -84,6 +77,7 @@ class AboutApollo extends Component {
                 technology incidental to rocketry and manned spaceflight,
                 including avionics, telecommunications, and computers.
               </p>
+              {/* <p>More information on the Apollo Program can be found at Wikipedia.</p> */}
             </div>
           </div>
         </div>
@@ -92,7 +86,72 @@ class AboutApollo extends Component {
           "That's one small step for man, one giant leap for mankind"
           <div className="quoter">—Neil Armstrong</div>
         </div>
-        <div id="more_info">Scroll Right for more info</div>
+        <div id="more_info">Scroll Right for more</div>
+        <div className="about_profile_header">Lunar Mission Profile</div>
+        <div className="about_seq_main_container">
+          <div className="seq_container" id="seq1">
+            <div className="seq_img" id="img1"></div>
+            <div className="seq_text">Launch The 3 Saturn V stages burn for about 11 minutes to achieve a 100-nautical-mile (190 km) circular parking orbit. The third stage burns a small portion of its fuel to achieve orbit.</div>
+          </div>
+          <div className="seq_container" id="seq2">
+            <div className="seq_img" id="img2"></div>
+            <div className="seq_text">Translunar injection After one to two orbits to verify readiness of spacecraft systems, the S-IVB third stage reignites for about 6 minutes to send the spacecraft to the Moon.</div>
+          </div>
+          <div className="seq_container" id="seq3">
+            <div className="seq_img" id="img3"></div>
+            <div className="seq_text">Transposition and docking (1) The Spacecraft Lunar Module Adapter (SLA) panels separate to free the CSM and expose the LM. The command module pilot (CMP) moves the CSM out a safe distance, and turns 180°.</div>
+          </div>
+          <div className="seq_container" id="seq4">
+            <div className="seq_img" id="img4"></div>
+            <div className="seq_text">Transposition and docking (2), The CMP docks with the LM, and pulls the combined spacecraft away from the S-IVB, which then is sent into solar orbit. The lunar voyage takes between 2 and 3 days. Midcourse corrections are made as necessary using the SM engine.</div>
+          </div>
+          <div className="seq_container" id="seq5">
+            <div className="seq_img" id="img5"></div>
+            <div className="seq_text">Lunar orbit insertion The spacecraft passes about 60 nautical miles (110 km) behind the Moon, and the SM engine is fired to slow the spacecraft and put it into a 60-by-170-nautical-mile (110 by 310 km) orbit, which is soon circularized at 60 nautical miles by a second burn.</div>
+          </div>
+          <div className="seq_container" id="seq6">
+            <div className="seq_img" id="img6"></div>
+            <div className="seq_text">After a rest period, the commander (CDR) and lunar module pilot (LMP) move to the LM, power up its systems, and deploy the landing gear. The CSM and LM separate; the CMP visually inspects the LM, then the LM crew move a safe distance away and fire the descent engine for Descent orbit insertion, which takes it to a perilune of about 50,000 feet (15 km).</div>
+          </div>
+          <div className="seq_container" id="seq7">
+            <div className="seq_img" id="img7"></div>
+            <div className="seq_text">Powered descent At perilune, the descent engine fires again to start the descent. The CDR takes over manual control after pitchover for a vertical landing.</div>
+          </div>
+          <div className="seq_container" id="seq8">
+            <div className="seq_img" id="img8"></div>
+            <div className="seq_text">The CDR and LMP perform one or more EVAs exploring the lunar surface and collecting samples, alternating with rest periods.</div>
+          </div>
+          <div className="seq_container" id="seq9">
+            <div className="seq_img" id="img9"></div>
+            <div className="seq_text">The ascent stage lifts off, using the descent stage as a launching pad.</div>
+          </div>
+          <div className="seq_container" id="seq10">
+            <div className="seq_img" id="img10"></div>
+            <div className="seq_text">The LM rendezvouses and docks with the CSM.</div>
+          </div>
+          <div className="seq_container" id="seq11">
+            <div className="seq_img" id="img11"></div>
+            <div className="seq_text">The CDR and LMP transfer back to the CM with their material samples, then the LM ascent stage is jettisoned, to eventually fall out of orbit and crash on the surface.</div>
+          </div>
+          <div className="seq_container" id="seq12">
+            <div className="seq_img" id="img12"></div>
+            <div className="seq_text">Trans-Earth injection The SM engine fires to send the CSM back to Earth.</div>
+          </div>
+          <div className="seq_container" id="seq13">
+            <div className="seq_img" id="img13"></div>
+            <div className="seq_text">The SM is jettisoned just before reentry, and the CM turns 180° to face its blunt end forward for reentry.</div>
+          </div>
+          <div className="seq_container" id="seq14">
+            <div className="seq_img" id="img14"></div>
+            <div className="seq_text">Atmospheric drag slows the CM. Aerodynamic heating surrounds it with an envelope of ionized air which causes a communications blackout for several minutes.</div>
+          </div>
+          <div className="seq_container" id="seq15">
+            <div className="seq_img" id="img15"></div>
+            <div className="seq_text">Parachutes are deployed, slowing the CM for a splashdown in the Pacific Ocean. The astronauts are recovered and brought to an aircraft carrier.</div>
+          </div>
+          
+
+        </div>
         {/* <div className="test_sections" id="img1"></div> */}
       </section>
     );

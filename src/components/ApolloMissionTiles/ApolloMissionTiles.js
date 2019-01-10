@@ -26,11 +26,12 @@ class ApolloMissionTiles extends Component {
             <a href="#close" title="Close">
               <div className="close" />
             </a>
-            <h2>Modal Box 2</h2>
-            <p>
-              <strong>Box 6</strong>
-            </p>
-            <p>yadda yadda</p>
+
+            <div className="story_container">
+                <div className="modal_mission">Mission</div>
+                <div className="modal_num">01</div>
+            </div>
+
           </div>
         </div>
 
