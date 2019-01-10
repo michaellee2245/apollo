@@ -110,7 +110,7 @@ class Apollo extends Component {
                 <section className="">
                     <Comments user={this.state.user} updateUser={this.updateUser} />
                 </section>
-                <section className="comment_section">
+                <section className="comment_section thanks_section">
                     <div className="thank_container">
                         <div className="pulsate thank_you">Thank you for visiting!</div>
                         <div className="pulsate learn_more">to learn more about the apollo program visit wikipedia</div>

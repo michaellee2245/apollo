@@ -236,7 +236,7 @@
 }
 .modal_mission{
     position: absolute;
-    top:5.5%;
+    top:9.5%;
     left:1.75%;
     font-weight:300;
     text-transform:uppercase;
@@ -288,7 +288,7 @@
     left:52%;
     top:1.5%;
     position:absolute;
-    line-height: 27px;
+    line-height: 24px;
 }
 h2{
     font-weight:600;
@@ -356,7 +356,7 @@ h6{
     // flex-flow: column wrap;
 }
 .additional_section p, .background_section p{
-    margin-top:-10px;
+    margin-top:-5px;
     
 }
 .last_section{
@@ -374,6 +374,14 @@ h6{
     margin-top:-5px;
     margin-bottom:0px;
 }
+.small_paragraph_space{
+    margin-top:-10px;
+    // margin-bottom: -20px;
+}
+.reduce_line_height{
+    line-height: 22px;
+    
+}
 .extra_width{
     width:1100px;
     margin-left:30px;
@@ -383,4 +391,19 @@ h6{
     display: flex;
     flex-direction: column;
     // flex-flow: column wrap;
+}
+#medallion_pic{
+    height:500px;
+    width:500px;
+    background-image:url(../../assets/images/Apollo_9_Medallion.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#launch_pic{
+    height:700px;
+    width:500px;
+    background-image:url(../../assets/images/Apollo-9-launch.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left:45px;
 }

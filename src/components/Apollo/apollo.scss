@@ -258,6 +258,14 @@ SECTION 5
     justify-content: center;
     align-items: center;
 }
+.thanks_section{
+    background-image: url(../../assets/images/Apollo_11_bootprint.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-color:rgba(0,0,0,.9);
+    background-blend-mode: overlay;
+    background-position: 50% 80%;
+}
 .thank_container{
     width:90%;
     height:90%;
