@@ -5,7 +5,6 @@
   width: 100%;
   font-family: 'Oswald', sans-serif;
   position: relative;
-  border: 1px solid white;
 }
 
 .main-auth-container {
@@ -95,7 +94,7 @@
   text-transform: uppercase;
   letter-spacing: 5px;
   font-size: 1.2em;
-  color: white4;
+  color: white;
   padding: 5px;
 }
 
@@ -110,19 +109,63 @@
   opacity: .5;
 }
 
-.comment_card {
-  width: 400px;
-  height: 60%;
-  background: white;
-  opacity: .85;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  box-shadow: 0 10px 30px #ed2024;
-  margin: 20px;
-  padding: 15px;
-  color: black;
+.carousel_container {
+  width: 90%;
+  height: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border: 1px solid white;
+  transform: translate(-50%, -50%);
+  padding: 0px 40px;
+  box-sizing: border-box;
+}
+
+.slick-track {
+  width: 100%;
+  height: 100%;
+  margin-top: 120px;
   position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slick-list {
+  margin: 0 10px;
+}
+
+.slick-slide {
+  height: 100%;
+  width: 400px;
+  box-sizing: border-box;
+  margin: 10px;
+}
+
+.slick-slide.slick-center div {
+  transform: scale(1.1);
+  margin-left: auto;
+  margin-right: auto;
+  transition: all .5s ease;
+  opacity: 1;
+  background-color: white;
+  text-align: center;
+  display: flex;
+  width: 89%;
+  margin-top: 3.5%;
+}
+
+.slick-current {
+  opacity: 1;
+  transition: all .5s ease;
+}
+
+.comment_card {
+  width: 200px;
+  height: 650px;
+  background-color: blue;
   font-family: 'Oswald', sans-serif;
   font-weight: 400;
 }
@@ -223,7 +266,7 @@
 }
 
 .leave_comment {
-  right: 200px;
+  right: 230px;
 }
 
 .comment_carousel_container {

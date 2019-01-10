@@ -122,11 +122,12 @@
   border: 1px solid white;
   padding: 15px;
   background: none;
-  color: white;
-  font-family: 'bebas_neueregular', sans-serif;
+  color: black;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
   font-size: 1em;
   cursor: pointer;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
 }
 
 .a_mark {
@@ -138,7 +139,7 @@
   position: absolute;
   top: 40px;
   left: 40px;
-  opacity: .5;
+  opacity: .25;
 }
 
 /* #rocket-icon{

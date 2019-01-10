@@ -5,9 +5,8 @@ import './comments.scss';
 import { connect } from 'react-redux';
 import { signInUser } from '../../redux/reducer';
 import Slider from 'react-slick';
-
-// import './alice-carousel.scss';
-// import AliceCarousel from 'react-alice-carousel'
+// import { ReactComponent as ArrowLeft } from '../../assets/arrow-left.svg';
+// import { ReactComponent as ArrowRight } from '../../assets/arrow-right.svg';
 
 class Comments extends Component {
 
@@ -35,13 +34,7 @@ class Comments extends Component {
         this.onUpdateClick = this.onUpdateClick.bind(this)
         this.handleUpdateComment = this.handleUpdateComment.bind(this)
     }
-    // slideTo = (i) => this.setState({ currentIndex: i });
 
-    // onSlideChanged = (e) => this.setState({ currentIndex: e.comments });
-
-    // slideNext = () => this.setState({ currentIndex: this.state.currentIndex + 1 });
-
-    // slidePrev = () => this.setState({ currentIndex: this.state.currentIndex - 1 });
 
 
     onInputChange = (e) => {
@@ -93,6 +86,10 @@ class Comments extends Component {
         this.getAllComments()
 
         // this.carouselSlides()
+        // $('.carousel-content').slick({
+        //     prevArrow:"<img class='a-left control-c prev slick-prev' src='../images/shoe_story/arrow-left.png'>",
+        //     nextArrow:"<img class='a-right control-c next slick-next' src='../images/shoe_story/arrow-right.png'>"
+        // });
 
     }
     handleLoginClick = () => {
@@ -188,11 +185,16 @@ class Comments extends Component {
             className: "center",
             centerMode: true,
             infinite: true,
-            centerPadding: "0px",
+            centerPadding: "0",
             slidesToShow: 3,
-            speed: 1000,
-            arrows: true,
-            focusOnSelect: true,
+            speed: 500,
+            // nextArrow: <ArrowLeft/>,
+            // prevArrow: <ArrowRight/>,
+            arrows:true,
+            
+            draggable:true,
+            // variableWidth: true,
+            responsive: [{breakpoint: 500, settings: {autoplay: true, slidesToShow: 1}}],
         }
 
         // const carouselIndex = this.state.comments.map(function (comment) {
@@ -212,12 +214,7 @@ class Comments extends Component {
 
         return (
             <div className="background-container">
-                {/* <Script
-                    url="https://unpkg.com/flickity@2.1.2/dist/flickity.pkgd.min.js"
-                    onCreate={this.handleScriptCreate.bind(this)}
-                    onError={this.handleScriptError.bind(this)}
-                    onLoad={this.handleScriptLoad.bind(this)}
-                /> */}
+                
 
 
                 <button className="leave_comment" onClick={() => this.handleCommentClick()}>Leave a Comment</button>
@@ -320,19 +317,20 @@ class Comments extends Component {
                 ))} */}
 
                 <div className="carousel_container">
-                    <Slider {...settings}>
+                    <Slider {...settings} >
 
 
                         {this.state.comments.map((comment) => (
 
                             <div className="comment_card" >
-                                <div className="comment_title">{comment.mission}</div>
-                                <div className="comment_text">{comment.user_comment}</div>
-                                <div className="comment_name">{comment.user_name}</div>
+                            <div className="comment_inside">
+                                <h2 className="comment_title">{comment.mission}</h2>
+                                <h4 className="comment_text">{comment.user_comment}</h4>
+                                <h6 className="comment_name">{comment.user_name}</h6>
                                 {this.props.user.username === comment.user_name ? <button className="delete_comment" onClick={() => this.onDeleteClick(comment.id)}>delete</button> : null}
                                 {this.props.user.username === comment.user_name ? <button className="update_comment" onClick={() => this.handleUpdateComment(comment.id)}>update</button> : null}
                             </div>
-                            
+                            </div>
                         ))}
 
                     </Slider>

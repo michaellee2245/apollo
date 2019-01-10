@@ -104,6 +104,7 @@ class Apollo extends Component {
                     </div>
                 </section>
                 <section className="tall_section">
+                {/* <div className="mission_section_title">Explore each mission</div> */}
                     <Missions />
                 </section>
                 <section className="">

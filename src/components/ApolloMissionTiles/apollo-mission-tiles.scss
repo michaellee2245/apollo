@@ -2,9 +2,9 @@
 .mission_wrapper {
     font-family:helvetica neue, helvetica, arial, sans-serif;
     font-weight:200;
-    height:225vh;
+    height:200vh;
     width:100vw;
-    border:1px solid #ffffff;
+    // border:1px solid #ffffff;
     overflow: hidden;
     flex-flow: row wrap;
   }
@@ -59,18 +59,62 @@
 }
 .modal_button{
     // background-color:rgb(4, 7, 1);
-    background-color:lightblue;
+    background-color:rgb(4, 7, 1);
     width:33.333%;
     height:50vh;
     color:white;
-    border:1px solid white;
-    font-family: 'Oswald', sans-serif;
-    font-weight: 200;
-    font-size:50px;
+    // border:1px solid white;
+    // background-image:url(../../assets//images/patrick-hendry-422301-unsplash.jpg);
+    background-size:100vw 200vh;
+    background-repeat: no-repeat;
+    background-position: inherit;
+    background-attachment: fixed;
     cursor: pointer;
-    
+    position:relative;
+    border:1px solid rgba(237, 32, 36, 0.15);
+
     &:focus{
         border:none;
         outline:none;
     }
+    
+}
+.modal_button:hover .mission_tile_container{
+    opacity:.5;
+    transition:1.25s ease-in;
+    visibility:visible;
+}
+.mission_tile_container{
+    width:100%;
+    height:100%;
+    position:relative;
+    font-family: 'Oswald', sans-serif;
+    opacity:0;
+    visibility: hidden;
+    background-color:rgba(0,0,0,1)
+
+    
+}
+.mission_title{
+    position:absolute;
+    bottom:0;
+    right:0;
+    font-weight:800;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-size: 1.5em;
+}
+.mission_tile_info{
+    position:absolute;
+    font-size:1em;
+    text-transform: uppercase;
+    width:100%;
+    height:100%;
+    line-height: 105%;
+}
+.date_title{
+    width:100%;
+    height:100%;
+    position:absolute;
+    font-size:.5em;
 }

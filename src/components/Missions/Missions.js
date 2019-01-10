@@ -41,6 +41,7 @@ class Missions extends Component {
                     <div className={`selected_mission ${this.missionTileOpen ? "" : "hidden"}`} onClick={() => this.handleMissionTileClick()} ></div>
                     <div>Some information</div>
                 </div> */}
+                <div className="mission_section_title">Explore each mission</div>
                 <ApolloMissionTiles />
 
 
