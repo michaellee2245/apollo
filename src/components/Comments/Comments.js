@@ -190,11 +190,11 @@ class Comments extends Component {
             speed: 500,
             // nextArrow: <ArrowLeft/>,
             // prevArrow: <ArrowRight/>,
-            arrows:true,
-            
-            draggable:true,
+            arrows: true,
+
+            draggable: true,
             // variableWidth: true,
-            responsive: [{breakpoint: 500, settings: {autoplay: true, slidesToShow: 1}}],
+            responsive: [{ breakpoint: 500, settings: { autoplay: true, slidesToShow: 1 } }],
         }
 
         // const carouselIndex = this.state.comments.map(function (comment) {
@@ -214,7 +214,7 @@ class Comments extends Component {
 
         return (
             <div className="background-container">
-                
+
 
 
                 <button className="leave_comment" onClick={() => this.handleCommentClick()}>Leave a Comment</button>
@@ -223,11 +223,11 @@ class Comments extends Component {
                     <div className="close_login" onClick={() => this.handleCloseLogin()}> </div>
                     <div className="leave_comment_inputs">
                         {/* <label>Username:</label> */}
-                        <input name="commentMission" placeholder="Favorite Mission" type="text" value={this.state.commentMission || ""} onChange={e => this.onInputChange(e)} />
+                        <input name="commentMission" placeholder="Favorite Mission" type="text" autoComplete="off" value={this.state.commentMission || ""} onChange={e => this.onInputChange(e)} />
                         {/* <label>Email:</label> */}
                         <textarea maxLength="750" name="commentText" placeholder="Let us know why it was your favorite!" type="text" value={this.state.commentText || ""} onChange={e => this.onInputChange(e)} />
                         {/* <label>Password:</label> */}
-                        <input name="commentName" placeholder="First Name" value={this.state.commentName || ""} onChange={e => this.onInputChange(e)} />
+                        <input name="commentName" placeholder="First Name" autoComplete="off" value={this.state.commentName || ""} onChange={e => this.onInputChange(e)} />
 
                         {/* {this.props.user.username !== "" ?
 
@@ -260,8 +260,8 @@ class Comments extends Component {
                     <div className="login_wrapper">
                         <div className="close_login"> </div>
                         <div className="login_container_inputs">
-                            <input name="loginUsername" type="text" placeholder="Username" value={this.state.loginUsername} onChange={this.onInputChange} />
-                            <input name="loginPassword" placeholder="Password" value={this.state.loginPassword} onChange={this.onInputChange} type="password" />
+                            <input name="loginUsername" type="text" placeholder="Username" autoComplete="off" value={this.state.loginUsername} onChange={this.onInputChange} />
+                            <input name="loginPassword" placeholder="Password" autoComplete="off" value={this.state.loginPassword} onChange={this.onInputChange} type="password" />
                             <button onClick={this.loginUser} className="login_buttons">Login</button>
                         </div>
 
@@ -270,11 +270,11 @@ class Comments extends Component {
                         <div className="auth-container-inputs">
 
                             {/* <label>Username:</label> */}
-                            <input name="username" type="text" placeholder="Username" value={this.state.username} onChange={this.onInputChange} />
+                            <input name="username" type="text" placeholder="Username" autoComplete="off" value={this.state.username} onChange={this.onInputChange} />
                             {/* <label>Email:</label> */}
-                            <input name="email" type="text" placeholder="Email" value={this.state.email} onChange={this.onInputChange} />
+                            <input name="email" type="text" placeholder="Email" autoComplete="off" value={this.state.email} onChange={this.onInputChange} />
                             {/* <label>Password:</label> */}
-                            <input name="password" placeholder="Password" value={this.state.password} onChange={this.onInputChange} type="password" />
+                            <input name="password" placeholder="Password" autoComplete="off" value={this.state.password} onChange={this.onInputChange} type="password" />
                             <button onClick={this.newUser} className="login_buttons">Register</button>
                         </div>
 
@@ -285,9 +285,9 @@ class Comments extends Component {
                     <div className="close_login" onClick={() => this.handleCloseUpdate()}> </div>
                     <div className="leave_comment_inputs">
                         {/* <label>Username:</label> */}
-                        <input name="commentMission" type="text" value={this.state.commentMission || ""} onChange={e => this.onInputChange(e)} />
+                        <input name="commentMission" type="text" autoComplete="off" value={this.state.commentMission || ""} onChange={e => this.onInputChange(e)} />
                         {/* <label>Email:</label> */}
-                        <textarea maxLength="750" name="commentText" type="text" value={this.state.commentText || ""} onChange={e => this.onInputChange(e)} />
+                        <textarea maxLength="750" name="commentText" type="text" autoComplete="off" value={this.state.commentText || ""} onChange={e => this.onInputChange(e)} />
                         {/* <label>Password:</label> */}
 
 
@@ -295,7 +295,7 @@ class Comments extends Component {
 
                             this.props.user.username
                             :
-                            <input name="commentName" placeholder="something" type="text" value={this.state.commentName || ""} onChange={e => this.onInputChange(e)} />
+                            <input name="commentName" placeholder="something" type="text" autoComplete="off" value={this.state.commentName || ""} onChange={e => this.onInputChange(e)} />
                         }
 
                     </div>
@@ -323,13 +323,13 @@ class Comments extends Component {
                         {this.state.comments.map((comment) => (
 
                             <div className="comment_card" >
-                            <div className="comment_inside">
-                                <h2 className="comment_title">{comment.mission}</h2>
-                                <h4 className="comment_text">{comment.user_comment}</h4>
-                                <h6 className="comment_name">{comment.user_name}</h6>
-                                {this.props.user.username === comment.user_name ? <button className="delete_comment" onClick={() => this.onDeleteClick(comment.id)}>delete</button> : null}
-                                {this.props.user.username === comment.user_name ? <button className="update_comment" onClick={() => this.handleUpdateComment(comment.id)}>update</button> : null}
-                            </div>
+                                {/* <div className="comment_inside"> */}
+                                    <div className="comment_title">{comment.mission}</div>
+                                    <div className="comment_text">{comment.user_comment}</div>
+                                    <div className="comment_name">{comment.user_name}</div>
+                                    {this.props.user.username === comment.user_name ? <button className="delete_comment" onClick={() => this.onDeleteClick(comment.id)}>delete</button> : null}
+                                    {this.props.user.username === comment.user_name ? <button className="update_comment" onClick={() => this.handleUpdateComment(comment.id)}>update</button> : null}
+                                
                             </div>
                         ))}
 
