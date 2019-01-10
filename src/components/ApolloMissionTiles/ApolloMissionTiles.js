@@ -7,12 +7,15 @@ class ApolloMissionTiles extends Component {
       <div id="mosaic_container" className="mission_wrapper">
         <a href="#mission01">
           <button className="modal_button">
+              <div className="accent_line"></div>
+              <div className="mission_title_small">Apollo 01</div>
             <div className="mission_tile_container">
               <div className="mission_title">Apollo 01</div>
-              <div className="mission_tile_info">
+              <div className="tile_line"></div>
                   <div className="date_title">Mission Date</div>
-                  <div>01.27</div>
-                  <div>1967</div>
+              <div className="mission_tile_info">
+                  <span className="mission_month">01.27 </span>
+                  <span> 1967</span>
               </div>
             </div>
           </button>
@@ -33,8 +36,16 @@ class ApolloMissionTiles extends Component {
 
         <a href="#mission07">
           <button className="modal_button">
+              <div className="accent_line"></div>
+              <div className="mission_title_small">Apollo 07</div>
             <div className="mission_tile_container">
               <div className="mission_title">Apollo 07</div>
+              <div className="tile_line2"></div>
+              <div className="date_title">Mission Date</div>
+              <div className="mission_tile_info">
+                  <span className="mission_month">01.27 </span>
+                  <span> 1967</span>
+              </div>
             </div>
           </button>
         </a>
@@ -54,8 +65,16 @@ class ApolloMissionTiles extends Component {
 
         <a href="#mission08">
           <button className="modal_button">
+              <div className="accent_line"></div>
+              <div className="mission_title_small">Apollo 08</div>
             <div className="mission_tile_container">
               <div className="mission_title">Apollo 08</div>
+              <div className="tile_line"></div>
+              <div className="date_title">Mission Date</div>
+              <div className="mission_tile_info">
+                  <span className="mission_month">01.27 </span>
+                  <span> 1967</span>
+              </div>
             </div>
           </button>
         </a>
@@ -75,8 +94,16 @@ class ApolloMissionTiles extends Component {
 
         <a href="#mission09">
           <button className="modal_button">
+              <div className="accent_line"></div>
+              <div className="mission_title_small">Apollo 09</div>
             <div className="mission_tile_container">
               <div className="mission_title">Apollo 09</div>
+              <div className="tile_line2"></div>
+              <div className="date_title">Mission Date</div>
+              <div className="mission_tile_info">
+                  <span className="mission_month">01.27 </span>
+                  <span> 1967</span>
+              </div>
             </div>
           </button>
         </a>
@@ -96,8 +123,16 @@ class ApolloMissionTiles extends Component {
 
         <a href="#mission10">
           <button className="modal_button">
+              <div className="accent_line"></div>
+              <div className="mission_title_small">Apollo 10</div>
             <div className="mission_tile_container">
               <div className="mission_title">Apollo 10</div>
+              <div className="tile_line"></div>
+              <div className="date_title">Mission Date</div>
+              <div className="mission_tile_info">
+                  <span className="mission_month">01.27 </span>
+                  <span> 1967</span>
+              </div>
             </div>
           </button>
         </a>
@@ -117,8 +152,16 @@ class ApolloMissionTiles extends Component {
 
         <a href="#mission11">
           <button className="modal_button">
+              <div className="accent_line"></div>
+              <div className="mission_title_small">Apollo 11</div>
             <div className="mission_tile_container">
               <div className="mission_title">Apollo 11</div>
+              <div className="tile_line2"></div>
+              <div className="date_title">Mission Date</div>
+              <div className="mission_tile_info">
+                  <span className="mission_month">01.27 </span>
+                  <span> 1967</span>
+              </div>
             </div>
           </button>
         </a>
@@ -138,8 +181,16 @@ class ApolloMissionTiles extends Component {
 
         <a href="#mission12">
           <button className="modal_button">
+              <div className="accent_line"></div>
+              <div className="mission_title_small">Apollo 12</div>
             <div className="mission_tile_container">
               <div className="mission_title">Apollo 12</div>
+              <div className="tile_line"></div>
+              <div className="date_title">Mission Date</div>
+              <div className="mission_tile_info">
+                  <span className="mission_month">01.27 </span>
+                  <span> 1967</span>
+              </div>
             </div>
           </button>
         </a>
@@ -159,8 +210,16 @@ class ApolloMissionTiles extends Component {
 
         <a href="#mission13">
           <button className="modal_button">
+              <div className="accent_line"></div>
+              <div className="mission_title_small">Apollo 13</div>
             <div className="mission_tile_container">
               <div className="mission_title">Apollo 13</div>
+              <div className="tile_line2"></div>
+              <div className="date_title">Mission Date</div>
+              <div className="mission_tile_info">
+                  <span className="mission_month">01.27 </span>
+                  <span> 1967</span>
+              </div>
             </div>
           </button>
         </a>
@@ -180,8 +239,16 @@ class ApolloMissionTiles extends Component {
 
         <a href="#mission14">
           <button className="modal_button">
+              <div className="accent_line"></div>
+              <div className="mission_title_small">Apollo 14</div>
             <div className="mission_tile_container">
               <div className="mission_title">Apollo 14</div>
+              <div className="tile_line"></div>
+              <div className="date_title">Mission Date</div>
+              <div className="mission_tile_info">
+                  <span className="mission_month">01.27 </span>
+                  <span> 1967</span>
+              </div>
             </div>
           </button>
         </a>
@@ -201,8 +268,16 @@ class ApolloMissionTiles extends Component {
 
         <a href="#mission15">
           <button className="modal_button">
+              <div className="accent_line"></div>
+              <div className="mission_title_small">Apollo 15</div>
             <div className="mission_tile_container">
               <div className="mission_title">Apollo 15</div>
+              <div className="tile_line2"></div>
+              <div className="date_title">Mission Date</div>
+              <div className="mission_tile_info">
+                  <span className="mission_month">01.27 </span>
+                  <span> 1967</span>
+              </div>
             </div>
           </button>
         </a>
@@ -222,8 +297,16 @@ class ApolloMissionTiles extends Component {
 
         <a href="#mission16">
           <button className="modal_button">
+              <div className="accent_line"></div>
+              <div className="mission_title_small">Apollo 16</div>
             <div className="mission_tile_container">
               <div className="mission_title">Apollo 16</div>
+              <div className="tile_line"></div>
+              <div className="date_title">Mission Date</div>
+              <div className="mission_tile_info">
+                  <span className="mission_month">01.27 </span>
+                  <span> 1967</span>
+              </div>
             </div>
           </button>
         </a>
@@ -243,8 +326,16 @@ class ApolloMissionTiles extends Component {
 
         <a href="#mission17">
           <button className="modal_button">
+              <div className="accent_line"></div>
+              <div className="mission_title_small">Apollo 17</div>
             <div className="mission_tile_container">
               <div className="mission_title">Apollo 17</div>
+              <div className="tile_line2"></div>
+              <div className="date_title">Mission Date</div>
+              <div className="mission_tile_info">
+                  <span className="mission_month">01.27 </span>
+                  <span> 1967</span>
+              </div>
             </div>
           </button>
         </a>
