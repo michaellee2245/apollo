@@ -111,7 +111,10 @@ class Apollo extends Component {
                     <Comments user={this.state.user} updateUser={this.updateUser} />
                 </section>
                 <section className="comment_section">
-                    {/* <CommentCarousel user={this.state.user} updateUser={this.updateUser} comments={this.state.comments}/> */}
+                    <div className="thank_container">
+                        <div className="thank_you">Thank you for visiting!</div>
+                        <div className="learn_more">to learn more about the apollo program visit wikipedia</div>
+                    </div>
                 </section>
 
             </div>
