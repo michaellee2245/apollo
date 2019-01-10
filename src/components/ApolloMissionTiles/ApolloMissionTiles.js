@@ -36,9 +36,9 @@ class ApolloMissionTiles extends Component {
                                 <div className="crew_table">
                                     <div>
                                         <h4>Position</h4>
-                                        <div>Command Pilot</div>
-                                        <div>Senior Pilot</div>
-                                        <div>Pilot</div>
+                                        <div>Commander</div>
+                                        <div>Command Module Pilot</div>
+                                        <div>Lunar Modular Pilot</div>
                                     </div>
                                     <div>
                                         <h4>Astronaut</h4>
@@ -511,6 +511,8 @@ class ApolloMissionTiles extends Component {
                             <div className="mission_overview">
                                 <h2>Basic Overview</h2>
                                 Apollo 11 was the spaceflight that landed the first two people on the Moon. Commander Neil Armstrong and Lunar Module Pilot Buzz Aldrin, both American, landed the Apollo Lunar Module Eagle on July 20, 1969, at 20:17 UTC. Armstrong became the first person to step onto the lunar surface six hours after landing on July 21 at 02:56:15 UTC; Aldrin joined him about 20 minutes later. They spent about two and a quarter hours together outside the spacecraft, and collected 47.5 pounds (21.5 kg) of lunar material to bring back to Earth. Command Module Pilot Michael Collins piloted the command module Columbia alone in lunar orbit while they were on the Moon's surface. Armstrong and Aldrin spent 21.5 hours on the lunar surface before rejoining Columbia in lunar orbit.
+
+                                {/* <h6 className="small_leading">"Thank you, Mr. President. It's a great honor and privilege for us to be here, representing not only the United States, but men of peace of all nations, and with interest and curiosity, and men with a vision for the future. It's an honor for us to be able to participate here today."</h6> */}
                             </div>
                             <div className="modal_accent_line"></div>
                             <div className="story_info_container">
@@ -536,7 +538,7 @@ class ApolloMissionTiles extends Component {
                                     {/* <h5>Plugs Out Test</h5> */}
                                     <p>During the first press conference after the Apollo 11 crew was announced, the first question a reporter asked was, "Which one of you gentlemen will be the first man to step onto the lunar surface?" Slayton told the reporter that it had not been decided, and Armstrong added that it was "not based on individual desire". The media accused Armstrong of exercising his commander's prerogative to exit the spacecraft first. Chris Kraft revealed in his 2001 autobiography that a meeting occurred between Gilruth, Slayton, Low, and himself to make sure Aldrin would not be the first to walk on the Moon. They argued that the first person to walk on the Moon should be like Charles Lindbergh, a calm and quiet person. They made the decision to change the flight plan so the commander was the first to egress from the spacecraft.
                                 </p>
-                                    <h4 className="reduce_leading">Mission</h4>
+                                    <h4 >Mission</h4>
                                     <p>
                                         An estimated one million spectators watched the launch of Apollo 11 from the highways and beaches in the vicinity of the launch site. Dignitaries included the Chief of Staff of the United States Army, General William Westmoreland, four cabinet members, 19 state governors, 40 mayors, 60 ambassadors and 200 congressmen. Vice President Spiro Agnew viewed the launch with the former president, Lyndon B. Johnson and his wife Lady Bird Johnson. Around 3,500 media representatives were present. About two-thirds were from the United States; the rest came from 55 other countries. The launch was televised live in 33 countries, with an estimated 25 million viewers in the United States alone. Millions more around the world listened to radio broadcasts. President Richard Nixon viewed the launch from his office in the White House with his NASA liaison officer, Apollo astronaut Frank Borman.
                                 </p>
@@ -545,7 +547,7 @@ class ApolloMissionTiles extends Component {
                                     Throughout the descent to the moon's surface, Aldrin called out navigation data to Armstrong, who was busy piloting Eagle. Now 107-foot (33 m) above the surface, Armstrong knew their propellant supply was dwindling and was determined to land at the first possible landing site. Preparations for the EVA began at 23:43. These took longer than expected; three and a half hours instead of two. During training on Earth, everything required had been neatly laid out in advance, but on the Moon the cabin contained a large number of other items as well, such as checklists, food packets and tools. Once Armstrong and Aldrin were ready to go outside, Eagle was depressurized. The hatch was opened at 02:39:33.
                                     </p>
                                     <p>In a 2010 interview, Armstrong explained that NASA limited the first moonwalk's time and distance because there was no empirical proof of how much cooling water the astronauts' PLSS backpacks would consume to handle their body heat generation while working on the Moon</p>
-                                    <h6 className="small_paragraph_space reduce_line_height">"Thank you, Mr. President. It's a great honor and privilege for us to be here, representing not only the United States, but men of peace of all nations, and with interest and curiosity, and men with a vision for the future. It's an honor for us to be able to participate here today."</h6>
+                                    
                                 </div>
 
                                 <div className="last_section reduce_line_height">
@@ -600,63 +602,54 @@ class ApolloMissionTiles extends Component {
                                 <div className="crew_table">
                                     <div>
                                         <h4>Position</h4>
-                                        <div>Command Pilot</div>
-                                        <div>Senior Pilot</div>
-                                        <div>Pilot</div>
+                                        <div>Commander</div>
+                                        <div>Command Module Pilot</div>
+                                        <div>Lunar Modular Pilot</div>
                                     </div>
                                     <div>
                                         <h4>Astronaut</h4>
-                                        <div>Virgil I. "Gus" Grissom</div>
-                                        <div>Edward H. White II</div>
-                                        <div>Roger B. Chaffee</div>
+                                        <div>Charles "Pete" Conrad Jr.</div>
+                                        <div>Richard F. Gordon Jr.</div>
+                                        <div>Alan L. Bean</div>
                                     </div>
                                 </div>
                             </div>
                             <div className="mission_overview">
                                 <h2>Basic Overview</h2>
-                                Apollo 1, initially designated AS-204, was the first manned mission of the United States Apollo program, the program to land the first men on the Moon. Planned as the first low Earth orbital test of the Apollo command and service module with a crew, to launch on February 21, 1967, the mission never flew; a cabin fire during a launch rehearsal test at Cape Kennedy Air Force Station Launch Complex 34 on January 27 killed all three crew members—Command Pilot Virgil I. "Gus" Grissom, Senior Pilot Ed White, and Pilot Roger B. Chaffee—and destroyed the command module (CM). The name Apollo 1, chosen by the crew, was officially retired by NASA in commemoration of them on April 24, 1967.
+                                Apollo 12 was the sixth manned flight in the United States Apollo program and the second to land on the Moon. It was launched on November 14, 1969, from the Kennedy Space Center, Florida, four months after Apollo 11. Commander Charles "Pete" Conrad and Lunar Module Pilot Alan L. Bean performed just over one day and seven hours of lunar surface activity while Command Module Pilot Richard F. Gordon remained in lunar orbit. The landing site for the mission was located in the southeastern portion of the Ocean of Storms. Unlike the first landing on Apollo 11, Conrad and Bean achieved a precise landing at their expected location. They carried the first color television camera to the lunar surface on an Apollo flight, but transmission was lost after Bean accidentally destroyed the camera by pointing it at the Sun. On one of two moonwalks, they visited the Surveyor and removed some parts for return to Earth. The mission ended on November 24 with a successful splashdown.
                             </div>
                             <div className="modal_accent_line"></div>
                             <div className="story_info_container">
 
 
                                 <div className="background_section">
-                                    <h4>Mission Background</h4>
+                                    <h4>Launch and Transfer</h4>
                                     <p>
-                                        Grissom declared his intent to keep his craft in orbit for a full 14 days. A newspaper article published on August 4, 1966, referred to the flight as "Apollo 1". CM-012 arrived at the Kennedy Space Center on August 26, labeled Apollo One by NAA on its packaging. In October 1966, NASA announced the flight would carry a small television camera to broadcast live from the command module. The camera would also be used to allow flight controllers to monitor the spacecraft's instrument panel in flight. Television cameras were carried aboard all manned Apollo missions.
+                                    Apollo 12 launched on schedule from Kennedy Space Center, during a rainstorm. It was the first rocket launch attended by an incumbent US president, Richard Nixon. Thirty-six-and-a-half seconds after lift-off, the vehicle triggered a lightning discharge through itself and down to the Earth through the Saturn's ionized plume. Protective circuits on the fuel cells in the service module (SM) detected overloads and took all three fuel cells offline, along with much of the command and service module (CSM) instrumentation. A second strike at 52 seconds after launch knocked out the "8-ball" attitude indicator. The telemetry stream at Mission Control was garbled. However, the vehicle continued to fly correctly; the strikes had not affected the Saturn V Instrument Unit.
                                 </p>
-                                    <h5>Spacecraft Preparation</h5>
-                                    <p>
-                                        The Apollo command and service module was much bigger and far more complex than any previously implemented spacecraft design. In October 1963, Joseph F. Shea was named Apollo Spacecraft Program Office (ASPO) manager, responsible for managing the design and construction of both the CSM and the LM. In a spacecraft review meeting held with Shea on August 19, 1966 (a week before delivery), the crew expressed concern about the amount of flammable material (mainly nylon netting and Velcro) in the cabin, which both astronauts and technicians found convenient for holding tools and equipment in place. Although Shea gave the spacecraft a passing grade, after the meeting they gave him a crew portrait they had posed with heads bowed and hands clasped in prayer, with the inscription: <h6>"It isn't that we don't trust you, Joe, but this time we've decided to go over your head."</h6> Shea gave his staff orders to tell North American to remove the flammables from the cabin, but did not supervise the issue personally.
-                                </p>
+                                <p>The loss of all three fuel cells put the CSM entirely on batteries, which were unable to maintain normal 75-ampere launch loads on the 28-volt DC bus. One of the AC inverters dropped offline. These power supply problems lit nearly every warning light on the control panel and caused much of the instrumentation to malfunction.</p>
+                                <p>Initially, it was feared that the lightning strike could have caused the command module's (CM's) parachute mechanism to prematurely fire, disabling the explosive bolts that open the parachute compartment to deploy them. If they were indeed disabled, the CM would have crashed uncontrollably into the Pacific Ocean and killed the crew instantly. Since there was no way to figure out whether or not this was the case, ground controllers decided not to tell the astronauts about the possibility. The parachutes deployed and functioned normally at the end of the mission.</p>
+                                    
                                 </div>
                                 <div className="additional_section">
-                                    <h4>Accident</h4>
+                                    <h4>Moon Landing</h4>
                                     {/* <h5>Plugs Out Test</h5> */}
-                                    <p>The launch simulation on January 27, 1967, on pad 34, was a "plugs-out" test to determine whether the spacecraft would operate nominally on (simulated) internal power while detached from all cables and umbilicals. Passing this test was essential to making the February 21 launch date. The test was considered non-hazardous because neither the launch vehicle nor the spacecraft was loaded with fuel or cryogenics, and all pyrotechnic systems (explosive bolts) were disabled.
+                                    <p>The Apollo 12 mission landed on November 19, 1969, on an area of the Ocean of Storms (Latin Oceanus Procellarum) that had been visited earlier by several unmanned missions (Luna 5, Surveyor 3, and Ranger 7). The International Astronomical Union, recognizing this, christened this region Mare Cognitum (Known Sea). The Lunar coordinates of the landing site were 3.01239° S latitude, 23.42157° W longitude. The landing site would thereafter be listed as Statio Cognitum on lunar maps. Conrad and Bean did not formally name their landing site, though Conrad nicknamed the intended touchdown area "Pete's Parking Lot".
                                 </p>
-                                    <p>Movement by the astronauts was detected by the spacecraft's inertial measurement unit and the astronaut's biomedical sensors, and also indicated by increases in oxygen spacesuit flow, and sounds from Grissom's stuck-open microphone. There was no evidence to identify the movement, or whether it was related to the fire. The stuck microphone was part of a problem with the communications loop connecting the crew, the Operations and Checkout Building, and the Complex 34 blockhouse control room. The poor communications led Grissom to remark: "How are we going to get to the Moon if we can't talk between two or three buildings?"
+                                    <p>The second lunar landing was an exercise in precision targeting, which would be needed for future Apollo missions. Most of the descent was automatic, with manual control assumed by Conrad during the final few hundred feet of descent. Unlike Apollo 11, where Neil Armstrong had to use the manual control to direct his lander downrange of the computer's target which was strewn with boulders, Apollo 12 succeeded in landing at its intended target – within walking distance of the Surveyor 3 probe, which had landed on the Moon in April 1967. This was the first – and, to date, only – occasion in which humans have "caught up" to a probe sent to land on another world.
                                 </p>
-                                    {/* <h5>Fire</h5> */}
                                     <p>
-                                        The crew members were using the time to run through their checklist again, when a momentary increase in AC Bus 2 voltage occurred. Nine seconds later, one of the astronauts (some listeners and laboratory analysis indicate Grissom) exclaimed "Hey!", "Fire!", or "Flame!"; this was followed by two seconds of scuffling sounds through Grissom's open microphone. This was immediately followed at by someone (believed by most listeners, and supported by laboratory analysis, to be Chaffee) saying, "[I've, or We've] got a fire in the cockpit." After 6.8 seconds of silence, a second, badly garbled transmission occurred, interpreted by various listeners as:
-                                            <h6>
-                                            "They're fighting a bad fire—Let's get out ....Open 'er up"
-                                            "We've got a bad fire—Let's get out ....We're burning up", or
-                                            "I'm reporting a bad fire ....I'm getting out ....".
-                                            This transmission lasted 5.0 seconds and ended with a cry of pain.
-                                             </h6></p>
-
-                                    <p>
-                                        It took five minutes for the pad workers to open all three hatch layers, and they could not drop the inner hatch to the cabin floor as intended, so they pushed it out of the way to one side. Although the cabin lights remained lit, they were at first unable to find the astronauts through the dense smoke. As the smoke cleared, they found the bodies, but were not able to remove them. The fire had partly melted Grissom's and White's nylon space suits and the hoses connecting them to the life support system. Grissom had removed his restraints and was lying on the floor of the spacecraft. White's restraints were burned through, and he was found lying sideways just below the hatch. It was determined that he had tried to open the hatch per the emergency procedure, but was not able to do so against the internal pressure. Chaffee was found strapped into his right-hand seat, as procedure called for him to maintain communication until White opened the hatch. Because of the large strands of melted nylon fusing the astronauts to the cabin interior, removing the bodies took nearly 90 minutes.
-                                </p>
+                                    Conrad actually landed Intrepid 580 feet (177 m) short of "Pete's Parking Lot", because it looked rougher during final approach than anticipated, and was a little under 1,180 feet (360 m) from Surveyor 3, a distance that was chosen to eliminate the possibility of lunar dust (being kicked up by Intrepid's descent engine during landing) from covering Surveyor 3. But the actual touchdown point – approximately 600 feet (183 m) from Surveyor 3 – did cause high velocity sandblasting of the probe. It was later determined that the sandblasting removed more dust than it delivered onto the Surveyor, because the probe was covered by a thin layer that gave it a tan hue as observed by the astronauts, and every portion of the surface exposed to the direct sandblasting was lightened back toward the original white color through the removal of lunar dust.</p>
+                                    
                                 </div>
 
                                 <div className="last_section">
-                                    <h4>Memorials</h4>
-                                    Gus Grissom and Roger Chaffee were buried at Arlington National Cemetery. Ed White was buried at West Point Cemetery on the grounds of the United States Military Academy in West Point, New York. Their names are among those of several astronauts and cosmonauts who have died in the line of duty, listed on the Space Mirror Memorial at the Kennedy Space Center Visitor Complex in Merritt Island, Florida. President Jimmy Carter awarded the Congressional Space Medal of Honor posthumously to Grissom on October 1, 1978. President Bill Clinton awarded it to White and Chaffee on December 17, 1997.
+                                    <h4>EVAs</h4>
+                                    <p>When Conrad, who was somewhat shorter than Neil Armstrong, stepped onto the lunar surface, his first words were "Whoopie! Man, that may have been a small one for Neil, but that's a long one for me." This was not an off-the-cuff remark: Conrad had made a US$500 bet with reporter Oriana Fallaci he would say these words, after she had queried whether NASA had instructed Neil Armstrong what to say as he stepped onto the Moon. Conrad later said he was never able to collect the money.</p>
 
-                                    An Apollo 1 mission patch was left on the Moon's surface after the first manned lunar landing by Apollo 11 crew members Neil Armstrong and Buzz Aldrin. The Apollo 15 mission left on the surface of the Moon a tiny memorial statue, Fallen Astronaut, along with a plaque containing the names of the Apollo 1 astronauts, among others including Soviet cosmonauts, who perished in the pursuit of human space flight.
+                                    <p>Astronauts Conrad and Bean also collected rocks and set up equipment that took measurements of the Moon's seismicity, solar wind flux and magnetic field, and relayed the measurements to Earth.The astronauts also took photographs, although by accident Bean left several rolls of exposed film on the lunar surface. Meanwhile, Gordon, on board the Yankee Clipper in lunar orbit, took multi-spectral photographs of the surface.</p>
+                                    <h4>Return</h4>
+                                    <p>Intrepid's ascent stage was dropped (per normal procedures) after Conrad and Bean rejoined Gordon in orbit. It impacted the Moon on November 20, 1969, at 3.94°S 21.20°W. The seismometers the astronauts had left on the lunar surface registered the vibrations for more than an hour. The crew stayed an extra day in lunar orbit taking photographs, for a total lunar surface stay of 31 and a half hours and a total time in lunar orbit of eighty-nine hours. On the return flight to Earth after leaving lunar orbit, the crew of Apollo 12 witnessed (and photographed) a solar eclipse, though this one was of the Earth eclipsing the Sun.</p>
                                 </div>
 
                             </div>
@@ -695,63 +688,60 @@ class ApolloMissionTiles extends Component {
                                 <div className="crew_table">
                                     <div>
                                         <h4>Position</h4>
-                                        <div>Command Pilot</div>
-                                        <div>Senior Pilot</div>
-                                        <div>Pilot</div>
+                                        <div>Commander</div>
+                                        <div>Command Module Pilot</div>
+                                        <div>Lunar Modular Pilot</div>
                                     </div>
                                     <div>
                                         <h4>Astronaut</h4>
-                                        <div>Virgil I. "Gus" Grissom</div>
-                                        <div>Edward H. White II</div>
-                                        <div>Roger B. Chaffee</div>
+                                        <div>Jim Lovell</div>
+                                        <div>Jack Swigert</div>
+                                        <div>Fred Haise</div>
                                     </div>
                                 </div>
                             </div>
                             <div className="mission_overview">
                                 <h2>Basic Overview</h2>
-                                Apollo 1, initially designated AS-204, was the first manned mission of the United States Apollo program, the program to land the first men on the Moon. Planned as the first low Earth orbital test of the Apollo command and service module with a crew, to launch on February 21, 1967, the mission never flew; a cabin fire during a launch rehearsal test at Cape Kennedy Air Force Station Launch Complex 34 on January 27 killed all three crew members—Command Pilot Virgil I. "Gus" Grissom, Senior Pilot Ed White, and Pilot Roger B. Chaffee—and destroyed the command module (CM). The name Apollo 1, chosen by the crew, was officially retired by NASA in commemoration of them on April 24, 1967.
+                                Apollo 13 was the seventh manned mission in the Apollo space program and the third intended to land on the Moon. The craft was launched on April 11, 1970 from the Kennedy Space Center, Florida, but the lunar landing was aborted after an oxygen tank exploded two days later, crippling the service module (SM) upon which the command module (CM) had depended. Despite great hardship caused by limited power, loss of cabin heat, shortage of potable water, and the critical need to make makeshift repairs to the carbon dioxide removal system, the crew returned safely to Earth on April 17, 1970, six days after launch. The flight passed the far side of the Moon at an altitude of 254 kilometers (137 nautical miles) above the lunar surface, and 400,171 km (248,655 mi) from Earth, a spaceflight record marking the farthest humans have ever traveled from Earth.
                             </div>
                             <div className="modal_accent_line"></div>
                             <div className="story_info_container">
 
 
                                 <div className="background_section">
-                                    <h4>Mission Background</h4>
-                                    <p>
-                                        Grissom declared his intent to keep his craft in orbit for a full 14 days. A newspaper article published on August 4, 1966, referred to the flight as "Apollo 1". CM-012 arrived at the Kennedy Space Center on August 26, labeled Apollo One by NAA on its packaging. In October 1966, NASA announced the flight would carry a small television camera to broadcast live from the command module. The camera would also be used to allow flight controllers to monitor the spacecraft's instrument panel in flight. Television cameras were carried aboard all manned Apollo missions.
+                                <h4>Accident</h4>
+                                    {/* <h5>Plugs Out Test</h5> */}
+                                    <p>Approaching 56 hours into the mission, Apollo 13 was approximately 205,000 miles (330,000 km) from Earth en route to the Moon. Approximately six and a half minutes after the end of a live TV broadcast from the spacecraft, Haise was in the process of closing out the LM, while Lovell was stowing the TV camera. Houston flight controllers asked Swigert to turn on the hydrogen and oxygen tank stirring fans in the service module, which were designed to destratify the cryogenic contents and increase the accuracy of their quantity readings. Two minutes later, the astronauts heard a "pretty large bang", accompanied by fluctuations in electrical power and the firing of the attitude control thrusters; the crew initially thought that a meteoroid might have struck the lunar module. Communications and telemetry to Earth were lost for 1.8 seconds, until the system automatically corrected by switching the high-gain S-band antenna, used for translunar communications, from narrow-beam to wide-beam mode.
                                 </p>
-                                    <h5>Spacecraft Preparation</h5>
-                                    <p>
-                                        The Apollo command and service module was much bigger and far more complex than any previously implemented spacecraft design. In October 1963, Joseph F. Shea was named Apollo Spacecraft Program Office (ASPO) manager, responsible for managing the design and construction of both the CSM and the LM. In a spacecraft review meeting held with Shea on August 19, 1966 (a week before delivery), the crew expressed concern about the amount of flammable material (mainly nylon netting and Velcro) in the cabin, which both astronauts and technicians found convenient for holding tools and equipment in place. Although Shea gave the spacecraft a passing grade, after the meeting they gave him a crew portrait they had posed with heads bowed and hands clasped in prayer, with the inscription: <h6>"It isn't that we don't trust you, Joe, but this time we've decided to go over your head."</h6> Shea gave his staff orders to tell North American to remove the flammables from the cabin, but did not supervise the issue personally.
+                                    <p>Immediately after the bang, Swigert reported a "problem", which Lovell repeated and clarified as a "main B bus undervolt", a temporary loss of operating voltage on the second of the spacecraft's main electrical circuits. Oxygen tank 2 immediately read quantity zero. About three minutes later, the number 1 and number 3 fuel cells failed. Lovell reported seeing out the window that the craft was venting "a gas of some sort" into space. The number 1 oxygen tank quantity gradually reduced to zero over the next 130 minutes, entirely depleting the SM's oxygen supply.
                                 </p>
+                                    <p>
+                                    Because the fuel cells generated the command and service module's electrical power by combining hydrogen and oxygen into water, when oxygen tank 1 ran dry, the remaining fuel cell finally shut down, leaving the craft on the command module's limited-duration battery power and water. The crew was forced to shut down the CM completely to save this for reentry, and to power up the LM to use as a "lifeboat". This situation had been suggested during an earlier training simulation, but had not been considered a likely scenario. Without the LM, the accident would certainly have been fatal.</p>
                                 </div>
                                 <div className="additional_section">
-                                    <h4>Accident</h4>
+                                    <h4>Crew survival and return journey</h4>
                                     {/* <h5>Plugs Out Test</h5> */}
-                                    <p>The launch simulation on January 27, 1967, on pad 34, was a "plugs-out" test to determine whether the spacecraft would operate nominally on (simulated) internal power while detached from all cables and umbilicals. Passing this test was essential to making the February 21 launch date. The test was considered non-hazardous because neither the launch vehicle nor the spacecraft was loaded with fuel or cryogenics, and all pyrotechnic systems (explosive bolts) were disabled.
+                                    <p>Considerable ingenuity under extreme pressure was required from the crew, flight controllers, and support personnel for the safe return. The developing drama was shown on television. Because electrical power was severely limited, no more live TV broadcasts were made; TV commentators used models and animated footage as illustrations. Low power levels made even voice communications difficult.
                                 </p>
-                                    <p>Movement by the astronauts was detected by the spacecraft's inertial measurement unit and the astronaut's biomedical sensors, and also indicated by increases in oxygen spacesuit flow, and sounds from Grissom's stuck-open microphone. There was no evidence to identify the movement, or whether it was related to the fire. The stuck microphone was part of a problem with the communications loop connecting the crew, the Operations and Checkout Building, and the Complex 34 blockhouse control room. The poor communications led Grissom to remark: "How are we going to get to the Moon if we can't talk between two or three buildings?"
+                                    <p>The lunar module consumables were intended to sustain two people for a day and a half, not three people for four days. Oxygen was the least critical consumable because the LM carried enough to repressurize the LM after each surface EVA. Unlike the command and service module (CSM), which was powered by fuel cells that produced water as a byproduct, the LM was powered by silver-zinc batteries, so electrical power and water (used for equipment cooling as well as drinking) were critical consumables. To keep the LM life-support and communication systems operational until reentry, the LM was powered down to the lowest levels possible. In particular, the LM's Abort Guidance System was used for most of the coast back to Earth instead of the primary guidance system, as it used less power and water.
                                 </p>
-                                    {/* <h5>Fire</h5> */}
+                                <p>Availability of lithium hydroxide (LiOH) for removing carbon dioxide presented a serious problem. The LM's internal stock of LiOH canisters was not sufficient to support the crew until return, and the remainder was stored in the descent stage, out of reach. The CM had an adequate supply of canisters, but these were incompatible with the LM. Engineers on the ground improvised a way to join the cube-shaped CM canisters to the LM's cylindrical canister-sockets by drawing air through them with a suit return hose. NASA engineers referred to the improvised device as "the mailbox".</p>
                                     <p>
-                                        The crew members were using the time to run through their checklist again, when a momentary increase in AC Bus 2 voltage occurred. Nine seconds later, one of the astronauts (some listeners and laboratory analysis indicate Grissom) exclaimed "Hey!", "Fire!", or "Flame!"; this was followed by two seconds of scuffling sounds through Grissom's open microphone. This was immediately followed at by someone (believed by most listeners, and supported by laboratory analysis, to be Chaffee) saying, "[I've, or We've] got a fire in the cockpit." After 6.8 seconds of silence, a second, badly garbled transmission occurred, interpreted by various listeners as:
-                                            <h6>
-                                            "They're fighting a bad fire—Let's get out ....Open 'er up"
-                                            "We've got a bad fire—Let's get out ....We're burning up", or
-                                            "I'm reporting a bad fire ....I'm getting out ....".
-                                            This transmission lasted 5.0 seconds and ended with a cry of pain.
-                                             </h6></p>
+                                    Another problem to be solved for a safe return was accomplishing a complete power-up from scratch of the completely shut-down command module, something never intended to be done in-flight. Flight controller John Aaron, with the support of grounded astronaut Mattingly and many engineers and designers, had to invent a new procedure to do this with the ship's limited power supply and time factor. This was further complicated by the fact that the reduced power levels in the LM caused internal temperatures to drop to as low as 4 °C (39 °F). The unpowered CM got so cold that water began to condense on solid surfaces, causing concern that this might short out electrical systems when it was reactivated. This turned out not to be a problem, partly because of the extensive electrical insulation improvements instituted after the Apollo 1 fire.</p>
 
                                     <p>
-                                        It took five minutes for the pad workers to open all three hatch layers, and they could not drop the inner hatch to the cabin floor as intended, so they pushed it out of the way to one side. Although the cabin lights remained lit, they were at first unable to find the astronauts through the dense smoke. As the smoke cleared, they found the bodies, but were not able to remove them. The fire had partly melted Grissom's and White's nylon space suits and the hoses connecting them to the life support system. Grissom had removed his restraints and was lying on the floor of the spacecraft. White's restraints were burned through, and he was found lying sideways just below the hatch. It was determined that he had tried to open the hatch per the emergency procedure, but was not able to do so against the internal pressure. Chaffee was found strapped into his right-hand seat, as procedure called for him to maintain communication until White opened the hatch. Because of the large strands of melted nylon fusing the astronauts to the cabin interior, removing the bodies took nearly 90 minutes.
+                                        
                                 </p>
                                 </div>
 
                                 <div className="last_section">
-                                    <h4>Memorials</h4>
-                                    Gus Grissom and Roger Chaffee were buried at Arlington National Cemetery. Ed White was buried at West Point Cemetery on the grounds of the United States Military Academy in West Point, New York. Their names are among those of several astronauts and cosmonauts who have died in the line of duty, listed on the Space Mirror Memorial at the Kennedy Space Center Visitor Complex in Merritt Island, Florida. President Jimmy Carter awarded the Congressional Space Medal of Honor posthumously to Grissom on October 1, 1978. President Bill Clinton awarded it to White and Chaffee on December 17, 1997.
+                                    <h4>Reentry and Splashdown</h4>
+                                    <p>As Apollo 13 neared Earth, the crew first jettisoned the service module, using the LM's reaction control system to pull themselves a safe distance from it, instead of the normal procedure which used automatic firing of the SM's RCS. They photographed it for later analysis of the accident's cause. It was then that the crew were surprised to see for the first time that the entire Sector 4 panel had been blown off. According to the analysts, these pictures also showed the antenna damage and possibly an upward tilt to the fuel cell shelf above the oxygen tank compartment.</p>
 
-                                    An Apollo 1 mission patch was left on the Moon's surface after the first manned lunar landing by Apollo 11 crew members Neil Armstrong and Buzz Aldrin. The Apollo 15 mission left on the surface of the Moon a tiny memorial statue, Fallen Astronaut, along with a plaque containing the names of the Apollo 1 astronauts, among others including Soviet cosmonauts, who perished in the pursuit of human space flight.
+                                    <p>Finally, the crew jettisoned the lunar module Aquarius using the above procedure worked out at the University of Toronto, leaving the command module Odyssey to begin its lone reentry through the atmosphere. The reentry on a lunar mission normally was accompanied by about four minutes of typical communications blackout caused by ionization of the air around the command module. The blackout in Apollo 13's reentry lasted six minutes, which was 87 seconds longer than had been expected. The possibility of heat-shield damage from the O2 tank rupture heightened the tension of the blackout period.</p>
+
+                                    <p>Odyssey regained radio contact and splashed down safely in the South Pacific Ocean, 21°38′24″S 165°21′42″W, southeast of American Samoa and 6.5 km (3.5 nmi) from the recovery ship, USS Iwo Jima. The crew was in good condition except for Haise, who was suffering from a serious urinary tract infection because of insufficient water intake. To avoid altering the trajectory of the spacecraft, the crew had been instructed to temporarily stop urine dumps, which forced them to invent ways of storing all urine for the rest of the flight.</p>
+                                    <p>The lunar module and service module reentered the atmosphere over the South Pacific between the islands of Fiji and New Zealand.</p>
                                 </div>
 
                             </div>
@@ -790,9 +780,9 @@ class ApolloMissionTiles extends Component {
                                 <div className="crew_table">
                                     <div>
                                         <h4>Position</h4>
-                                        <div>Command Pilot</div>
-                                        <div>Senior Pilot</div>
-                                        <div>Pilot</div>
+                                        <div>Commander</div>
+                                        <div>Command Module Pilot</div>
+                                        <div>Lunar Modular Pilot</div>
                                     </div>
                                     <div>
                                         <h4>Astronaut</h4>
@@ -885,9 +875,9 @@ class ApolloMissionTiles extends Component {
                                 <div className="crew_table">
                                     <div>
                                         <h4>Position</h4>
-                                        <div>Command Pilot</div>
-                                        <div>Senior Pilot</div>
-                                        <div>Pilot</div>
+                                        <div>Commander</div>
+                                        <div>Command Module Pilot</div>
+                                        <div>Lunar Modular Pilot</div>
                                     </div>
                                     <div>
                                         <h4>Astronaut</h4>
@@ -980,9 +970,9 @@ class ApolloMissionTiles extends Component {
                                 <div className="crew_table">
                                     <div>
                                         <h4>Position</h4>
-                                        <div>Command Pilot</div>
-                                        <div>Senior Pilot</div>
-                                        <div>Pilot</div>
+                                        <div>Commander</div>
+                                        <div>Command Module Pilot</div>
+                                        <div>Lunar Modular Pilot</div>
                                     </div>
                                     <div>
                                         <h4>Astronaut</h4>
@@ -1075,9 +1065,9 @@ class ApolloMissionTiles extends Component {
                                 <div className="crew_table">
                                     <div>
                                         <h4>Position</h4>
-                                        <div>Command Pilot</div>
-                                        <div>Senior Pilot</div>
-                                        <div>Pilot</div>
+                                        <div>Commander</div>
+                                        <div>Command Module Pilot</div>
+                                        <div>Lunar Modular Pilot</div>
                                     </div>
                                     <div>
                                         <h4>Astronaut</h4>
