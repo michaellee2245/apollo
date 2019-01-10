@@ -112,8 +112,8 @@ class Apollo extends Component {
                 </section>
                 <section className="comment_section">
                     <div className="thank_container">
-                        <div className="thank_you">Thank you for visiting!</div>
-                        <div className="learn_more">to learn more about the apollo program visit wikipedia</div>
+                        <div className="pulsate thank_you">Thank you for visiting!</div>
+                        <div className="pulsate learn_more">to learn more about the apollo program visit wikipedia</div>
                     </div>
                 </section>
 
