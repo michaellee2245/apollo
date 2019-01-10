@@ -253,3 +253,134 @@
     color:rgba(237, 32, 36, 0.5);
     line-height: 200px;
 }
+.crew_container{
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height:300px;
+    width:500px;
+    // border:1px solid white;
+    top:0;
+    left:20%;
+    
+    // align-items: center;
+}
+.crew_table{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: -30px;
+    
+}
+.crew_members{
+    font-weight:600;
+    text-transform: uppercase;
+    font-size:30px;
+    letter-spacing: 10px;
+    text-align:center
+}
+.mission_overview{
+    width:800px;
+    font-weight:300;
+    font-size: 15px;
+    letter-spacing: 1px;
+    left:52%;
+    top:1.5%;
+    position:absolute;
+    line-height: 27px;
+}
+h2{
+    font-weight:600;
+    text-transform: uppercase;
+    font-size: 30px;
+    letter-spacing: 10px;
+}
+h4{
+    font-weight:400;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 4px;
+}
+h5{
+    font-weight:400;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 4px;
+}
+h6{
+    font-weight:400;
+    text-transform: uppercase;
+    font-size: 10.5px;
+    letter-spacing: 0px;
+}
+.story_info_container{
+    margin-top:18%;
+    width:100%;
+    height:635px;
+    // border:1px solid white;
+    padding:0px 15px;
+    line-height: 25px;
+    display:flex;
+    font-size: 14px;
+    position: relative;
+
+}
+// .story_info_container div{
+//     margin-left:10px;
+// }
+// .story_info_container p{
+//     width:500px;
+// }
+.gus_quote{
+    position:absolute;
+    top:37%;
+    left:73%;
+    width:400px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size:15px;
+}
+.background_section{
+    width:500px;
+    // position: absolute;
+}
+.additional_section{
+    width:750px;
+    margin-left:30px;
+    margin-right:30px;
+    // border:1px solid white;
+    // position: absolute;
+    display: flex;
+    flex-direction: column;
+    // flex-flow: column wrap;
+}
+.additional_section p, .background_section p{
+    margin-top:-10px;
+    
+}
+.last_section{
+    width:500px;
+}
+.modal_accent_line{
+    height:3px;
+    width:100%;
+    position: absolute;
+    top:15.5%;
+    right:0;
+    background-color:rgba(237, 32, 36, 0.5);
+}
+.reduce_leading{
+    margin-top:-5px;
+    margin-bottom:0px;
+}
+.extra_width{
+    width:1100px;
+    margin-left:30px;
+    margin-right:30px;
+    // border:1px solid white;
+    // position: absolute;
+    display: flex;
+    flex-direction: column;
+    // flex-flow: column wrap;
+}
