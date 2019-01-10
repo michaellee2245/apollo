@@ -978,57 +978,55 @@ class ApolloMissionTiles extends Component {
                                     </div>
                                     <div>
                                         <h4>Astronaut</h4>
-                                        <div>David R. Scott</div>
-                                        <div>Alfred M. Worden</div>
-                                        <div>James B. Irwin</div>
+                                        <div>John W. Young</div>
+                                        <div>Thomas K. Mattingly II</div>
+                                        <div>Charles M. Duke Jr.</div>
                                     </div>
                                 </div>
                             </div>
                             <div className="mission_overview">
                                 <h2>Basic Overview</h2>
-                                Apollo 15 was the ninth manned mission in the United States' Apollo program, the eighth to be successful, and the fourth to land on the Moon. It was the first J mission, with a longer stay on the Moon and a greater focus on science than earlier landings. Apollo 15 saw the first use of the Lunar Roving Vehicle. The mission began on July 26, 1971, and ended on August 7, the lunar surface exploration taking place between July 30 and August 2. Commander David Scott and Lunar Module Pilot James Irwin landed near Hadley Rille and explored the local area using the rover, allowing them to travel further from the Apollo Lunar Module (LM) than had been possible on previous missions. They spent 18​1⁄2 hours outside their lander on extravehicular activity (EVA), and collected 77 kilograms (170 lb) of surface material. Apollo 15 is also remembered for the finding of the Genesis Rock, and for Scott's use of a hammer and a feather to validate Galileo's theory that absent air resistance, objects drop at the same rate.
+                                Apollo 16 was the tenth manned mission in the United States Apollo space program, the fifth and penultimate to land on the Moon and the first to land in the lunar highlands. The second of the so-called "J missions," it was crewed by Commander John Young, Lunar Module Pilot Charles Duke and Command Module Pilot Ken Mattingly. Launched from the Kennedy Space Center in Florida at 12:54 PM EST on April 16, 1972, the mission lasted 11 days, 1 hour, and 51 minutes, and concluded at 2:45 PM EST on April 27. Young and Duke spent 71 hours on the lunar surface, during which they conducted three extra-vehicular activities or moonwalks, totaling 20 hours and 14 minutes. The pair drove the Lunar Roving Vehicle, the second produced and used on the Moon, for 26.7 kilometers (16.6 mi). On the surface, Young and Duke collected 95.8 kilograms (211 lb) of lunar samples for return to Earth, while Command Module Pilot Ken Mattingly orbited in the command and service module above to perform observations.
                             </div>
                             <div className="modal_accent_line"></div>
                             <div className="story_info_container">
 
 
                                 <div className="background_section">
-                                    <h4>Mission Background</h4>
+                                    <h4>Landing Site Selection</h4>
                                     <p>
-                                        Grissom declared his intent to keep his craft in orbit for a full 14 days. A newspaper article published on August 4, 1966, referred to the flight as "Apollo 1". CM-012 arrived at the Kennedy Space Center on August 26, labeled Apollo One by NAA on its packaging. In October 1966, NASA announced the flight would carry a small television camera to broadcast live from the command module. The camera would also be used to allow flight controllers to monitor the spacecraft's instrument panel in flight. Television cameras were carried aboard all manned Apollo missions.
+                                    Apollo 16 was the second of the Apollo type J missions, featuring the use of the Lunar Roving Vehicle, increased scientific capability, and lunar surface stays of three days. As Apollo 16 was the penultimate mission in the Apollo program and there was no new hardware or procedures to test on the lunar surface, the last two missions (the other being Apollo 17) presented opportunities for astronauts to clear up some uncertainties in understanding the Moon's properties. Although previous Apollo expeditions, including Apollo 14 and Apollo 15, obtained samples of pre-mare lunar material, before lava began to upwell from the Moon's interior and flood the low areas and basins, none had actually visited the lunar highlands.
                                 </p>
-                                    <h5>Spacecraft Preparation</h5>
                                     <p>
-                                        The Apollo command and service module was much bigger and far more complex than any previously implemented spacecraft design. In October 1963, Joseph F. Shea was named Apollo Spacecraft Program Office (ASPO) manager, responsible for managing the design and construction of both the CSM and the LM. In a spacecraft review meeting held with Shea on August 19, 1966 (a week before delivery), the crew expressed concern about the amount of flammable material (mainly nylon netting and Velcro) in the cabin, which both astronauts and technicians found convenient for holding tools and equipment in place. Although Shea gave the spacecraft a passing grade, after the meeting they gave him a crew portrait they had posed with heads bowed and hands clasped in prayer, with the inscription: <h6>"It isn't that we don't trust you, Joe, but this time we've decided to go over your head."</h6> Shea gave his staff orders to tell North American to remove the flammables from the cabin, but did not supervise the issue personally.
+                                    Apollo 14 had visited and sampled a ridge of material that had been ejected by the impact that created the Mare Imbrium impact basin. Likewise, Apollo 15 had also sampled material in the region of Imbrium, visiting the basin's edge. There remained the possibility, because the Apollo 14 and Apollo 15 landing sites were closely associated with the Imbrium basin, that different geologic processes were prevalent in areas of the lunar highlands far from Mare Imbrium. Several members of the scientific community remarked that the central lunar highlands resembled regions on Earth that were created by volcanic processes and hypothesized the same might be true on the Moon. They had hoped that scientific output from the Apollo 16 mission would provide an answer.
+                                    </p>
+                                    <p>
+                                    Apollo 16's landing spot in the highlands was chosen to allow the astronauts to gather geologically older lunar material than the samples obtained in the first four landings, which were in or near lunar maria. Samples from the Descartes Formation and the Cayley Formation disproved a hypothesis that the formations were volcanic in origin.
                                 </p>
                                 </div>
                                 <div className="additional_section">
-                                    <h4>Accident</h4>
+                                    <h4>Mission Highlights</h4>
                                     {/* <h5>Plugs Out Test</h5> */}
-                                    <p>The launch simulation on January 27, 1967, on pad 34, was a "plugs-out" test to determine whether the spacecraft would operate nominally on (simulated) internal power while detached from all cables and umbilicals. Passing this test was essential to making the February 21 launch date. The test was considered non-hazardous because neither the launch vehicle nor the spacecraft was loaded with fuel or cryogenics, and all pyrotechnic systems (explosive bolts) were disabled.
+                                    <p>The launch of Apollo 16 was delayed one month from March 17 to April 16. This was the first launch delay in the Apollo program due to a technical problem. During the delay, the space suits, a spacecraft separation mechanism and batteries in the lunar module (LM) were modified and tested.
                                 </p>
-                                    <p>Movement by the astronauts was detected by the spacecraft's inertial measurement unit and the astronaut's biomedical sensors, and also indicated by increases in oxygen spacesuit flow, and sounds from Grissom's stuck-open microphone. There was no evidence to identify the movement, or whether it was related to the fire. The stuck microphone was part of a problem with the communications loop connecting the crew, the Operations and Checkout Building, and the Complex 34 blockhouse control room. The poor communications led Grissom to remark: "How are we going to get to the Moon if we can't talk between two or three buildings?"
+                                    <p>The official mission countdown began on Monday, April 10, 1972, at 8:30 AM, six days before the launch. At this point the Saturn V rocket's three stages were powered up and drinking water was pumped into the spacecraft. As the countdown began, the crew of Apollo 16 was participating in final training exercises in anticipation of a launch on April 16. The astronauts underwent their final preflight physical examination on April 11. On April 15, liquid hydrogen and liquid oxygen propellants were pumped into the spacecraft, while the astronauts rested in anticipation of their launch the next day.
                                 </p>
-                                    {/* <h5>Fire</h5> */}
+                                    
                                     <p>
-                                        The crew members were using the time to run through their checklist again, when a momentary increase in AC Bus 2 voltage occurred. Nine seconds later, one of the astronauts (some listeners and laboratory analysis indicate Grissom) exclaimed "Hey!", "Fire!", or "Flame!"; this was followed by two seconds of scuffling sounds through Grissom's open microphone. This was immediately followed at by someone (believed by most listeners, and supported by laboratory analysis, to be Chaffee) saying, "[I've, or We've] got a fire in the cockpit." After 6.8 seconds of silence, a second, badly garbled transmission occurred, interpreted by various listeners as:
-                                            <h6>
-                                            "They're fighting a bad fire—Let's get out ....Open 'er up"
-                                            "We've got a bad fire—Let's get out ....We're burning up", or
-                                            "I'm reporting a bad fire ....I'm getting out ....".
-                                            This transmission lasted 5.0 seconds and ended with a cry of pain.
-                                             </h6></p>
+                                    By the time Mission Control issued the wake-up call to the crew for flight day two, the spacecraft was about 98,000 nautical miles (181,000 km) away from the Earth, traveling at about 5,322 ft/s (1,622 m/s). As it was not due to arrive in lunar orbit until flight day four, flight days two and three were largely preparatory days, consisting of spacecraft maintenance and scientific research. On day two, the crew performed an electrophoresis experiment, also performed on Apollo 14, in which they attempted to prove the higher purity of particle migrations in the zero-gravity environment.</p>
 
                                     <p>
-                                        It took five minutes for the pad workers to open all three hatch layers, and they could not drop the inner hatch to the cabin floor as intended, so they pushed it out of the way to one side. Although the cabin lights remained lit, they were at first unable to find the astronauts through the dense smoke. As the smoke cleared, they found the bodies, but were not able to remove them. The fire had partly melted Grissom's and White's nylon space suits and the hoses connecting them to the life support system. Grissom had removed his restraints and was lying on the floor of the spacecraft. White's restraints were burned through, and he was found lying sideways just below the hatch. It was determined that he had tried to open the hatch per the emergency procedure, but was not able to do so against the internal pressure. Chaffee was found strapped into his right-hand seat, as procedure called for him to maintain communication until White opened the hatch. Because of the large strands of melted nylon fusing the astronauts to the cabin interior, removing the bodies took nearly 90 minutes.
+                                    At just over 74 hours into the mission, the spacecraft passed behind the Moon, losing direct contact with Mission Control. While over the far side of the Moon, the CSM's service propulsion system engine burned for 6 minutes and 15 seconds, braking the spacecraft into an orbit around the Moon 
+                                </p>
+                                <h5 className="small_paragraph_space">Lunar Surface</h5>
+                                <p>
+                                After landing, Young and Duke began powering down some of the LM's systems to conserve battery power. Upon completing their initial adjustments, the pair configured Orion for their three-day stay on the lunar surface, removed their space suits and took initial geological observations of the immediate landing site. They then settled down for their first meal on the surface. After eating, they configured the cabin for their first sleep period on the Moon. The landing delay caused by the malfunction in the CSM's main engine necessitated significant modifications to the mission schedule. Apollo 16 would spend one less day in lunar orbit after surface exploration had been completed to afford the crew contingency time to compensate for any further problems and to conserve expendables. In order to improve Young's and Duke's sleep schedule, the third and final moonwalk of the mission was trimmed from seven hours to five.
                                 </p>
                                 </div>
 
-                                <div className="last_section">
-                                    <h4>Memorials</h4>
-                                    Gus Grissom and Roger Chaffee were buried at Arlington National Cemetery. Ed White was buried at West Point Cemetery on the grounds of the United States Military Academy in West Point, New York. Their names are among those of several astronauts and cosmonauts who have died in the line of duty, listed on the Space Mirror Memorial at the Kennedy Space Center Visitor Complex in Merritt Island, Florida. President Jimmy Carter awarded the Congressional Space Medal of Honor posthumously to Grissom on October 1, 1978. President Bill Clinton awarded it to White and Chaffee on December 17, 1997.
-
-                                    An Apollo 1 mission patch was left on the Moon's surface after the first manned lunar landing by Apollo 11 crew members Neil Armstrong and Buzz Aldrin. The Apollo 15 mission left on the surface of the Moon a tiny memorial statue, Fallen Astronaut, along with a plaque containing the names of the Apollo 1 astronauts, among others including Soviet cosmonauts, who perished in the pursuit of human space flight.
+                                <div id="lunar_moon_img" className="last_section">
+                                    
+                                    
                                 </div>
 
                             </div>
