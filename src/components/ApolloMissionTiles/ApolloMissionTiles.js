@@ -929,10 +929,10 @@ class ApolloMissionTiles extends Component {
                                     <h4>Mission Highlights</h4>
                                     <p>In addition to preparing the lunar module for its descent, the crew continued observations of the Moon (including of the landing site at Hadley) and provided television footage of the surface. Then, Scott and Irwin entered the lunar module in preparation for the landing attempt. Undocking was planned for 100:13:56, over the far side of the Moon, but nothing happened when separation was attempted. After analyzing the problem, the crew and Houston decided the probe instrumentation umbilical was likely loose or disconnected; Worden went into the tunnel connecting the command and lunar modules and determined this was so, seating it more firmly. With the problem resolved, Falcon separated from Endeavour at 100:39:16.2, about 25 minutes late.</p>
                                     <p>
-                                    Throughout the sleep period Mission Control in Houston monitored a slow but steady oxygen loss. Scott and Irwin eventually were awakened an hour early, and the source of the problem was found to be an open valve on the urine transfer device. In post-mission debriefing, Scott recommended that future crews be woken at once under similar circumstances. After the problem was solved, the crew began preparation for the first Moon walk.
+                                        Throughout the sleep period Mission Control in Houston monitored a slow but steady oxygen loss. Scott and Irwin eventually were awakened an hour early, and the source of the problem was found to be an open valve on the urine transfer device. In post-mission debriefing, Scott recommended that future crews be woken at once under similar circumstances. After the problem was solved, the crew began preparation for the first Moon walk.
                                     </p>
                                     <p>
-                                    By the time Scott and Irwin were ready to take off from the lunar surface and return to Endeavor, the CSM's orbit had drifted due to the rotation of the Moon, and a plane change burn was required to ensure that the CSM's orbit would be in the same plane as that of the LM once it took off from the Moon. Worden accomplished the 18-second burn with the SPS.
+                                        By the time Scott and Irwin were ready to take off from the lunar surface and return to Endeavor, the CSM's orbit had drifted due to the rotation of the Moon, and a plane change burn was required to ensure that the CSM's orbit would be in the same plane as that of the LM once it took off from the Moon. Worden accomplished the 18-second burn with the SPS.
                                     </p>
                                 </div>
 
@@ -995,13 +995,13 @@ class ApolloMissionTiles extends Component {
                                 <div className="background_section">
                                     <h4>Landing Site Selection</h4>
                                     <p>
-                                    Apollo 16 was the second of the Apollo type J missions, featuring the use of the Lunar Roving Vehicle, increased scientific capability, and lunar surface stays of three days. As Apollo 16 was the penultimate mission in the Apollo program and there was no new hardware or procedures to test on the lunar surface, the last two missions (the other being Apollo 17) presented opportunities for astronauts to clear up some uncertainties in understanding the Moon's properties. Although previous Apollo expeditions, including Apollo 14 and Apollo 15, obtained samples of pre-mare lunar material, before lava began to upwell from the Moon's interior and flood the low areas and basins, none had actually visited the lunar highlands.
+                                        Apollo 16 was the second of the Apollo type J missions, featuring the use of the Lunar Roving Vehicle, increased scientific capability, and lunar surface stays of three days. As Apollo 16 was the penultimate mission in the Apollo program and there was no new hardware or procedures to test on the lunar surface, the last two missions (the other being Apollo 17) presented opportunities for astronauts to clear up some uncertainties in understanding the Moon's properties. Although previous Apollo expeditions, including Apollo 14 and Apollo 15, obtained samples of pre-mare lunar material, before lava began to upwell from the Moon's interior and flood the low areas and basins, none had actually visited the lunar highlands.
                                 </p>
                                     <p>
-                                    Apollo 14 had visited and sampled a ridge of material that had been ejected by the impact that created the Mare Imbrium impact basin. Likewise, Apollo 15 had also sampled material in the region of Imbrium, visiting the basin's edge. There remained the possibility, because the Apollo 14 and Apollo 15 landing sites were closely associated with the Imbrium basin, that different geologic processes were prevalent in areas of the lunar highlands far from Mare Imbrium. Several members of the scientific community remarked that the central lunar highlands resembled regions on Earth that were created by volcanic processes and hypothesized the same might be true on the Moon. They had hoped that scientific output from the Apollo 16 mission would provide an answer.
+                                        Apollo 14 had visited and sampled a ridge of material that had been ejected by the impact that created the Mare Imbrium impact basin. Likewise, Apollo 15 had also sampled material in the region of Imbrium, visiting the basin's edge. There remained the possibility, because the Apollo 14 and Apollo 15 landing sites were closely associated with the Imbrium basin, that different geologic processes were prevalent in areas of the lunar highlands far from Mare Imbrium. Several members of the scientific community remarked that the central lunar highlands resembled regions on Earth that were created by volcanic processes and hypothesized the same might be true on the Moon. They had hoped that scientific output from the Apollo 16 mission would provide an answer.
                                     </p>
                                     <p>
-                                    Apollo 16's landing spot in the highlands was chosen to allow the astronauts to gather geologically older lunar material than the samples obtained in the first four landings, which were in or near lunar maria. Samples from the Descartes Formation and the Cayley Formation disproved a hypothesis that the formations were volcanic in origin.
+                                        Apollo 16's landing spot in the highlands was chosen to allow the astronauts to gather geologically older lunar material than the samples obtained in the first four landings, which were in or near lunar maria. Samples from the Descartes Formation and the Cayley Formation disproved a hypothesis that the formations were volcanic in origin.
                                 </p>
                                 </div>
                                 <div className="additional_section">
@@ -1011,22 +1011,22 @@ class ApolloMissionTiles extends Component {
                                 </p>
                                     <p>The official mission countdown began on Monday, April 10, 1972, at 8:30 AM, six days before the launch. At this point the Saturn V rocket's three stages were powered up and drinking water was pumped into the spacecraft. As the countdown began, the crew of Apollo 16 was participating in final training exercises in anticipation of a launch on April 16. The astronauts underwent their final preflight physical examination on April 11. On April 15, liquid hydrogen and liquid oxygen propellants were pumped into the spacecraft, while the astronauts rested in anticipation of their launch the next day.
                                 </p>
-                                    
-                                    <p>
-                                    By the time Mission Control issued the wake-up call to the crew for flight day two, the spacecraft was about 98,000 nautical miles (181,000 km) away from the Earth, traveling at about 5,322 ft/s (1,622 m/s). As it was not due to arrive in lunar orbit until flight day four, flight days two and three were largely preparatory days, consisting of spacecraft maintenance and scientific research. On day two, the crew performed an electrophoresis experiment, also performed on Apollo 14, in which they attempted to prove the higher purity of particle migrations in the zero-gravity environment.</p>
 
                                     <p>
-                                    At just over 74 hours into the mission, the spacecraft passed behind the Moon, losing direct contact with Mission Control. While over the far side of the Moon, the CSM's service propulsion system engine burned for 6 minutes and 15 seconds, braking the spacecraft into an orbit around the Moon 
+                                        By the time Mission Control issued the wake-up call to the crew for flight day two, the spacecraft was about 98,000 nautical miles (181,000 km) away from the Earth, traveling at about 5,322 ft/s (1,622 m/s). As it was not due to arrive in lunar orbit until flight day four, flight days two and three were largely preparatory days, consisting of spacecraft maintenance and scientific research. On day two, the crew performed an electrophoresis experiment, also performed on Apollo 14, in which they attempted to prove the higher purity of particle migrations in the zero-gravity environment.</p>
+
+                                    <p>
+                                        At just over 74 hours into the mission, the spacecraft passed behind the Moon, losing direct contact with Mission Control. While over the far side of the Moon, the CSM's service propulsion system engine burned for 6 minutes and 15 seconds, braking the spacecraft into an orbit around the Moon
                                 </p>
-                                <h5 className="small_paragraph_space">Lunar Surface</h5>
-                                <p>
-                                After landing, Young and Duke began powering down some of the LM's systems to conserve battery power. Upon completing their initial adjustments, the pair configured Orion for their three-day stay on the lunar surface, removed their space suits and took initial geological observations of the immediate landing site. They then settled down for their first meal on the surface. After eating, they configured the cabin for their first sleep period on the Moon. The landing delay caused by the malfunction in the CSM's main engine necessitated significant modifications to the mission schedule. Apollo 16 would spend one less day in lunar orbit after surface exploration had been completed to afford the crew contingency time to compensate for any further problems and to conserve expendables. In order to improve Young's and Duke's sleep schedule, the third and final moonwalk of the mission was trimmed from seven hours to five.
+                                    <h5 className="small_paragraph_space">Lunar Surface</h5>
+                                    <p>
+                                        After landing, Young and Duke began powering down some of the LM's systems to conserve battery power. Upon completing their initial adjustments, the pair configured Orion for their three-day stay on the lunar surface, removed their space suits and took initial geological observations of the immediate landing site. They then settled down for their first meal on the surface. After eating, they configured the cabin for their first sleep period on the Moon. The landing delay caused by the malfunction in the CSM's main engine necessitated significant modifications to the mission schedule. Apollo 16 would spend one less day in lunar orbit after surface exploration had been completed to afford the crew contingency time to compensate for any further problems and to conserve expendables. In order to improve Young's and Duke's sleep schedule, the third and final moonwalk of the mission was trimmed from seven hours to five.
                                 </p>
                                 </div>
 
                                 <div id="lunar_moon_img" className="last_section">
-                                    
-                                    
+
+
                                 </div>
 
                             </div>
@@ -1071,57 +1071,60 @@ class ApolloMissionTiles extends Component {
                                     </div>
                                     <div>
                                         <h4>Astronaut</h4>
-                                        <div>Virgil I. "Gus" Grissom</div>
-                                        <div>Edward H. White II</div>
-                                        <div>Roger B. Chaffee</div>
+                                        <div>Eugene A. Cernan</div>
+                                        <div>Ronald E. Evans</div>
+                                        <div>Harrison H. Schmitt</div>
                                     </div>
                                 </div>
                             </div>
                             <div className="mission_overview">
                                 <h2>Basic Overview</h2>
-                                Apollo 1, initially designated AS-204, was the first manned mission of the United States Apollo program, the program to land the first men on the Moon. Planned as the first low Earth orbital test of the Apollo command and service module with a crew, to launch on February 21, 1967, the mission never flew; a cabin fire during a launch rehearsal test at Cape Kennedy Air Force Station Launch Complex 34 on January 27 killed all three crew members—Command Pilot Virgil I. "Gus" Grissom, Senior Pilot Ed White, and Pilot Roger B. Chaffee—and destroyed the command module (CM). The name Apollo 1, chosen by the crew, was officially retired by NASA in commemoration of them on April 24, 1967.
+                                <p className="reduce_line_height"> Apollo 17 was the final mission of NASA's Apollo program. Launched at 12:33 a.m. Eastern Standard Time (EST) on December 7, 1972, with a crew made up of Commander Eugene Cernan, Command Module Pilot Ronald Evans, and Lunar Module Pilot Harrison Schmitt, it was the last use of Apollo hardware for its original purpose. Apollo 17 was the first night launch of a U.S. human spaceflight and the final manned launch of a Saturn V rocket. The landing site was chosen with the primary objectives of Apollo 17 in mind: to sample lunar highland material older than the impact that formed Mare Imbrium, and investigate the possibility of relatively new volcanic activity in the same area. Cernan, Evans, and Schmitt returned to Earth on December 19 after a 12-day mission. Apollo 17 is the most recent manned Moon landing and the most recent time humans travelled beyond low Earth orbit. The mission broke several records: the longest moon landing, longest total extravehicular activities (moonwalks), largest lunar sample, and longest time in lunar orbit.</p>
                             </div>
+
                             <div className="modal_accent_line"></div>
                             <div className="story_info_container">
 
 
                                 <div className="background_section">
-                                    <h4>Mission Background</h4>
+                                    <h4>Planning and Training</h4>
                                     <p>
-                                        Grissom declared his intent to keep his craft in orbit for a full 14 days. A newspaper article published on August 4, 1966, referred to the flight as "Apollo 1". CM-012 arrived at the Kennedy Space Center on August 26, labeled Apollo One by NAA on its packaging. In October 1966, NASA announced the flight would carry a small television camera to broadcast live from the command module. The camera would also be used to allow flight controllers to monitor the spacecraft's instrument panel in flight. Television cameras were carried aboard all manned Apollo missions.
+                                        Like Apollo 15 and Apollo 16, Apollo 17 was slated to be a "J-mission," an Apollo mission type that featured lunar surface stays of three days, higher scientific capability, and the usage of the Lunar Roving Vehicle. Since Apollo 17 was to be the final lunar landing of the Apollo program, high-priority landing sites that had not been visited previously were given consideration for potential exploration. A landing in the crater Copernicus was considered, but was ultimately rejected because Apollo 12 had already obtained samples from that impact, and three other Apollo expeditions had already visited the vicinity of Mare Imbrium.
                                 </p>
-                                    <h5>Spacecraft Preparation</h5>
                                     <p>
-                                        The Apollo command and service module was much bigger and far more complex than any previously implemented spacecraft design. In October 1963, Joseph F. Shea was named Apollo Spacecraft Program Office (ASPO) manager, responsible for managing the design and construction of both the CSM and the LM. In a spacecraft review meeting held with Shea on August 19, 1966 (a week before delivery), the crew expressed concern about the amount of flammable material (mainly nylon netting and Velcro) in the cabin, which both astronauts and technicians found convenient for holding tools and equipment in place. Although Shea gave the spacecraft a passing grade, after the meeting they gave him a crew portrait they had posed with heads bowed and hands clasped in prayer, with the inscription: <h6>"It isn't that we don't trust you, Joe, but this time we've decided to go over your head."</h6> Shea gave his staff orders to tell North American to remove the flammables from the cabin, but did not supervise the issue personally.
+                                        After the elimination of several sites, three sites made the final consideration for Apollo 17: Alphonsus crater, Gassendi crater, and the Taurus-Littrow valley. The Taurus-Littrow site was selected with the prediction that the crew would be able to obtain samples of old highland material from the remnants of a landslide event that occurred on the south wall of the valley and the possibility of relatively young, explosive volcanic activity in the area. Although the valley is similar to the landing site of Apollo 15 in that it is on the border of a lunar mare, the advantages of Taurus-Littrow were believed to outweigh the drawbacks, thus leading to its selection as the Apollo 17 landing site.
+                                </p>
+                                    <p>
+                                        Apollo 17 was the only lunar landing mission to carry the Traverse Gravimeter Experiment (TGE), an experiment built by Draper Laboratory at the Massachusetts Institute of Technology designed to provide relative gravity measurements throughout the landing site at various locations during the mission's moonwalks. Scientists would then use this data to gather information about the geological substructure of the landing site and the surrounding vicinity.
                                 </p>
                                 </div>
                                 <div className="additional_section">
-                                    <h4>Accident</h4>
-                                    {/* <h5>Plugs Out Test</h5> */}
-                                    <p>The launch simulation on January 27, 1967, on pad 34, was a "plugs-out" test to determine whether the spacecraft would operate nominally on (simulated) internal power while detached from all cables and umbilicals. Passing this test was essential to making the February 21 launch date. The test was considered non-hazardous because neither the launch vehicle nor the spacecraft was loaded with fuel or cryogenics, and all pyrotechnic systems (explosive bolts) were disabled.
+                                    <h4>Hardware and Experiments</h4>
+                                    <h5 className="small_paragraph_space reduce_leading">Traverse Gravimeter</h5>
+                                    <p>Apollo 17 was the only Apollo lunar landing mission to carry the traverse gravimeter experiment (TGE). As gravimeters had proven to be useful in the geologic investigation of the Earth, the objective of this experiment was to determine the feasibility of using the same techniques on the Moon to learn about its internal structure. The gravimeter was used to obtain readings at the landing site in the immediate vicinity of the lunar module, as well as various locations on the mission's traverse routes. The TGE was carried on the Lunar Roving Vehicle; measurements were taken by the astronauts while the LRV was not in motion or after the gravimeter was placed on the surface. A total of twenty-six measurements were taken with the TGE during the mission's three moonwalks, with productive results. As part of the Apollo Lunar Surface Experiments Package (ALSEP), the astronauts also deployed the Lunar Surface Gravimeter, a similar experiment, which ultimately failed to function properly.
                                 </p>
-                                    <p>Movement by the astronauts was detected by the spacecraft's inertial measurement unit and the astronaut's biomedical sensors, and also indicated by increases in oxygen spacesuit flow, and sounds from Grissom's stuck-open microphone. There was no evidence to identify the movement, or whether it was related to the fire. The stuck microphone was part of a problem with the communications loop connecting the crew, the Operations and Checkout Building, and the Complex 34 blockhouse control room. The poor communications led Grissom to remark: "How are we going to get to the Moon if we can't talk between two or three buildings?"
-                                </p>
-                                    {/* <h5>Fire</h5> */}
+                                    <h5 className="small_paragraph_space reduce_leading">Scientific instrument module (SIM)</h5>
+                                    <p>The SIM bay housed three experiments for use in lunar orbit: a lunar sounder, an infrared scanning radiometer, and a far-ultraviolet spectrometer. A mapping camera, panoramic camera, and a laser altimeter were also included in the SIM bay.
+                                    </p>
                                     <p>
-                                        The crew members were using the time to run through their checklist again, when a momentary increase in AC Bus 2 voltage occurred. Nine seconds later, one of the astronauts (some listeners and laboratory analysis indicate Grissom) exclaimed "Hey!", "Fire!", or "Flame!"; this was followed by two seconds of scuffling sounds through Grissom's open microphone. This was immediately followed at by someone (believed by most listeners, and supported by laboratory analysis, to be Chaffee) saying, "[I've, or We've] got a fire in the cockpit." After 6.8 seconds of silence, a second, badly garbled transmission occurred, interpreted by various listeners as:
-                                            <h6>
-                                            "They're fighting a bad fire—Let's get out ....Open 'er up"
-                                            "We've got a bad fire—Let's get out ....We're burning up", or
-                                            "I'm reporting a bad fire ....I'm getting out ....".
-                                            This transmission lasted 5.0 seconds and ended with a cry of pain.
-                                             </h6></p>
+                                        The lunar sounder beamed electromagnetic impulses toward the lunar surface, which were designed with the objective of obtaining data to assist in developing a geological model of the interior of the Moon to an approximate depth of 1.3 km (0.81 mi). The infrared scanning radiometer was designed with the objective of generating a temperature map of the lunar surface to aid in locating surface features such as rock fields, structural differences in the lunar crust, and volcanic activity. The far-ultraviolet spectrometer was to be used to obtain data pertaining to the composition, density, and constituency of the lunar atmosphere. The spectrometer was also designed to detect far-UV radiation emitted by the Sun that has been reflected off the lunar surface.
+                                    </p>
+                                    <h5 className="small_paragraph_space reduce_leading">Lunar Roving Vehicle</h5>
+                                    <p>
+                                    Apollo 17 was the third mission (the others being Apollo 15 and Apollo 16) to make use of a Lunar Roving Vehicle. The LRV,in addition to being used by the astronauts for transport from station to station on the mission's three moonwalks, was used to transport the astronauts' tools, communications equipment, and samples. The Apollo 17 LRV was also used to carry experiments unique to the mission, such as the Traverse Gravimeter and Surface Electrical Properties experiment. The Apollo 17 LRV traveled a cumulative distance of approximately 35.9 km (22.3 mi) in a total drive time of about four hours and twenty-six minutes; the greatest distance Eugene Cernan and Harrison Schmitt traveled from the lunar module was about 7.6 km (4.7 mi).
+                                    </p>
 
                                     <p>
-                                        It took five minutes for the pad workers to open all three hatch layers, and they could not drop the inner hatch to the cabin floor as intended, so they pushed it out of the way to one side. Although the cabin lights remained lit, they were at first unable to find the astronauts through the dense smoke. As the smoke cleared, they found the bodies, but were not able to remove them. The fire had partly melted Grissom's and White's nylon space suits and the hoses connecting them to the life support system. Grissom had removed his restraints and was lying on the floor of the spacecraft. White's restraints were burned through, and he was found lying sideways just below the hatch. It was determined that he had tried to open the hatch per the emergency procedure, but was not able to do so against the internal pressure. Chaffee was found strapped into his right-hand seat, as procedure called for him to maintain communication until White opened the hatch. Because of the large strands of melted nylon fusing the astronauts to the cabin interior, removing the bodies took nearly 90 minutes.
+                                      
                                 </p>
                                 </div>
 
                                 <div className="last_section">
-                                    <h4>Memorials</h4>
-                                    Gus Grissom and Roger Chaffee were buried at Arlington National Cemetery. Ed White was buried at West Point Cemetery on the grounds of the United States Military Academy in West Point, New York. Their names are among those of several astronauts and cosmonauts who have died in the line of duty, listed on the Space Mirror Memorial at the Kennedy Space Center Visitor Complex in Merritt Island, Florida. President Jimmy Carter awarded the Congressional Space Medal of Honor posthumously to Grissom on October 1, 1978. President Bill Clinton awarded it to White and Chaffee on December 17, 1997.
-
-                                    An Apollo 1 mission patch was left on the Moon's surface after the first manned lunar landing by Apollo 11 crew members Neil Armstrong and Buzz Aldrin. The Apollo 15 mission left on the surface of the Moon a tiny memorial statue, Fallen Astronaut, along with a plaque containing the names of the Apollo 1 astronauts, among others including Soviet cosmonauts, who perished in the pursuit of human space flight.
+                                    <h4>Lunar Surface</h4>
+                                    <p>Before reentering the LM for the final time, Gene Cernan expressed his thoughts:</p>
+                                    <h6 className="reduce_leading">...I'm on the surface; and, as I take man's last step from the surface, back home for some time to come - but we believe not too long into the future - I'd like to just [say] what I believe history will record. That America's challenge of today has forged man's destiny of tomorrow. And, as we leave the Moon at Taurus-Littrow, we leave as we came and, God willing, as we shall return, with peace and hope for all mankind. "Godspeed the crew of Apollo 17."</h6>
+                                    {/* <p className="small_paragraph_space reduce_leading">Cernan then followed Schmitt into the LM after spending approximately seven hours and 15 minutes outside during the mission's final lunar excursion.</p> */}
+                                    <div id="apollo17_surface"></div>
                                 </div>
 
                             </div>
