@@ -455,9 +455,10 @@ class ApolloMissionTiles extends Component {
                                         In February 2016 Discovery Channel broadcast a TV show suggesting that the mission witnessed mysterious or alien signals while on the far side of the Moon. The astronomers mention the odd whistling sound that lasted nearly an hour. It was speculated that this is an evidence for UFO coverup. According to space journalist James Oberg, the sound was most probably radio interference between the command module and the lunar module landing vehicles. Describing it as "outer-space type music" was most probably due to priming, as suggested by Benjamin Radford.
                                 </p>
                                     <h4>Earthrise from the moon</h4>
-                                    <video width="500" controls>
+                                    {/* <video width="500" controls>
                                         <source src="../../assets/videos/Apollo_10_Earthrise.mp4" type="video/mp4"></source>
-                                    </video>
+                                    </video> */}
+                                    <div id="earthrise_img"></div>
                                 </div>
 
                             </div>
