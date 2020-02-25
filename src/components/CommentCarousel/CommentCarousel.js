@@ -9,14 +9,20 @@ class CommentCarousel extends Component {
 
     render() {
         const settings = {
-            className: "center",
-            centerMode: true,
+            
+            dots: false,
             infinite: true,
-            centerPadding: "60px",
-            slidesToShow: 3,
-            speed: 1000,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            centerMode: true,
             arrows: true,
+            centerPadding: "10px",
+            variableWidth: true,
             focusOnSelect: true,
+            swipeToSlide: true,
+            // nextArrow: <CustomNextArrow />,
+            // prevArrow: <CustomPrevArrow />
         };
         // var carouselIndex = this.state.comments.map(function (comment) {
         //     return (

@@ -182,19 +182,19 @@ class Comments extends Component {
     render() {
 
         const settings = {
-            className: "center",
-            centerMode: true,
+            dots: false,
             infinite: true,
-            centerPadding: "0",
-            slidesToShow: 3,
             speed: 500,
-            // nextArrow: <ArrowLeft/>,
-            // prevArrow: <ArrowRight/>,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            centerMode: true,
             arrows: true,
-
-            draggable: true,
-            // variableWidth: true,
-            responsive: [{ breakpoint: 500, settings: { autoplay: true, slidesToShow: 1 } }],
+            centerPadding: "10px",
+            variableWidth: true,
+            focusOnSelect: true,
+            swipeToSlide: true,
+            // nextArrow: <CustomNextArrow />,
+            // prevArrow: <CustomPrevArrow />
         }
 
         // const carouselIndex = this.state.comments.map(function (comment) {
